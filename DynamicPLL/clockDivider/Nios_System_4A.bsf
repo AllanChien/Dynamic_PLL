@@ -1,0 +1,99 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 464 160)
+	(text "Nios_System_4A" (rect 5 0 80 12)(font "Arial" ))
+	(text "inst" (rect 8 128 20 140)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "button_pio_external_connection_export[3..0]" (rect 0 0 174 12)(font "Arial" ))
+		(text "button_pio_external_connection_export[3..0]" (rect 21 27 195 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "clocks_ref_clk_clk" (rect 0 0 75 12)(font "Arial" ))
+		(text "clocks_ref_clk_clk" (rect 21 43 96 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "clocks_ref_reset_reset" (rect 0 0 94 12)(font "Arial" ))
+		(text "clocks_ref_reset_reset" (rect 21 59 115 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 1))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "switch_pio_external_connection_export[9..0]" (rect 0 0 174 12)(font "Arial" ))
+		(text "switch_pio_external_connection_export[9..0]" (rect 21 75 195 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 448 32)
+		(output)
+		(text "clocks_sdram_clk_clk" (rect 0 0 89 12)(font "Arial" ))
+		(text "clocks_sdram_clk_clk" (rect 338 27 427 39)(font "Arial" ))
+		(line (pt 448 32)(pt 432 32)(line_width 1))
+	)
+	(port
+		(pt 448 48)
+		(output)
+		(text "led_pio_external_connection_export[9..0]" (rect 0 0 161 12)(font "Arial" ))
+		(text "led_pio_external_connection_export[9..0]" (rect 266 43 427 55)(font "Arial" ))
+		(line (pt 448 48)(pt 432 48)(line_width 3))
+	)
+	(port
+		(pt 448 64)
+		(output)
+		(text "seg1_pio_external_connection_export[6..0]" (rect 0 0 168 12)(font "Arial" ))
+		(text "seg1_pio_external_connection_export[6..0]" (rect 259 59 427 71)(font "Arial" ))
+		(line (pt 448 64)(pt 432 64)(line_width 3))
+	)
+	(port
+		(pt 448 80)
+		(output)
+		(text "seg2_pio_external_connection_export[6..0]" (rect 0 0 169 12)(font "Arial" ))
+		(text "seg2_pio_external_connection_export[6..0]" (rect 258 75 427 87)(font "Arial" ))
+		(line (pt 448 80)(pt 432 80)(line_width 3))
+	)
+	(port
+		(pt 448 96)
+		(output)
+		(text "seg3_pio_external_connection_export[6..0]" (rect 0 0 169 12)(font "Arial" ))
+		(text "seg3_pio_external_connection_export[6..0]" (rect 258 91 427 103)(font "Arial" ))
+		(line (pt 448 96)(pt 432 96)(line_width 3))
+	)
+	(port
+		(pt 448 112)
+		(output)
+		(text "seg4_pio_external_connection_export[6..0]" (rect 0 0 171 12)(font "Arial" ))
+		(text "seg4_pio_external_connection_export[6..0]" (rect 256 107 427 119)(font "Arial" ))
+		(line (pt 448 112)(pt 432 112)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 432 128)(line_width 1))
+	)
+)

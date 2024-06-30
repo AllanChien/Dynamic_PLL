@@ -1,0 +1,20 @@
+Fitter Status : Successful - Fri Jun 28 13:37:06 2024
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : Nios_Sys_2A
+Top-level Entity Name : Nios_Sys_2A
+Family : Cyclone V
+Device : 5CSEMA5F31C6
+Timing Models : Final
+Logic utilization (in ALMs) : 1,493 / 32,070 ( 5 % )
+Total registers : 1690
+Total pins : 56 / 457 ( 12 % )
+Total virtual pins : 0
+Total block memory bits : 175,104 / 4,065,280 ( 4 % )
+Total RAM Blocks : 37 / 397 ( 9 % )
+Total DSP Blocks : 0 / 87 ( 0 % )
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 2 / 6 ( 33 % )
+Total DLLs : 0 / 4 ( 0 % )

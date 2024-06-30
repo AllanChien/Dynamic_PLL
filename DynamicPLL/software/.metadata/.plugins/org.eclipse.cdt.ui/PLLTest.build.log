@@ -1,0 +1,9 @@
+12:29:57 **** Incremental Build of configuration Nios II for project PLLTest ****
+make all 
+Info: Building ../PLLTest_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../PLLTest_bsp/
+[BSP build complete]
+[PLLTest build complete]
+
+12:29:57 Build Finished (took 752ms)
+

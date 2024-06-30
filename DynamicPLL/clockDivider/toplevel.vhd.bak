@@ -1,0 +1,84 @@
+library ieee;
+use ieee.numeric_std.all;
+use ieee.std_logic_1164.all;
+
+
+entity TopLevel is
+	port (
+		CLOCK_50      : in    std_logic;
+		CLOCK2_50     : in    std_logic;
+		CLOCK3_50     : in    std_logic;
+
+		FPGA_I2C_SCLK : out   std_logic;
+		FPGA_I2C_SDAT : inout std_logic;
+		AUD_ADCDAT    : in    std_logic;
+		AUD_ADCLRCK   : inout std_logic;
+		AUD_BCLK      : inout std_logic;
+		AUD_DACDAT    : out   std_logic;
+		AUD_DACLRCK   : inout std_logic;
+		AUD_XCK       : out   std_logic;
+
+		KEY           : in    std_logic_vector(3 downto 0);
+		SW            : in    std_logic_vector(9 downto 0);
+		LEDR          : out   std_logic_vector(9 downto 0);
+		HEX0          : out   std_logic_vector(6 downto 0);
+		HEX1          : out   std_logic_vector(6 downto 0);
+		HEX2          : out   std_logic_vector(6 downto 0);
+		HEX3          : out   std_logic_vector(6 downto 0);
+		HEX4          : out   std_logic_vector(6 downto 0);
+		HEX5          : out   std_logic_vector(6 downto 0)
+	);
+end entity;
+
+architecture rtl of TopLevel is
+
+	signal clock : std_logic;
+
+	
+	component Nios_System_4A is 
+		port (
+			button_pio_external_connection_export : in  std_logic_vector(3 downto 0)  := (others => '0'); -- button_pio_external_connection.export
+			clocks_ref_clk_clk                    : in  std_logic                     := '0';             --                 clocks_ref_clk.clk
+			clocks_ref_reset_reset                : in  std_logic                     := '0';             --               clocks_ref_reset.reset
+			clocks_sdram_clk_clk                  : out std_logic;                                        --               clocks_sdram_clk.clk
+			led_pio_external_connection_export    : out std_logic_vector(9 downto 0);                     --    led_pio_external_connection.export
+			recv_addr_external_connection_export  : in  std_logic_vector(7 downto 0)  := (others => '0'); --  recv_addr_external_connection.export
+			recv_data_external_connection_export  : in  std_logic_vector(31 downto 0) := (others => '0'); --  recv_data_external_connection.export
+			seg1_pio_external_connection_export   : out std_logic_vector(6 downto 0);                     --   seg1_pio_external_connection.export
+			seg2_pio_external_connection_export   : out std_logic_vector(6 downto 0);                     --   seg2_pio_external_connection.export
+			seg3_pio_external_connection_export   : out std_logic_vector(6 downto 0);                     --   seg3_pio_external_connection.export
+			seg4_pio_external_connection_export   : out std_logic_vector(6 downto 0);                     --   seg4_pio_external_connection.export
+			seg5_pio_external_connection_export   : out std_logic_vector(6 downto 0);                     --   seg5_pio_external_connection.export
+			seg6_pio_external_connection_export   : out std_logic_vector(6 downto 0);                     --   seg6_pio_external_connection.export
+			send_addr_external_connection_export  : out std_logic_vector(7 downto 0);                     --  send_addr_external_connection.export
+			send_data_external_connection_export  : out std_logic_vector(31 downto 0);                    --  send_data_external_connection.export
+			switch_pio_external_connection_export : in  std_logic_vector(9 downto 0)  := (others => '0')  -- switch_pio_external_connection.export
+		);
+	end component Nios_System_4A;
+
+begin
+
+	clock <= CLOCK_50;
+	
+	nios : component Nios_System_4A
+		port map(
+			clocks_ref_clk_clk => CLOCK_50,
+			
+			seg1_pio_external_connection_export  => HEX0,
+			seg2_pio_external_connection_export  => HEX1,
+			seg3_pio_external_connection_export  => HEX2,
+			seg4_pio_external_connection_export  => HEX3,
+			seg5_pio_external_connection_export  => HEX4,
+			seg6_pio_external_connection_export  => HEX5,
+			switch_pio_external_connection_export => SW,
+			button_pio_external_connection_export => KEY,
+			led_pio_external_connection_export => LEDR,
+			recv_data_external_connection_export => recv_port(2).data,
+			recv_addr_external_connection_export => recv_port(2).addr,
+			send_data_external_connection_export => send_port(2).data,
+			send_addr_external_connection_export => send_port(2).addr
+
+		);
+
+
+end architecture;

@@ -1,0 +1,134 @@
+# Reading C:/intelFPGA_lite/18.0/modelsim_ase/tcl/vsim/pref.tcl
+# do Nios_Sys_2A_run_msim_rtl_vhdl.do
+# if ![file isdirectory Nios_Sys_2A_iputf_libs] {
+# 	file mkdir Nios_Sys_2A_iputf_libs
+# }
+# 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+###### Libraries for IPUTF cores 
+# vlib Nios_Sys_2A_iputf_libs/PLL_Reconfig
+# ** Warning: (vlib-34) Library already exists at "Nios_Sys_2A_iputf_libs/PLL_Reconfig".
+# vmap PLL_Reconfig ./Nios_Sys_2A_iputf_libs/PLL_Reconfig
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap PLL_Reconfig ./Nios_Sys_2A_iputf_libs/PLL_Reconfig 
+# Modifying modelsim.ini
+###### End libraries for IPUTF cores 
+###### MIF file copy and HDL compilation commands for IPUTF cores 
+# 
+# 
+# vcom "C:/UNI/Y4S1/DynamicPLL/PLL_sim/PLL.vho"                                                                   
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:50:45 on Jun 30,2024
+# vcom -reportprogress 300 C:/UNI/Y4S1/DynamicPLL/PLL_sim/PLL.vho 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_lnsim_components
+# -- Compiling entity PLL
+# -- Compiling architecture RTL of PLL
+# End time: 23:50:45 on Jun 30,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog "C:/UNI/Y4S1/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_top.v"  -work PLL_Reconfig
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:50:45 on Jun 30,2024
+# vlog -reportprogress 300 C:/UNI/Y4S1/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_top.v -work PLL_Reconfig 
+# -- Compiling module altera_pll_reconfig_top
+# 
+# Top level modules:
+# 	altera_pll_reconfig_top
+# End time: 23:50:45 on Jun 30,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog "C:/UNI/Y4S1/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v" -work PLL_Reconfig
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:50:45 on Jun 30,2024
+# vlog -reportprogress 300 C:/UNI/Y4S1/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v -work PLL_Reconfig 
+# -- Compiling module altera_pll_reconfig_core
+# ** Warning: C:/UNI/Y4S1/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(62): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# -- Compiling module self_reset
+# -- Compiling module dprio_mux
+# -- Compiling module fpll_dprio_init
+# -- Compiling module dyn_phase_shift
+# -- Compiling module generic_lcell_comb
+# 
+# Top level modules:
+# 	altera_pll_reconfig_core
+# End time: 23:50:45 on Jun 30,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vlog "C:/UNI/Y4S1/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_std_synchronizer.v"  -work PLL_Reconfig
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:50:45 on Jun 30,2024
+# vlog -reportprogress 300 C:/UNI/Y4S1/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_std_synchronizer.v -work PLL_Reconfig 
+# -- Compiling module altera_std_synchronizer
+# 
+# Top level modules:
+# 	altera_std_synchronizer
+# End time: 23:50:46 on Jun 30,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom "C:/UNI/Y4S1/DynamicPLL/PLL_Reconfig_sim/PLL_Reconfig.vhd"                                                 
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:50:46 on Jun 30,2024
+# vcom -reportprogress 300 C:/UNI/Y4S1/DynamicPLL/PLL_Reconfig_sim/PLL_Reconfig.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity PLL_Reconfig
+# -- Compiling architecture rtl of PLL_Reconfig
+# End time: 23:50:46 on Jun 30,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/UNI/Y4S1/DynamicPLL/pll_control.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:50:46 on Jun 30,2024
+# vcom -reportprogress 300 -93 -work work C:/UNI/Y4S1/DynamicPLL/pll_control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity pll_control
+# -- Compiling architecture Behavioral of pll_control
+# End time: 23:50:46 on Jun 30,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/UNI/Y4S1/DynamicPLL/ConstLow.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:50:46 on Jun 30,2024
+# vcom -reportprogress 300 -93 -work work C:/UNI/Y4S1/DynamicPLL/ConstLow.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ConstLow
+# -- Compiling architecture SYN of constlow
+# End time: 23:50:46 on Jun 30,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/UNI/Y4S1/DynamicPLL/test/TestPLL.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:50:46 on Jun 30,2024
+# vcom -reportprogress 300 -93 -work work C:/UNI/Y4S1/DynamicPLL/test/TestPLL.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity tb_PLL
+# -- Compiling architecture Behavioral of tb_PLL
+# ** Error: (vcom-11) Could not find work.pll_ms.
+# ** Error (suppressible): C:/UNI/Y4S1/DynamicPLL/test/TestPLL.vhd(29): (vcom-1195) Cannot find expanded name "work.PLL_MS".
+# ** Error: C:/UNI/Y4S1/DynamicPLL/test/TestPLL.vhd(29): Unknown expanded name.
+# ** Error: C:/UNI/Y4S1/DynamicPLL/test/TestPLL.vhd(79): VHDL Compiler exiting
+# End time: 23:50:46 on Jun 30,2024, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+# ** Error: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./Nios_Sys_2A_run_msim_rtl_vhdl.do line 28
+# C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -93 -work work {C:/UNI/Y4S1/DynamicPLL/test/TestPLL.vhd}"

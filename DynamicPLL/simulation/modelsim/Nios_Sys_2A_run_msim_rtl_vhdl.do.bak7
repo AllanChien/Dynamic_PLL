@@ -1,0 +1,40 @@
+transcript on
+if ![file isdirectory Nios_Sys_2A_iputf_libs] {
+	file mkdir Nios_Sys_2A_iputf_libs
+}
+
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+###### Libraries for IPUTF cores 
+vlib Nios_Sys_2A_iputf_libs/PLL_Reconfig
+vmap PLL_Reconfig ./Nios_Sys_2A_iputf_libs/PLL_Reconfig
+###### End libraries for IPUTF cores 
+###### MIF file copy and HDL compilation commands for IPUTF cores 
+
+
+vcom "C:/Y4S1/P4P/p4p-2024-group57/Implementation_Test/QuartusProject/PLLTest/PLL_sim/PLL.vho"                                                                   
+vlog "C:/Y4S1/P4P/p4p-2024-group57/Implementation_Test/QuartusProject/PLLTest/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_top.v"  -work PLL_Reconfig
+vlog "C:/Y4S1/P4P/p4p-2024-group57/Implementation_Test/QuartusProject/PLLTest/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v" -work PLL_Reconfig
+vlog "C:/Y4S1/P4P/p4p-2024-group57/Implementation_Test/QuartusProject/PLLTest/PLL_Reconfig_sim/altera_pll_reconfig/altera_std_synchronizer.v"  -work PLL_Reconfig
+vcom "C:/Y4S1/P4P/p4p-2024-group57/Implementation_Test/QuartusProject/PLLTest/PLL_Reconfig_sim/PLL_Reconfig.vhd"                                                 
+
+vcom -93 -work work {C:/Y4S1/P4P/p4p-2024-group57/Implementation_Test/QuartusProject/PLLTest/PLL.vho}
+vcom -93 -work work {C:/Y4S1/P4P/p4p-2024-group57/Implementation_Test/QuartusProject/PLLTest/PLL_Reconfig.vho}
+vlib PLL
+vmap PLL PLL
+vlog -vlog01compat -work PLL +incdir+C:/Y4S1/P4P/p4p-2024-group57/Implementation_Test/QuartusProject/PLLTest/PLL {C:/Y4S1/P4P/p4p-2024-group57/Implementation_Test/QuartusProject/PLLTest/PLL/PLL_0002.v}
+vlib PLL_Reconfig
+vmap PLL_Reconfig PLL_Reconfig
+vlog -vlog01compat -work PLL_Reconfig +incdir+C:/Y4S1/P4P/p4p-2024-group57/Implementation_Test/QuartusProject/PLLTest/PLL_Reconfig {C:/Y4S1/P4P/p4p-2024-group57/Implementation_Test/QuartusProject/PLLTest/PLL_Reconfig/altera_pll_reconfig_top.v}
+vlog -vlog01compat -work PLL_Reconfig +incdir+C:/Y4S1/P4P/p4p-2024-group57/Implementation_Test/QuartusProject/PLLTest/PLL_Reconfig {C:/Y4S1/P4P/p4p-2024-group57/Implementation_Test/QuartusProject/PLLTest/PLL_Reconfig/altera_pll_reconfig_core.v}
+vlog -vlog01compat -work PLL_Reconfig +incdir+C:/Y4S1/P4P/p4p-2024-group57/Implementation_Test/QuartusProject/PLLTest/PLL_Reconfig {C:/Y4S1/P4P/p4p-2024-group57/Implementation_Test/QuartusProject/PLLTest/PLL_Reconfig/altera_std_synchronizer.v}
+vcom -93 -work work {C:/Y4S1/P4P/p4p-2024-group57/Implementation_Test/QuartusProject/PLLTest/pll_control.vhd}
+vlib Nios_System_4A
+vmap Nios_System_4A Nios_System_4A
+vcom -93 -work Nios_System_4A {C:/Y4S1/P4P/p4p-2024-group57/Implementation_Test/QuartusProject/PLLTest/Nios_System_4A/synthesis/Nios_System_4A.vhd}
+vcom -93 -work work {C:/Y4S1/P4P/p4p-2024-group57/Implementation_Test/QuartusProject/PLLTest/ConstLow.vhd}
+

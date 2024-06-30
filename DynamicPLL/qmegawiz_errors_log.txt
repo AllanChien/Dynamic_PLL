@@ -1,0 +1,6 @@
+
+
+D:/Users/Daniel/Documents/GitHub/p4p-2024-group57/Implementation_Test/QuartusProject/DynamicPLL/PLL_Reconfig.vhd
+
+Jun 25 10PM:47:52>: Megafunction PLL Reconfig Intel FPGA IP v18.1 is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted

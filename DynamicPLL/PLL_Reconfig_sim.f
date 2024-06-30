@@ -1,0 +1,4 @@
+PLL_Reconfig_sim/PLL_Reconfig.vhd
+PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_top.v
+PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
+PLL_Reconfig_sim/altera_pll_reconfig/altera_std_synchronizer.v

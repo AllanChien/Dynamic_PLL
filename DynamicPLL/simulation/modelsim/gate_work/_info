@@ -1,0 +1,86 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/UNI/Y4S1/P4P/p4p-2024-group57/Implementation_Test/QuartusProject/DynamicPLL/simulation/modelsim
+Enios_sys_2a
+Z1 w1719538654
+Z2 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 ^Q<I4_d=;6U7ZlPZM8]Vi3
+Z3 DPx8 cyclonev 19 cyclonev_components 0 22 2D6AGAL3C<_1Ve5@klln?0
+Z4 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 j2UP9CC=Y_B?SOL73A]P;2
+Z5 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z6 DPx6 altera 11 dffeas_pack 0 22 ZQ]VGMHaJ[GMZ@f@b6[AU2
+Z7 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z9 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z10 DPx6 altera 28 altera_primitives_components 0 22 18Ti78zfmJ`i`agjOM[]Q2
+R0
+Z11 8Nios_Sys_2A.vho
+Z12 FNios_Sys_2A.vho
+l0
+L39
+Vo89CVaoQ[00PP[Re4^?W]1
+!s100 6bb@RW<RBWHQjmWnY;XPe0
+Z13 OV;C;10.5b;63
+31
+Z14 !s110 1719629746
+!i10b 1
+Z15 !s108 1719629746.000000
+Z16 !s90 -reportprogress|300|-93|-work|work|Nios_Sys_2A.vho|
+Z17 !s107 Nios_Sys_2A.vho|
+!i113 1
+Z18 o-93 -work work
+Z19 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+DEx4 work 11 nios_sys_2a 0 22 o89CVaoQ[00PP[Re4^?W]1
+l5657
+L122
+VLi0S:WmVJC8W9^=3_`3KI1
+!s100 =M8VJ20UYC:H2aZ=8^b2O0
+R13
+31
+R14
+!i10b 1
+R15
+R16
+R17
+!i113 1
+R18
+R19
+Etb_pll
+w1719548495
+DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+R8
+R9
+R0
+8C:/UNI/Y4S1/P4P/p4p-2024-group57/Implementation_Test/QuartusProject/DynamicPLL/test/TestPLL.vhd
+FC:/UNI/Y4S1/P4P/p4p-2024-group57/Implementation_Test/QuartusProject/DynamicPLL/test/TestPLL.vhd
+l0
+L7
+VP:`O9@g_4E7mO]>25TRhz2
+!s100 1aOJJ<]P5Bn]JDD8JnmQc1
+R13
+31
+!s110 1719629747
+!i10b 1
+!s108 1719629747.000000
+!s90 -reportprogress|300|-93|-work|work|C:/UNI/Y4S1/P4P/p4p-2024-group57/Implementation_Test/QuartusProject/DynamicPLL/test/TestPLL.vhd|
+!s107 C:/UNI/Y4S1/P4P/p4p-2024-group57/Implementation_Test/QuartusProject/DynamicPLL/test/TestPLL.vhd|
+!i113 1
+R18
+R19

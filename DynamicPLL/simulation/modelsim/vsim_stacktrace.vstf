@@ -1,0 +1,80 @@
+# Current time Fri Jun 28 14:38:55 2024
+# ModelSim - Intel FPGA Edition Stack Trace
+# Program = vsim
+# Id = "10.5b"
+# Version = "2016.10"
+# Date = "Oct  5 2016"
+# Platform = win32pe
+# Signature = a4da31216fa3031746f0a74423efc007
+# 0    0x734b57d0: 'islower + 0x802' in 'c:\windows\system32\msvcr120.dll'
+# 1    0x73524d1f: 'vsnprintf_l + 0x81' in 'c:\windows\system32\msvcr120.dll'
+# 2    0x73524c99: 'vsnprintf + 0x16' in 'c:\windows\system32\msvcr120.dll'
+# 3    0x01286704: '<unknown (@0x1286704)>'
+# 4    0x004c13a2: '<unknown (@0x4c13a2)>'
+# End of Stack Trace
+
+
+# Current time Fri Jun 28 14:44:22 2024
+# ModelSim - Intel FPGA Edition Stack Trace
+# Program = vsim
+# Id = "10.5b"
+# Version = "2016.10"
+# Date = "Oct  5 2016"
+# Platform = win32pe
+# Signature = a4da31216fa3031746f0a74423efc007
+# 0    0x734b57d0: 'islower + 0x802' in 'c:\windows\system32\msvcr120.dll'
+# 1    0x73524d1f: 'vsnprintf_l + 0x81' in 'c:\windows\system32\msvcr120.dll'
+# 2    0x73524c99: 'vsnprintf + 0x16' in 'c:\windows\system32\msvcr120.dll'
+# 3    0x01286704: '<unknown (@0x1286704)>'
+# 4    0x004c13a2: '<unknown (@0x4c13a2)>'
+# End of Stack Trace
+
+
+# Current time Fri Jun 28 14:48:12 2024
+# ModelSim - Intel FPGA Edition Stack Trace
+# Program = vsim
+# Id = "10.5b"
+# Version = "2016.10"
+# Date = "Oct  5 2016"
+# Platform = win32pe
+# Signature = a4da31216fa3031746f0a74423efc007
+# 0    0x734b57d0: 'islower + 0x802' in 'c:\windows\system32\msvcr120.dll'
+# 1    0x73524d1f: 'vsnprintf_l + 0x81' in 'c:\windows\system32\msvcr120.dll'
+# 2    0x73524c99: 'vsnprintf + 0x16' in 'c:\windows\system32\msvcr120.dll'
+# 3    0x01286704: '<unknown (@0x1286704)>'
+# 4    0x004c13a2: '<unknown (@0x4c13a2)>'
+# End of Stack Trace
+
+
+# Current time Fri Jun 28 15:10:10 2024
+# ModelSim - Intel FPGA Edition Stack Trace
+# Program = vsim
+# Id = "10.5b"
+# Version = "2016.10"
+# Date = "Oct  5 2016"
+# Platform = win32pe
+# Signature = a4da31216fa3031746f0a74423efc007
+# 0    0x734b57d0: 'islower + 0x802' in 'c:\windows\system32\msvcr120.dll'
+# 1    0x73524d1f: 'vsnprintf_l + 0x81' in 'c:\windows\system32\msvcr120.dll'
+# 2    0x73524c99: 'vsnprintf + 0x16' in 'c:\windows\system32\msvcr120.dll'
+# 3    0x01286704: '<unknown (@0x1286704)>'
+# 4    0x004c13a2: '<unknown (@0x4c13a2)>'
+# End of Stack Trace
+
+
+# Current time Fri Jun 28 15:14:47 2024
+# ModelSim - Intel FPGA Edition Stack Trace
+# Program = vsim
+# Id = "10.5b"
+# Version = "2016.10"
+# Date = "Oct  5 2016"
+# Platform = win32pe
+# Signature = a4da31216fa3031746f0a74423efc007
+# 0    0x734b57d0: 'islower + 0x802' in 'c:\windows\system32\msvcr120.dll'
+# 1    0x73524d1f: 'vsnprintf_l + 0x81' in 'c:\windows\system32\msvcr120.dll'
+# 2    0x73524c99: 'vsnprintf + 0x16' in 'c:\windows\system32\msvcr120.dll'
+# 3    0x01286704: '<unknown (@0x1286704)>'
+# 4    0x004c13a2: '<unknown (@0x4c13a2)>'
+# End of Stack Trace
+
+

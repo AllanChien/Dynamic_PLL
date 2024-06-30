@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file path="PLL_MS_sim/PLL_MS.vho" type="VHDL" />
+ <topLevel name="PLL_MS" />
+ <deviceFamily name="cyclonev" />
+</simPackage>

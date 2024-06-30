@@ -1,0 +1,96 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+
+entity pll_control is
+    port (
+        clk                : in std_logic;
+        reset_n            : in std_logic;
+        start_reconfig     : in std_logic;  -- Signal to start reconfiguration
+        mgmt_waitrequest   : in std_logic;
+        mgmt_readdata      : in std_logic_vector(31 downto 0);
+        mgmt_address       : out std_logic_vector(5 downto 0);
+        mgmt_read          : out std_logic;
+        mgmt_write         : out std_logic;
+        mgmt_writedata     : out std_logic_vector(31 downto 0);
+        config_done        : out std_logic  -- Signal to indicate configuration is done
+    );
+end pll_control;
+
+architecture Behavioral of pll_control is
+    type state_type is (idle, write_address, write_data, wait_for_reconfig, write_start);
+    signal state : state_type := idle;
+    signal config_counter : integer range 0 to 8 := 0;
+    signal write_addresses : array(0 to 7) of std_logic_vector(5 downto 0);
+    signal write_data : array(0 to 7) of std_logic_vector(31 downto 0);
+
+begin
+    process(clk, reset_n)
+    begin
+        if reset_n = '0' then
+            state <= idle;
+            mgmt_address <= (others => '0');
+            mgmt_read <= '0';
+            mgmt_write <= '0';
+            mgmt_writedata <= (others => '0');
+            config_done <= '0';
+            config_counter <= 0;
+        elsif rising_edge(clk) then
+            case state is
+                when idle =>
+                    if start_reconfig = '1' then
+                        -- Set your reconfiguration commands here
+                        write_addresses(0) <= "000000001";  -- Example address
+                        write_data(0) <= X"00000001";      -- Example data
+                        write_addresses(1) <= "000000010";  -- Example address
+                        write_data(1) <= X"00000002";      -- Example data
+                        write_addresses(2) <= "000000011";  -- Example address
+                        write_data(2) <= X"00000003";      -- Example data
+                        write_addresses(3) <= "000000100";  -- Example address
+                        write_data(3) <= X"00000004";      -- Example data
+                        write_addresses(4) <= "000000101";  -- Example address
+                        write_data(4) <= X"00000005";      -- Example data
+                        write_addresses(5) <= "000000110";  -- Example address
+                        write_data(5) <= X"00000006";      -- Example data
+                        write_addresses(6) <= "000000111";  -- Example address
+                        write_data(6) <= X"00000007";      -- Example data
+                        write_addresses(7) <= "000001000";  -- Example address
+                        write_data(7) <= X"00000008";      -- Example data
+                        state <= write_address;
+                        config_counter <= 0;
+                        config_done <= '0';
+                    end if;
+                when write_address =>
+                    mgmt_address <= write_addresses(config_counter);
+                    mgmt_writedata <= write_data(config_counter);
+                    mgmt_write <= '1';
+                    state <= write_data;
+                when write_data =>
+                    if mgmt_waitrequest = '0' then
+                        mgmt_write <= '0';
+                        if config_counter = 7 then
+                            state <= write_start;
+                        else
+                            config_counter <= config_counter + 1;
+                            state <= write_address;
+                        end if;
+                    end if;
+                when write_start =>
+                    mgmt_address <= "000000000";  -- Start address
+                    mgmt_writedata <= (others => '0');  -- Any value
+                    mgmt_write <= '1';
+                    state <= wait_for_reconfig;
+                when wait_for_reconfig =>
+                    if mgmt_waitrequest = '0' then
+                        mgmt_write <= '0';
+                        state <= idle;
+                        config_done <= '1';
+                    end if;
+                when others =>
+                    state <= idle;
+            end case;
+        end if;
+    end process;
+end Behavioral;
+

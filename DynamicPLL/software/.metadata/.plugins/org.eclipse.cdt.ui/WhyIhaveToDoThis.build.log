@@ -1,0 +1,9 @@
+15:59:31 **** Incremental Build of configuration Nios II for project WhyIhaveToDoThis ****
+make all 
+Info: Building ../WhyIhaveToDoThis_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../WhyIhaveToDoThis_bsp/
+[BSP build complete]
+[WhyIhaveToDoThis build complete]
+
+15:59:32 Build Finished (took 922ms)
+
