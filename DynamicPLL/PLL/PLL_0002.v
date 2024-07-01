@@ -226,7 +226,7 @@ module  PLL_0002(
 		.pll_fbclk_mux_1("glb"),
 		.pll_fbclk_mux_2("m_cnt"),
 		.pll_m_cnt_in_src("ph_mux_clk"),
-		.pll_slf_rst("false")
+		.pll_slf_rst("true")
 	) altera_pll_i (
 		.rst	(rst),
 		.outclk	({outclk_0}),

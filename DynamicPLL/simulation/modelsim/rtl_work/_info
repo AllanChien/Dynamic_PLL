@@ -21,9 +21,9 @@ V^fWWoha:dH6GXiISMa[a50
 !s100 8]>H]Ld@j7:iz=jCaN6K_2
 Z6 OV;C;10.5b;63
 31
-Z7 !s110 1719798278
+Z7 !s110 1719831057
 !i10b 1
-Z8 !s108 1719798278.000000
+Z8 !s108 1719831057.000000
 Z9 !s90 -reportprogress|300|-93|-work|work|C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/ConstLow.vhd|
 Z10 !s107 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/ConstLow.vhd|
 !i113 1
@@ -48,7 +48,7 @@ R10
 R11
 R12
 Epll
-Z13 w1719458316
+Z13 w1719829546
 R2
 R3
 Z14 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 ;`SHL]^j4UaADA9ENAN^]0
@@ -56,14 +56,14 @@ R0
 Z15 8C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_sim/PLL.vho
 Z16 FC:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_sim/PLL.vho
 l0
-L34
-VYDWII>]CUmDH^`6hBibgI3
-!s100 nEEXX_B1TPb54YW<]1LQO3
+L33
+V6<oPC:OAW9F]RcJObFaFe3
+!s100 1QXRX>Jf2fXCD[L<?mNjg3
 R6
 32
-Z17 !s110 1719798277
+Z17 !s110 1719831056
 !i10b 1
-Z18 !s108 1719798277.000000
+Z18 !s108 1719831056.000000
 Z19 !s90 -reportprogress|300|C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_sim/PLL.vho|
 Z20 !s107 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_sim/PLL.vho|
 !i113 1
@@ -72,11 +72,11 @@ Artl
 R2
 R3
 R14
-Z21 DEx4 work 3 pll 0 22 YDWII>]CUmDH^`6hBibgI3
-l55
-L46
-VU0E`Ul_P>=P><AR^Fm:hJ3
-!s100 7:CMDBnKA_kS^fnN_IQ0i1
+Z21 DEx4 work 3 pll 0 22 6<oPC:OAW9F]RcJObFaFe3
+l54
+L45
+VC>jYM0bDg1K;igP>bcZcE3
+!s100 hWne@lO>JJ9N?NdIcF>b61
 R6
 32
 R17
@@ -87,7 +87,7 @@ R20
 !i113 1
 R12
 Epll_control
-Z22 w1719391070
+Z22 w1719828668
 Z23 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 R2
 R3
@@ -128,7 +128,7 @@ R27
 R11
 R12
 Epll_reconfig
-Z29 w1719621116
+Z29 w1719828933
 R23
 R2
 R3
@@ -137,8 +137,8 @@ Z30 8C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/PLL_Reconfig.vhd
 Z31 FC:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/PLL_Reconfig.vhd
 l0
 L9
-VYKd^@:l:bOI]MJXzOzGj:1
-!s100 gk:PDG^<[IkBOFo^gM1e[0
+V^KWRNLP4IAIHG5zBQYD^j1
+!s100 V>1Gj0?RdCXRI>lGDb>bo3
 R6
 32
 R7
@@ -152,11 +152,11 @@ Artl
 R23
 R2
 R3
-Z34 DEx4 work 12 pll_reconfig 0 22 YKd^@:l:bOI]MJXzOzGj:1
-l52
-L24
-VDFCandgmC[BH`GYgU5]Hm1
-!s100 l?Xz_U;KGU4FEnLT8jc@B1
+Z34 DEx4 work 12 pll_reconfig 0 22 ^KWRNLP4IAIHG5zBQYD^j1
+l53
+L25
+VAJ2C:^^29M2b@87`W^6mJ1
+!s100 E22JgZ:Wa6K1>zB^=GMNI2
 R6
 32
 R7
@@ -167,7 +167,7 @@ R33
 !i113 1
 R12
 Etb_pll_control
-Z35 w1719797786
+Z35 w1719828678
 Z36 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
 Z37 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
 R2
@@ -200,10 +200,10 @@ R37
 R2
 R3
 DEx4 work 14 tb_pll_control 0 22 nV^DZ2K7^_cJN=Mna:I^R0
-l44
+l47
 L10
-V?8i_[i^aG;0`;lE8RmBi02
-!s100 bHUVlD9S9G?LP=ig39iFS2
+V<ek]@W`5VUF0_S`5M_aL]1
+!s100 30D`JYeRNLBY2JSX:P7^e2
 R6
 31
 R7

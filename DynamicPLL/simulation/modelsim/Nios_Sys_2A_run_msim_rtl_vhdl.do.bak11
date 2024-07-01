@@ -32,4 +32,4 @@ vsim -suppress 10000 -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lns
 add wave *
 view structure
 view signals
-run 20000 ns
+run 10000 ns

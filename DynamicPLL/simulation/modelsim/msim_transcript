@@ -1,5 +1,5 @@
 # Reading C:/intelFPGA_lite/18.0/modelsim_ase/tcl/vsim/pref.tcl
-# do Nios_Sys_2A_run_msim_rtl_verilog.do
+# do Nios_Sys_2A_run_msim_rtl_vhdl.do
 # if ![file isdirectory Nios_Sys_2A_iputf_libs] {
 # 	file mkdir Nios_Sys_2A_iputf_libs
 # }
@@ -27,7 +27,7 @@
 # 
 # vcom "C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_sim/PLL.vho"                                                                   
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:43:39 on Jul 01,2024
+# Start time: 22:50:33 on Jul 01,2024
 # vcom -reportprogress 300 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_sim/PLL.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -35,21 +35,21 @@
 # -- Loading package altera_lnsim_components
 # -- Compiling entity PLL
 # -- Compiling architecture RTL of PLL
-# End time: 13:43:39 on Jul 01,2024, Elapsed time: 0:00:00
+# End time: 22:50:33 on Jul 01,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog "C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_top.v"  -work PLL_Reconfig
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:43:39 on Jul 01,2024
+# Start time: 22:50:33 on Jul 01,2024
 # vlog -reportprogress 300 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_top.v -work PLL_Reconfig 
 # -- Compiling module altera_pll_reconfig_top
 # 
 # Top level modules:
 # 	altera_pll_reconfig_top
-# End time: 13:43:39 on Jul 01,2024, Elapsed time: 0:00:00
+# End time: 22:50:33 on Jul 01,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog "C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v" -work PLL_Reconfig
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:43:40 on Jul 01,2024
+# Start time: 22:50:33 on Jul 01,2024
 # vlog -reportprogress 300 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v -work PLL_Reconfig 
 # -- Compiling module altera_pll_reconfig_core
 # ** Warning: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(62): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
@@ -61,21 +61,21 @@
 # 
 # Top level modules:
 # 	altera_pll_reconfig_core
-# End time: 13:43:40 on Jul 01,2024, Elapsed time: 0:00:00
+# End time: 22:50:33 on Jul 01,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
 # vlog "C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_std_synchronizer.v"  -work PLL_Reconfig
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:43:40 on Jul 01,2024
+# Start time: 22:50:33 on Jul 01,2024
 # vlog -reportprogress 300 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_std_synchronizer.v -work PLL_Reconfig 
 # -- Compiling module altera_std_synchronizer
 # 
 # Top level modules:
 # 	altera_std_synchronizer
-# End time: 13:43:40 on Jul 01,2024, Elapsed time: 0:00:00
+# End time: 22:50:33 on Jul 01,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom "C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/PLL_Reconfig.vhd"                                                 
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:43:40 on Jul 01,2024
+# Start time: 22:50:33 on Jul 01,2024
 # vcom -reportprogress 300 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/PLL_Reconfig.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -83,12 +83,12 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity PLL_Reconfig
 # -- Compiling architecture rtl of PLL_Reconfig
-# End time: 13:43:40 on Jul 01,2024, Elapsed time: 0:00:00
+# End time: 22:50:33 on Jul 01,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vcom -93 -work work {C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/pll_control.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:43:40 on Jul 01,2024
+# Start time: 22:50:33 on Jul 01,2024
 # vcom -reportprogress 300 -93 -work work C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/pll_control.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -96,23 +96,23 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity pll_control
 # -- Compiling architecture Behavioral of pll_control
-# End time: 13:43:40 on Jul 01,2024, Elapsed time: 0:00:00
+# End time: 22:50:33 on Jul 01,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/ConstLow.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:43:40 on Jul 01,2024
+# Start time: 22:50:33 on Jul 01,2024
 # vcom -reportprogress 300 -93 -work work C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/ConstLow.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity ConstLow
 # -- Compiling architecture SYN of constlow
-# End time: 13:43:40 on Jul 01,2024, Elapsed time: 0:00:00
+# End time: 22:50:33 on Jul 01,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vcom -93 -work work {C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/test/testPllControl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:43:40 on Jul 01,2024
+# Start time: 22:50:33 on Jul 01,2024
 # vcom -reportprogress 300 -93 -work work C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/test/testPllControl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -126,12 +126,12 @@
 # -- Loading entity PLL_Reconfig
 # -- Loading package altera_lnsim_components
 # -- Loading entity PLL
-# End time: 13:43:40 on Jul 01,2024, Elapsed time: 0:00:00
+# End time: 22:50:34 on Jul 01,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -L PLL_Reconfig -voptargs="+acc"  tb_pll_control
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -L PLL_Reconfig -voptargs=""+acc"" tb_pll_control 
-# Start time: 13:43:40 on Jul 01,2024
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -L PLL_Reconfig -voptargs="+acc"  tb_pll_control
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -L PLL_Reconfig -voptargs=""+acc"" tb_pll_control 
+# Start time: 22:50:34 on Jul 01,2024
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -144,7 +144,6 @@
 # Loading work.pll_reconfig(rtl)
 # Loading PLL_Reconfig.altera_pll_reconfig_top
 # Loading PLL_Reconfig.altera_pll_reconfig_core
-# Loading altera_mf_ver.altera_std_synchronizer
 # Loading PLL_Reconfig.dyn_phase_shift
 # Loading PLL_Reconfig.generic_lcell_comb
 # Loading PLL_Reconfig.self_reset
@@ -182,10 +181,10 @@
 # Loading sv_std.std
 # Loading altera_lnsim.altera_lnsim_functions
 # Loading altera_lnsim.altera_pll
-# Loading altera_lnsim_ver.dps_extra_kick
-# Loading altera_lnsim_ver.dprio_init
-# Loading altera_lnsim_ver.altera_pll_dps_lcell_comb
-# Loading altera_lnsim_ver.altera_cyclonev_pll
+# Loading altera_lnsim.dps_extra_kick
+# Loading altera_lnsim.dprio_init
+# Loading altera_lnsim.altera_pll_dps_lcell_comb
+# Loading altera_lnsim.altera_cyclonev_pll
 # Loading ieee.vital_timing(body)
 # Loading ieee.vital_primitives(body)
 # Loading cyclonev.cyclonev_atom_pack(body)
@@ -193,7 +192,7 @@
 # Error loading design
 # Error: Error loading design
 #        Pausing macro execution
-# MACRO ./Nios_Sys_2A_run_msim_rtl_verilog.do PAUSED at line 30
+# MACRO ./Nios_Sys_2A_run_msim_rtl_vhdl.do PAUSED at line 30
 transcript on
 if ![file isdirectory Nios_Sys_2A_iputf_libs] {
 	file mkdir Nios_Sys_2A_iputf_libs
@@ -221,7 +220,7 @@ vmap PLL_Reconfig ./Nios_Sys_2A_iputf_libs/PLL_Reconfig
 
 vcom "C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_sim/PLL.vho"                                                                   
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:44:01 on Jul 01,2024
+# Start time: 22:50:56 on Jul 01,2024
 # vcom -reportprogress 300 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_sim/PLL.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -229,21 +228,21 @@ vcom "C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_sim/PLL.vho"
 # -- Loading package altera_lnsim_components
 # -- Compiling entity PLL
 # -- Compiling architecture RTL of PLL
-# End time: 13:44:01 on Jul 01,2024, Elapsed time: 0:00:00
+# End time: 22:50:56 on Jul 01,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog "C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_top.v"  -work PLL_Reconfig
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:44:01 on Jul 01,2024
+# Start time: 22:50:56 on Jul 01,2024
 # vlog -reportprogress 300 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_top.v -work PLL_Reconfig 
 # -- Compiling module altera_pll_reconfig_top
 # 
 # Top level modules:
 # 	altera_pll_reconfig_top
-# End time: 13:44:01 on Jul 01,2024, Elapsed time: 0:00:00
+# End time: 22:50:56 on Jul 01,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog "C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v" -work PLL_Reconfig
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:44:02 on Jul 01,2024
+# Start time: 22:50:56 on Jul 01,2024
 # vlog -reportprogress 300 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v -work PLL_Reconfig 
 # -- Compiling module altera_pll_reconfig_core
 # ** Warning: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(62): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
@@ -255,21 +254,21 @@ vlog "C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/al
 # 
 # Top level modules:
 # 	altera_pll_reconfig_core
-# End time: 13:44:02 on Jul 01,2024, Elapsed time: 0:00:00
+# End time: 22:50:56 on Jul 01,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
 vlog "C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_std_synchronizer.v"  -work PLL_Reconfig
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:44:02 on Jul 01,2024
+# Start time: 22:50:57 on Jul 01,2024
 # vlog -reportprogress 300 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_std_synchronizer.v -work PLL_Reconfig 
 # -- Compiling module altera_std_synchronizer
 # 
 # Top level modules:
 # 	altera_std_synchronizer
-# End time: 13:44:02 on Jul 01,2024, Elapsed time: 0:00:00
+# End time: 22:50:57 on Jul 01,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom "C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/PLL_Reconfig.vhd"                                                 
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:44:02 on Jul 01,2024
+# Start time: 22:50:57 on Jul 01,2024
 # vcom -reportprogress 300 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/PLL_Reconfig.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -277,12 +276,12 @@ vcom "C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/PLL_Reconfig.vhd"
 # -- Loading package NUMERIC_STD
 # -- Compiling entity PLL_Reconfig
 # -- Compiling architecture rtl of PLL_Reconfig
-# End time: 13:44:02 on Jul 01,2024, Elapsed time: 0:00:00
+# End time: 22:50:57 on Jul 01,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 vcom -93 -work work {C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/pll_control.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:44:02 on Jul 01,2024
+# Start time: 22:50:57 on Jul 01,2024
 # vcom -reportprogress 300 -93 -work work C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/pll_control.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -290,23 +289,23 @@ vcom -93 -work work {C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/pll_control.vhd}
 # -- Loading package NUMERIC_STD
 # -- Compiling entity pll_control
 # -- Compiling architecture Behavioral of pll_control
-# End time: 13:44:02 on Jul 01,2024, Elapsed time: 0:00:00
+# End time: 22:50:57 on Jul 01,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -93 -work work {C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/ConstLow.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:44:02 on Jul 01,2024
+# Start time: 22:50:57 on Jul 01,2024
 # vcom -reportprogress 300 -93 -work work C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/ConstLow.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity ConstLow
 # -- Compiling architecture SYN of constlow
-# End time: 13:44:02 on Jul 01,2024, Elapsed time: 0:00:00
+# End time: 22:50:57 on Jul 01,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 vcom -93 -work work {C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/test/testPllControl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:44:02 on Jul 01,2024
+# Start time: 22:50:57 on Jul 01,2024
 # vcom -reportprogress 300 -93 -work work C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/test/testPllControl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -320,12 +319,12 @@ vcom -93 -work work {C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/test/testPllControl.vhd}
 # -- Loading entity PLL_Reconfig
 # -- Loading package altera_lnsim_components
 # -- Loading entity PLL
-# End time: 13:44:02 on Jul 01,2024, Elapsed time: 0:00:00
+# End time: 22:50:57 on Jul 01,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
-vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -L PLL_Reconfig -voptargs="+acc"  tb_pll_control
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -L PLL_Reconfig -voptargs=""+acc"" tb_pll_control 
-# Start time: 13:43:40 on Jul 01,2024
+vsim -suppress 10000 -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -L PLL_Reconfig -voptargs="+acc"  tb_pll_control
+# vsim -suppress 10000 -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -L PLL_Reconfig -voptargs=""+acc"" tb_pll_control 
+# Start time: 22:50:34 on Jul 01,2024
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -338,400 +337,12 @@ vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lns
 # Loading work.pll_reconfig(rtl)
 # Loading PLL_Reconfig.altera_pll_reconfig_top
 # Loading PLL_Reconfig.altera_pll_reconfig_core
-# Loading altera_mf_ver.altera_std_synchronizer
 # Loading PLL_Reconfig.dyn_phase_shift
 # Loading PLL_Reconfig.generic_lcell_comb
 # Loading PLL_Reconfig.self_reset
 # Loading PLL_Reconfig.dprio_mux
 # Loading PLL_Reconfig.fpll_dprio_init
-# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2180): Unresolved defparam reference to 'lcell_inst' in lcell_inst.lut_mask.
-#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_0/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
-# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2181): Unresolved defparam reference to 'lcell_inst' in lcell_inst.dont_touch.
-#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_0/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
-# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2180): Unresolved defparam reference to 'lcell_inst' in lcell_inst.lut_mask.
-#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_1/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
-# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2181): Unresolved defparam reference to 'lcell_inst' in lcell_inst.dont_touch.
-#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_1/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
-# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2180): Unresolved defparam reference to 'lcell_inst' in lcell_inst.lut_mask.
-#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_2/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
-# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2181): Unresolved defparam reference to 'lcell_inst' in lcell_inst.dont_touch.
-#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_2/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
-# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2180): Unresolved defparam reference to 'lcell_inst' in lcell_inst.lut_mask.
-#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_3/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
-# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2181): Unresolved defparam reference to 'lcell_inst' in lcell_inst.dont_touch.
-#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_3/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
-# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2180): Unresolved defparam reference to 'lcell_inst' in lcell_inst.lut_mask.
-#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_4/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
-# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2181): Unresolved defparam reference to 'lcell_inst' in lcell_inst.dont_touch.
-#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_4/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
-# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2180): Unresolved defparam reference to 'lcell_inst' in lcell_inst.lut_mask.
-#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/lcell_fpll_0_1/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
-# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2181): Unresolved defparam reference to 'lcell_inst' in lcell_inst.dont_touch.
-#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/lcell_fpll_0_1/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
-# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2180): Unresolved defparam reference to 'lcell_inst' in lcell_inst.lut_mask.
-#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/lcell_dprio_read/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
-# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2181): Unresolved defparam reference to 'lcell_inst' in lcell_inst.dont_touch.
-#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/lcell_dprio_read/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
-# Loading work.pll(rtl)
-# Loading sv_std.std
-# Loading altera_lnsim.altera_lnsim_functions
-# Loading altera_lnsim.altera_pll
-# Loading altera_lnsim_ver.dps_extra_kick
-# Loading altera_lnsim_ver.dprio_init
-# Loading altera_lnsim_ver.altera_pll_dps_lcell_comb
-# Loading altera_lnsim_ver.altera_cyclonev_pll
-# Loading ieee.vital_timing(body)
-# Loading ieee.vital_primitives(body)
-# Loading cyclonev.cyclonev_atom_pack(body)
-# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./Nios_Sys_2A_run_msim_rtl_verilog.do PAUSED at line 30
-transcript on
-if ![file isdirectory Nios_Sys_2A_iputf_libs] {
-	file mkdir Nios_Sys_2A_iputf_libs
-}
-
-if {[file exists rtl_work]} {
-	vdel -lib rtl_work -all
-}
-vlib rtl_work
-vmap work rtl_work
-# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
-# vmap work rtl_work 
-# Modifying modelsim.ini
-
-###### Libraries for IPUTF cores 
-vlib Nios_Sys_2A_iputf_libs/PLL_Reconfig
-# ** Warning: (vlib-34) Library already exists at "Nios_Sys_2A_iputf_libs/PLL_Reconfig".
-vmap PLL_Reconfig ./Nios_Sys_2A_iputf_libs/PLL_Reconfig
-# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
-# vmap PLL_Reconfig ./Nios_Sys_2A_iputf_libs/PLL_Reconfig 
-# Modifying modelsim.ini
-###### End libraries for IPUTF cores 
-###### MIF file copy and HDL compilation commands for IPUTF cores 
-
-
-vcom "C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_sim/PLL.vho"                                                                   
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:44:12 on Jul 01,2024
-# vcom -reportprogress 300 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_sim/PLL.vho 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package altera_lnsim_components
-# -- Compiling entity PLL
-# -- Compiling architecture RTL of PLL
-# End time: 13:44:12 on Jul 01,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog "C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_top.v"  -work PLL_Reconfig
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:44:12 on Jul 01,2024
-# vlog -reportprogress 300 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_top.v -work PLL_Reconfig 
-# -- Compiling module altera_pll_reconfig_top
-# 
-# Top level modules:
-# 	altera_pll_reconfig_top
-# End time: 13:44:12 on Jul 01,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog "C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v" -work PLL_Reconfig
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:44:13 on Jul 01,2024
-# vlog -reportprogress 300 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v -work PLL_Reconfig 
-# -- Compiling module altera_pll_reconfig_core
-# ** Warning: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(62): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# -- Compiling module self_reset
-# -- Compiling module dprio_mux
-# -- Compiling module fpll_dprio_init
-# -- Compiling module dyn_phase_shift
-# -- Compiling module generic_lcell_comb
-# 
-# Top level modules:
-# 	altera_pll_reconfig_core
-# End time: 13:44:13 on Jul 01,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-vlog "C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_std_synchronizer.v"  -work PLL_Reconfig
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:44:13 on Jul 01,2024
-# vlog -reportprogress 300 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_std_synchronizer.v -work PLL_Reconfig 
-# -- Compiling module altera_std_synchronizer
-# 
-# Top level modules:
-# 	altera_std_synchronizer
-# End time: 13:44:13 on Jul 01,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom "C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/PLL_Reconfig.vhd"                                                 
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:44:13 on Jul 01,2024
-# vcom -reportprogress 300 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/PLL_Reconfig.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity PLL_Reconfig
-# -- Compiling architecture rtl of PLL_Reconfig
-# End time: 13:44:13 on Jul 01,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-
-vcom -93 -work work {C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/pll_control.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:44:13 on Jul 01,2024
-# vcom -reportprogress 300 -93 -work work C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/pll_control.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity pll_control
-# -- Compiling architecture Behavioral of pll_control
-# End time: 13:44:13 on Jul 01,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -93 -work work {C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/ConstLow.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:44:13 on Jul 01,2024
-# vcom -reportprogress 300 -93 -work work C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/ConstLow.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity ConstLow
-# -- Compiling architecture SYN of constlow
-# End time: 13:44:13 on Jul 01,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-
-vcom -93 -work work {C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/test/testPllControl.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:44:13 on Jul 01,2024
-# vcom -reportprogress 300 -93 -work work C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/test/testPllControl.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity tb_pll_control
-# -- Compiling architecture Behavioral of tb_pll_control
-# -- Loading package NUMERIC_STD
-# -- Loading entity pll_control
-# -- Loading entity PLL_Reconfig
-# -- Loading package altera_lnsim_components
-# -- Loading entity PLL
-# End time: 13:44:13 on Jul 01,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-
-vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -L PLL_Reconfig -voptargs="+acc"  tb_pll_control
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -L PLL_Reconfig -voptargs=""+acc"" tb_pll_control 
-# Start time: 13:43:40 on Jul 01,2024
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading ieee.numeric_std(body)
-# Loading altera_lnsim.altera_lnsim_components
-# Loading work.tb_pll_control(behavioral)
-# Loading work.pll_control(behavioral)
-# Loading work.pll_reconfig(rtl)
-# Loading PLL_Reconfig.altera_pll_reconfig_top
-# Loading PLL_Reconfig.altera_pll_reconfig_core
-# Loading altera_mf_ver.altera_std_synchronizer
-# Loading PLL_Reconfig.dyn_phase_shift
-# Loading PLL_Reconfig.generic_lcell_comb
-# Loading PLL_Reconfig.self_reset
-# Loading PLL_Reconfig.dprio_mux
-# Loading PLL_Reconfig.fpll_dprio_init
-# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2180): Unresolved defparam reference to 'lcell_inst' in lcell_inst.lut_mask.
-#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_0/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
-# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2181): Unresolved defparam reference to 'lcell_inst' in lcell_inst.dont_touch.
-#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_0/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
-# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2180): Unresolved defparam reference to 'lcell_inst' in lcell_inst.lut_mask.
-#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_1/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
-# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2181): Unresolved defparam reference to 'lcell_inst' in lcell_inst.dont_touch.
-#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_1/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
-# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2180): Unresolved defparam reference to 'lcell_inst' in lcell_inst.lut_mask.
-#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_2/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
-# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2181): Unresolved defparam reference to 'lcell_inst' in lcell_inst.dont_touch.
-#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_2/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
-# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2180): Unresolved defparam reference to 'lcell_inst' in lcell_inst.lut_mask.
-#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_3/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
-# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2181): Unresolved defparam reference to 'lcell_inst' in lcell_inst.dont_touch.
-#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_3/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
-# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2180): Unresolved defparam reference to 'lcell_inst' in lcell_inst.lut_mask.
-#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_4/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
-# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2181): Unresolved defparam reference to 'lcell_inst' in lcell_inst.dont_touch.
-#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_4/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
-# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2180): Unresolved defparam reference to 'lcell_inst' in lcell_inst.lut_mask.
-#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/lcell_fpll_0_1/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
-# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2181): Unresolved defparam reference to 'lcell_inst' in lcell_inst.dont_touch.
-#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/lcell_fpll_0_1/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
-# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2180): Unresolved defparam reference to 'lcell_inst' in lcell_inst.lut_mask.
-#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/lcell_dprio_read/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
-# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2181): Unresolved defparam reference to 'lcell_inst' in lcell_inst.dont_touch.
-#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/lcell_dprio_read/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
-# Loading work.pll(rtl)
-# Loading sv_std.std
-# Loading altera_lnsim.altera_lnsim_functions
-# Loading altera_lnsim.altera_pll
-# Loading altera_lnsim_ver.dps_extra_kick
-# Loading altera_lnsim_ver.dprio_init
-# Loading altera_lnsim_ver.altera_pll_dps_lcell_comb
-# Loading altera_lnsim_ver.altera_cyclonev_pll
-# Loading ieee.vital_timing(body)
-# Loading ieee.vital_primitives(body)
-# Loading cyclonev.cyclonev_atom_pack(body)
-# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./Nios_Sys_2A_run_msim_rtl_verilog.do PAUSED at line 30
-transcript on
-if ![file isdirectory Nios_Sys_2A_iputf_libs] {
-	file mkdir Nios_Sys_2A_iputf_libs
-}
-
-if {[file exists rtl_work]} {
-	vdel -lib rtl_work -all
-}
-vlib rtl_work
-vmap work rtl_work
-# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
-# vmap work rtl_work 
-# Modifying modelsim.ini
-
-###### Libraries for IPUTF cores 
-vlib Nios_Sys_2A_iputf_libs/PLL_Reconfig
-# ** Warning: (vlib-34) Library already exists at "Nios_Sys_2A_iputf_libs/PLL_Reconfig".
-vmap PLL_Reconfig ./Nios_Sys_2A_iputf_libs/PLL_Reconfig
-# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
-# vmap PLL_Reconfig ./Nios_Sys_2A_iputf_libs/PLL_Reconfig 
-# Modifying modelsim.ini
-###### End libraries for IPUTF cores 
-###### MIF file copy and HDL compilation commands for IPUTF cores 
-
-
-vcom "C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_sim/PLL.vho"                                                                   
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:44:37 on Jul 01,2024
-# vcom -reportprogress 300 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_sim/PLL.vho 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package altera_lnsim_components
-# -- Compiling entity PLL
-# -- Compiling architecture RTL of PLL
-# End time: 13:44:37 on Jul 01,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog "C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_top.v"  -work PLL_Reconfig
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:44:37 on Jul 01,2024
-# vlog -reportprogress 300 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_top.v -work PLL_Reconfig 
-# -- Compiling module altera_pll_reconfig_top
-# 
-# Top level modules:
-# 	altera_pll_reconfig_top
-# End time: 13:44:37 on Jul 01,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog "C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v" -work PLL_Reconfig
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:44:37 on Jul 01,2024
-# vlog -reportprogress 300 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v -work PLL_Reconfig 
-# -- Compiling module altera_pll_reconfig_core
-# ** Warning: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(62): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# -- Compiling module self_reset
-# -- Compiling module dprio_mux
-# -- Compiling module fpll_dprio_init
-# -- Compiling module dyn_phase_shift
-# -- Compiling module generic_lcell_comb
-# 
-# Top level modules:
-# 	altera_pll_reconfig_core
-# End time: 13:44:38 on Jul 01,2024, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 1
-vlog "C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_std_synchronizer.v"  -work PLL_Reconfig
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:44:38 on Jul 01,2024
-# vlog -reportprogress 300 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_std_synchronizer.v -work PLL_Reconfig 
-# -- Compiling module altera_std_synchronizer
-# 
-# Top level modules:
-# 	altera_std_synchronizer
-# End time: 13:44:38 on Jul 01,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom "C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/PLL_Reconfig.vhd"                                                 
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:44:38 on Jul 01,2024
-# vcom -reportprogress 300 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/PLL_Reconfig.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity PLL_Reconfig
-# -- Compiling architecture rtl of PLL_Reconfig
-# End time: 13:44:38 on Jul 01,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-
-vcom -93 -work work {C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/pll_control.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:44:38 on Jul 01,2024
-# vcom -reportprogress 300 -93 -work work C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/pll_control.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity pll_control
-# -- Compiling architecture Behavioral of pll_control
-# End time: 13:44:38 on Jul 01,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -93 -work work {C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/ConstLow.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:44:38 on Jul 01,2024
-# vcom -reportprogress 300 -93 -work work C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/ConstLow.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity ConstLow
-# -- Compiling architecture SYN of constlow
-# End time: 13:44:38 on Jul 01,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-
-vcom -93 -work work {C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/test/testPllControl.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:44:38 on Jul 01,2024
-# vcom -reportprogress 300 -93 -work work C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/test/testPllControl.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity tb_pll_control
-# -- Compiling architecture Behavioral of tb_pll_control
-# -- Loading package NUMERIC_STD
-# -- Loading entity pll_control
-# -- Loading entity PLL_Reconfig
-# -- Loading package altera_lnsim_components
-# -- Loading entity PLL
-# End time: 13:44:38 on Jul 01,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-
-vsim -suppress 10000 -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -L PLL_Reconfig -voptargs="+acc"  tb_pll_control
-# vsim -suppress 10000 -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -L PLL_Reconfig -voptargs=""+acc"" tb_pll_control 
-# Start time: 13:43:40 on Jul 01,2024
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading ieee.numeric_std(body)
-# Loading altera_lnsim.altera_lnsim_components
-# Loading work.tb_pll_control(behavioral)
-# Loading work.pll_control(behavioral)
-# Loading work.pll_reconfig(rtl)
-# Loading PLL_Reconfig.altera_pll_reconfig_top
-# Loading PLL_Reconfig.altera_pll_reconfig_core
-# Loading altera_mf_ver.altera_std_synchronizer
-# Loading PLL_Reconfig.dyn_phase_shift
-# Loading PLL_Reconfig.generic_lcell_comb
-# Loading PLL_Reconfig.self_reset
-# Loading PLL_Reconfig.dprio_mux
-# Loading PLL_Reconfig.fpll_dprio_init
+# Loading altera_mf.altera_std_synchronizer(behavioral)
 # Loading ieee.vital_timing(body)
 # Loading ieee.vital_primitives(body)
 # Loading cyclonev.cyclonev_atom_pack(body)
@@ -740,10 +351,10 @@ vsim -suppress 10000 -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_v
 # Loading sv_std.std
 # Loading altera_lnsim.altera_lnsim_functions
 # Loading altera_lnsim.altera_pll
-# Loading altera_lnsim_ver.dps_extra_kick
-# Loading altera_lnsim_ver.dprio_init
-# Loading altera_lnsim_ver.altera_pll_dps_lcell_comb
-# Loading altera_lnsim_ver.altera_cyclonev_pll
+# Loading altera_lnsim.dps_extra_kick
+# Loading altera_lnsim.dprio_init
+# Loading altera_lnsim.altera_pll_dps_lcell_comb
+# Loading altera_lnsim.altera_cyclonev_pll
 # ** Warning: (vsim-8822) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2172): [TFMPC] - Missing Verilog connection for formal VHDL port 'datag'.
 #    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_0/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
 # ** Warning: (vsim-8822) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2172): [TFMPC] - Missing Verilog connection for formal VHDL port 'cin'.
@@ -1168,10 +779,10 @@ view structure
 # .main_pane.structure.interior.cs.body.struct
 view signals
 # .main_pane.objects.interior.cs.body.tree
-run 20000 ns
+run 10000 ns
 # 
 # Warning: por to CB BFM is not connected, internal por is used.
 # 
 
-# End time: 13:47:40 on Jul 01,2024, Elapsed time: 0:04:00
-# Errors: 42, Warnings: 335
+# End time: 23:11:28 on Jul 01,2024, Elapsed time: 0:20:54
+# Errors: 14, Warnings: 335

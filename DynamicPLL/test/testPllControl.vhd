@@ -23,18 +23,21 @@ architecture Behavioral of tb_pll_control is
 
     --Pll Reconfig
     signal reset_R_p          : std_logic;
-    signal pll_reconfig_waitrequest : std_logic;
+    signal pll_reconfig_waitrequest : std_logic := '0';
     signal pll_reconfig_read        : std_logic;
     signal pll_reconfig_write       : std_logic;
     signal pll_reconfig_readdata    : std_logic_vector(31 downto 0);
     signal pll_reconfig_address     : std_logic_vector(5 downto 0);
-    signal pll_reconfig_writedata   : std_logic_vector(31 downto 0);
+    signal pll_reconfig_writedata   : std_logic_vector(31 downto 0);  -- testing with 1
     
     -- PLL
-    signal reset_p          : std_logic;
+    signal reset_p          : std_logic := '0';
     signal pll_outclk_0      : std_logic;
-    signal pll_outclk_1      : std_logic;
+    -- signal pll_outclk_1      : std_logic;
     signal pll_locked        : std_logic := '1';
+
+    signal PLL_R_reconfig_to_pll   : std_logic_vector(63 downto 0);
+    signal PLL_R_reconfig_from_pll : std_logic_vector(63 downto 0);
 
     signal reconfig_to_pll   : std_logic_vector(63 downto 0);
     signal reconfig_from_pll : std_logic_vector(63 downto 0);
@@ -67,8 +70,8 @@ begin
             mgmt_readdata     => pll_reconfig_readdata,
             mgmt_address      => pll_reconfig_address,
             mgmt_writedata    => pll_reconfig_writedata,
-            reconfig_to_pll   => reconfig_to_pll,
-            reconfig_from_pll => reconfig_from_pll
+            reconfig_to_pll   => PLL_R_reconfig_to_pll,
+            reconfig_from_pll => PLL_R_reconfig_from_pll
         );
 
         -- Instantiate the PLL component
@@ -88,7 +91,8 @@ begin
         pll_reconfig_write <= mgmt_write;
         pll_reconfig_address <= mgmt_address;
         pll_reconfig_writedata <= mgmt_writedata;
-
+        reconfig_to_pll <= PLL_R_reconfig_to_pll;
+        PLL_R_reconfig_from_pll <= reconfig_from_pll;
     
 
     -- Stimulus process
@@ -98,15 +102,15 @@ begin
         -- Apply reset
         -- Apply reset
         reset_p <= '1';
-        reset_SM_p <= '1';
-        reset_R_p <= '1';
-        wait for 50 ns;
+        -- reset_SM_p <= '1';
+        -- reset_R_p <= '1';
+        wait for 500 ns;
         
         reset_p <= '0';        
         reset_R_p <= '0';
 
         -- wait until pll_locked = '1';
-        reset_SM_p <= '0';
+        -- reset_SM_p <= '0';
         -- wait for 100 ns;
 
         -- Wait for PLL to lock
@@ -118,7 +122,7 @@ begin
         reset_p <= '1';
         -- reset_SM_p <= '1';
         -- reset_R_p <= '1';
-        wait for 50 ns;
+        wait for 200 ns;
         
         reset_p <= '0';        
         -- reset_R_p <= '0';
@@ -138,9 +142,9 @@ begin
     clk_process: process
     begin
         while True loop
-            clk <= '1';
-            wait for clk_period / 2;
             clk <= '0';
+            wait for clk_period / 2;
+            clk <= '1';
             wait for clk_period / 2;
         end loop;
     end process;
