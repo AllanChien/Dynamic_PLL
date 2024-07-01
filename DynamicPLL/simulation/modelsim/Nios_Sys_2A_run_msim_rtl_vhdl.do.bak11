@@ -3,45 +3,6 @@ if ![file isdirectory Nios_Sys_2A_iputf_libs] {
 	file mkdir Nios_Sys_2A_iputf_libs
 }
 
-if ![file isdirectory vhdl_libs] {
-	file mkdir vhdl_libs
-}
-
-vlib vhdl_libs/altera
-vmap altera ./vhdl_libs/altera
-vcom -93 -work altera {c:/intelfpga_lite/20.1/quartus/eda/sim_lib/altera_syn_attributes.vhd}
-vcom -93 -work altera {c:/intelfpga_lite/20.1/quartus/eda/sim_lib/altera_standard_functions.vhd}
-vcom -93 -work altera {c:/intelfpga_lite/20.1/quartus/eda/sim_lib/alt_dspbuilder_package.vhd}
-vcom -93 -work altera {c:/intelfpga_lite/20.1/quartus/eda/sim_lib/altera_europa_support_lib.vhd}
-vcom -93 -work altera {c:/intelfpga_lite/20.1/quartus/eda/sim_lib/altera_primitives_components.vhd}
-vcom -93 -work altera {c:/intelfpga_lite/20.1/quartus/eda/sim_lib/altera_primitives.vhd}
-
-vlib vhdl_libs/lpm
-vmap lpm ./vhdl_libs/lpm
-vcom -93 -work lpm {c:/intelfpga_lite/20.1/quartus/eda/sim_lib/220pack.vhd}
-vcom -93 -work lpm {c:/intelfpga_lite/20.1/quartus/eda/sim_lib/220model.vhd}
-
-vlib vhdl_libs/sgate
-vmap sgate ./vhdl_libs/sgate
-vcom -93 -work sgate {c:/intelfpga_lite/20.1/quartus/eda/sim_lib/sgate_pack.vhd}
-vcom -93 -work sgate {c:/intelfpga_lite/20.1/quartus/eda/sim_lib/sgate.vhd}
-
-vlib vhdl_libs/altera_mf
-vmap altera_mf ./vhdl_libs/altera_mf
-vcom -93 -work altera_mf {c:/intelfpga_lite/20.1/quartus/eda/sim_lib/altera_mf_components.vhd}
-vcom -93 -work altera_mf {c:/intelfpga_lite/20.1/quartus/eda/sim_lib/altera_mf.vhd}
-
-vlib vhdl_libs/altera_lnsim
-vmap altera_lnsim ./vhdl_libs/altera_lnsim
-vlog -sv -work altera_lnsim {c:/intelfpga_lite/20.1/quartus/eda/sim_lib/mentor/altera_lnsim_for_vhdl.sv}
-vcom -93 -work altera_lnsim {c:/intelfpga_lite/20.1/quartus/eda/sim_lib/altera_lnsim_components.vhd}
-
-vlib vhdl_libs/cyclonev
-vmap cyclonev ./vhdl_libs/cyclonev
-vlog -vlog01compat -work cyclonev {c:/intelfpga_lite/20.1/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v}
-vcom -93 -work cyclonev {c:/intelfpga_lite/20.1/quartus/eda/sim_lib/cyclonev_atoms.vhd}
-vcom -93 -work cyclonev {c:/intelfpga_lite/20.1/quartus/eda/sim_lib/cyclonev_components.vhd}
-
 if {[file exists rtl_work]} {
 	vdel -lib rtl_work -all
 }
@@ -55,24 +16,18 @@ vmap PLL_Reconfig ./Nios_Sys_2A_iputf_libs/PLL_Reconfig
 ###### MIF file copy and HDL compilation commands for IPUTF cores 
 
 
-vcom "C:/UNI/Y4S1/P4P/p4p-2024-group57/Implementation_Test/QuartusProject/DynamicPLL/PLL_sim/PLL.vho"                                                                   
-vlog "C:/UNI/Y4S1/P4P/p4p-2024-group57/Implementation_Test/QuartusProject/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_top.v"  -work PLL_Reconfig
-vlog "C:/UNI/Y4S1/P4P/p4p-2024-group57/Implementation_Test/QuartusProject/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v" -work PLL_Reconfig
-vlog "C:/UNI/Y4S1/P4P/p4p-2024-group57/Implementation_Test/QuartusProject/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_std_synchronizer.v"  -work PLL_Reconfig
-vcom "C:/UNI/Y4S1/P4P/p4p-2024-group57/Implementation_Test/QuartusProject/DynamicPLL/PLL_Reconfig_sim/PLL_Reconfig.vhd"                                                 
-vcom "C:/UNI/Y4S1/P4P/p4p-2024-group57/Implementation_Test/QuartusProject/DynamicPLL/PLL_normal_sim/PLL_normal.vho"                                                     
-vcom "C:/UNI/Y4S1/P4P/p4p-2024-group57/Implementation_Test/QuartusProject/DynamicPLL/PLL_MS_sim/PLL_MS.vho"                                                             
-vlog "C:/UNI/Y4S1/P4P/p4p-2024-group57/Implementation_Test/QuartusProject/DynamicPLL/PLL_MS_Verilog_sim/PLL_MS_Verilog.vo"                                              
+vcom "C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_sim/PLL.vho"                                                                   
+vlog "C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_top.v"  -work PLL_Reconfig
+vlog "C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v" -work PLL_Reconfig
+vlog "C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_std_synchronizer.v"  -work PLL_Reconfig
+vcom "C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/PLL_Reconfig.vhd"                                                 
 
-vcom -93 -work work {C:/UNI/Y4S1/P4P/p4p-2024-group57/Implementation_Test/QuartusProject/DynamicPLL/pll_control.vhd}
-vlib Nios_System_4A
-vmap Nios_System_4A Nios_System_4A
-vcom -93 -work Nios_System_4A {C:/UNI/Y4S1/P4P/p4p-2024-group57/Implementation_Test/QuartusProject/DynamicPLL/Nios_System_4A/synthesis/Nios_System_4A.vhd}
-vcom -93 -work work {C:/UNI/Y4S1/P4P/p4p-2024-group57/Implementation_Test/QuartusProject/DynamicPLL/ConstLow.vhd}
+vcom -93 -work work {C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/pll_control.vhd}
+vcom -93 -work work {C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/ConstLow.vhd}
 
-vcom -93 -work work {C:/UNI/Y4S1/P4P/p4p-2024-group57/Implementation_Test/QuartusProject/DynamicPLL/test/testPllControl.vhd}
+vcom -93 -work work {C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/test/testPllControl.vhd}
 
-vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -L Nios_System_4A -L PLL_Reconfig -voptargs="+acc"  tb_pll_control
+vsim -suppress 10000 -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -L PLL_Reconfig -voptargs="+acc"  tb_pll_control
 
 add wave *
 view structure

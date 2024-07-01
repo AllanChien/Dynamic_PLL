@@ -1,5 +1,5 @@
 # Reading C:/intelFPGA_lite/18.0/modelsim_ase/tcl/vsim/pref.tcl
-# do Nios_Sys_2A_run_msim_rtl_vhdl.do
+# do Nios_Sys_2A_run_msim_rtl_verilog.do
 # if ![file isdirectory Nios_Sys_2A_iputf_libs] {
 # 	file mkdir Nios_Sys_2A_iputf_libs
 # }
@@ -25,34 +25,34 @@
 ###### MIF file copy and HDL compilation commands for IPUTF cores 
 # 
 # 
-# vcom "C:/UNI/Y4S1/DynamicPLL/PLL_sim/PLL.vho"                                                                   
+# vcom "C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_sim/PLL.vho"                                                                   
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:50:45 on Jun 30,2024
-# vcom -reportprogress 300 C:/UNI/Y4S1/DynamicPLL/PLL_sim/PLL.vho 
+# Start time: 13:43:39 on Jul 01,2024
+# vcom -reportprogress 300 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_sim/PLL.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package altera_lnsim_components
 # -- Compiling entity PLL
 # -- Compiling architecture RTL of PLL
-# End time: 23:50:45 on Jun 30,2024, Elapsed time: 0:00:00
+# End time: 13:43:39 on Jul 01,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog "C:/UNI/Y4S1/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_top.v"  -work PLL_Reconfig
+# vlog "C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_top.v"  -work PLL_Reconfig
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:50:45 on Jun 30,2024
-# vlog -reportprogress 300 C:/UNI/Y4S1/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_top.v -work PLL_Reconfig 
+# Start time: 13:43:39 on Jul 01,2024
+# vlog -reportprogress 300 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_top.v -work PLL_Reconfig 
 # -- Compiling module altera_pll_reconfig_top
 # 
 # Top level modules:
 # 	altera_pll_reconfig_top
-# End time: 23:50:45 on Jun 30,2024, Elapsed time: 0:00:00
+# End time: 13:43:39 on Jul 01,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog "C:/UNI/Y4S1/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v" -work PLL_Reconfig
+# vlog "C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v" -work PLL_Reconfig
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:50:45 on Jun 30,2024
-# vlog -reportprogress 300 C:/UNI/Y4S1/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v -work PLL_Reconfig 
+# Start time: 13:43:40 on Jul 01,2024
+# vlog -reportprogress 300 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v -work PLL_Reconfig 
 # -- Compiling module altera_pll_reconfig_core
-# ** Warning: C:/UNI/Y4S1/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(62): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(62): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
 # -- Compiling module self_reset
 # -- Compiling module dprio_mux
 # -- Compiling module fpll_dprio_init
@@ -61,74 +61,1117 @@
 # 
 # Top level modules:
 # 	altera_pll_reconfig_core
-# End time: 23:50:45 on Jun 30,2024, Elapsed time: 0:00:00
+# End time: 13:43:40 on Jul 01,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
-# vlog "C:/UNI/Y4S1/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_std_synchronizer.v"  -work PLL_Reconfig
+# vlog "C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_std_synchronizer.v"  -work PLL_Reconfig
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:50:45 on Jun 30,2024
-# vlog -reportprogress 300 C:/UNI/Y4S1/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_std_synchronizer.v -work PLL_Reconfig 
+# Start time: 13:43:40 on Jul 01,2024
+# vlog -reportprogress 300 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_std_synchronizer.v -work PLL_Reconfig 
 # -- Compiling module altera_std_synchronizer
 # 
 # Top level modules:
 # 	altera_std_synchronizer
-# End time: 23:50:46 on Jun 30,2024, Elapsed time: 0:00:01
+# End time: 13:43:40 on Jul 01,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom "C:/UNI/Y4S1/DynamicPLL/PLL_Reconfig_sim/PLL_Reconfig.vhd"                                                 
+# vcom "C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/PLL_Reconfig.vhd"                                                 
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:50:46 on Jun 30,2024
-# vcom -reportprogress 300 C:/UNI/Y4S1/DynamicPLL/PLL_Reconfig_sim/PLL_Reconfig.vhd 
+# Start time: 13:43:40 on Jul 01,2024
+# vcom -reportprogress 300 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/PLL_Reconfig.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity PLL_Reconfig
 # -- Compiling architecture rtl of PLL_Reconfig
-# End time: 23:50:46 on Jun 30,2024, Elapsed time: 0:00:00
+# End time: 13:43:40 on Jul 01,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vcom -93 -work work {C:/UNI/Y4S1/DynamicPLL/pll_control.vhd}
+# vcom -93 -work work {C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/pll_control.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:50:46 on Jun 30,2024
-# vcom -reportprogress 300 -93 -work work C:/UNI/Y4S1/DynamicPLL/pll_control.vhd 
+# Start time: 13:43:40 on Jul 01,2024
+# vcom -reportprogress 300 -93 -work work C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/pll_control.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity pll_control
 # -- Compiling architecture Behavioral of pll_control
-# End time: 23:50:46 on Jun 30,2024, Elapsed time: 0:00:00
+# End time: 13:43:40 on Jul 01,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/UNI/Y4S1/DynamicPLL/ConstLow.vhd}
+# vcom -93 -work work {C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/ConstLow.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:50:46 on Jun 30,2024
-# vcom -reportprogress 300 -93 -work work C:/UNI/Y4S1/DynamicPLL/ConstLow.vhd 
+# Start time: 13:43:40 on Jul 01,2024
+# vcom -reportprogress 300 -93 -work work C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/ConstLow.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity ConstLow
 # -- Compiling architecture SYN of constlow
-# End time: 23:50:46 on Jun 30,2024, Elapsed time: 0:00:00
+# End time: 13:43:40 on Jul 01,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vcom -93 -work work {C:/UNI/Y4S1/DynamicPLL/test/TestPLL.vhd}
+# vcom -93 -work work {C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/test/testPllControl.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:50:46 on Jun 30,2024
-# vcom -reportprogress 300 -93 -work work C:/UNI/Y4S1/DynamicPLL/test/TestPLL.vhd 
+# Start time: 13:43:40 on Jul 01,2024
+# vcom -reportprogress 300 -93 -work work C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/test/testPllControl.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package std_logic_arith
 # -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity tb_PLL
-# -- Compiling architecture Behavioral of tb_PLL
-# ** Error: (vcom-11) Could not find work.pll_ms.
-# ** Error (suppressible): C:/UNI/Y4S1/DynamicPLL/test/TestPLL.vhd(29): (vcom-1195) Cannot find expanded name "work.PLL_MS".
-# ** Error: C:/UNI/Y4S1/DynamicPLL/test/TestPLL.vhd(29): Unknown expanded name.
-# ** Error: C:/UNI/Y4S1/DynamicPLL/test/TestPLL.vhd(79): VHDL Compiler exiting
-# End time: 23:50:46 on Jun 30,2024, Elapsed time: 0:00:00
-# Errors: 4, Warnings: 0
-# ** Error: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vcom failed.
-# Error in macro ./Nios_Sys_2A_run_msim_rtl_vhdl.do line 28
-# C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vcom failed.
-#     while executing
-# "vcom -93 -work work {C:/UNI/Y4S1/DynamicPLL/test/TestPLL.vhd}"
+# -- Compiling entity tb_pll_control
+# -- Compiling architecture Behavioral of tb_pll_control
+# -- Loading package NUMERIC_STD
+# -- Loading entity pll_control
+# -- Loading entity PLL_Reconfig
+# -- Loading package altera_lnsim_components
+# -- Loading entity PLL
+# End time: 13:43:40 on Jul 01,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -L PLL_Reconfig -voptargs="+acc"  tb_pll_control
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -L PLL_Reconfig -voptargs=""+acc"" tb_pll_control 
+# Start time: 13:43:40 on Jul 01,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading altera_lnsim.altera_lnsim_components
+# Loading work.tb_pll_control(behavioral)
+# Loading work.pll_control(behavioral)
+# Loading work.pll_reconfig(rtl)
+# Loading PLL_Reconfig.altera_pll_reconfig_top
+# Loading PLL_Reconfig.altera_pll_reconfig_core
+# Loading altera_mf_ver.altera_std_synchronizer
+# Loading PLL_Reconfig.dyn_phase_shift
+# Loading PLL_Reconfig.generic_lcell_comb
+# Loading PLL_Reconfig.self_reset
+# Loading PLL_Reconfig.dprio_mux
+# Loading PLL_Reconfig.fpll_dprio_init
+# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2180): Unresolved defparam reference to 'lcell_inst' in lcell_inst.lut_mask.
+#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_0/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
+# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2181): Unresolved defparam reference to 'lcell_inst' in lcell_inst.dont_touch.
+#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_0/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
+# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2180): Unresolved defparam reference to 'lcell_inst' in lcell_inst.lut_mask.
+#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_1/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
+# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2181): Unresolved defparam reference to 'lcell_inst' in lcell_inst.dont_touch.
+#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_1/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
+# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2180): Unresolved defparam reference to 'lcell_inst' in lcell_inst.lut_mask.
+#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_2/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
+# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2181): Unresolved defparam reference to 'lcell_inst' in lcell_inst.dont_touch.
+#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_2/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
+# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2180): Unresolved defparam reference to 'lcell_inst' in lcell_inst.lut_mask.
+#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_3/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
+# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2181): Unresolved defparam reference to 'lcell_inst' in lcell_inst.dont_touch.
+#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_3/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
+# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2180): Unresolved defparam reference to 'lcell_inst' in lcell_inst.lut_mask.
+#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_4/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
+# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2181): Unresolved defparam reference to 'lcell_inst' in lcell_inst.dont_touch.
+#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_4/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
+# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2180): Unresolved defparam reference to 'lcell_inst' in lcell_inst.lut_mask.
+#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/lcell_fpll_0_1/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
+# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2181): Unresolved defparam reference to 'lcell_inst' in lcell_inst.dont_touch.
+#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/lcell_fpll_0_1/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
+# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2180): Unresolved defparam reference to 'lcell_inst' in lcell_inst.lut_mask.
+#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/lcell_dprio_read/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
+# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2181): Unresolved defparam reference to 'lcell_inst' in lcell_inst.dont_touch.
+#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/lcell_dprio_read/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
+# Loading work.pll(rtl)
+# Loading sv_std.std
+# Loading altera_lnsim.altera_lnsim_functions
+# Loading altera_lnsim.altera_pll
+# Loading altera_lnsim_ver.dps_extra_kick
+# Loading altera_lnsim_ver.dprio_init
+# Loading altera_lnsim_ver.altera_pll_dps_lcell_comb
+# Loading altera_lnsim_ver.altera_cyclonev_pll
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading cyclonev.cyclonev_atom_pack(body)
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./Nios_Sys_2A_run_msim_rtl_verilog.do PAUSED at line 30
+transcript on
+if ![file isdirectory Nios_Sys_2A_iputf_libs] {
+	file mkdir Nios_Sys_2A_iputf_libs
+}
+
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Modifying modelsim.ini
+
+###### Libraries for IPUTF cores 
+vlib Nios_Sys_2A_iputf_libs/PLL_Reconfig
+# ** Warning: (vlib-34) Library already exists at "Nios_Sys_2A_iputf_libs/PLL_Reconfig".
+vmap PLL_Reconfig ./Nios_Sys_2A_iputf_libs/PLL_Reconfig
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap PLL_Reconfig ./Nios_Sys_2A_iputf_libs/PLL_Reconfig 
+# Modifying modelsim.ini
+###### End libraries for IPUTF cores 
+###### MIF file copy and HDL compilation commands for IPUTF cores 
+
+
+vcom "C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_sim/PLL.vho"                                                                   
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:44:01 on Jul 01,2024
+# vcom -reportprogress 300 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_sim/PLL.vho 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_lnsim_components
+# -- Compiling entity PLL
+# -- Compiling architecture RTL of PLL
+# End time: 13:44:01 on Jul 01,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog "C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_top.v"  -work PLL_Reconfig
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:44:01 on Jul 01,2024
+# vlog -reportprogress 300 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_top.v -work PLL_Reconfig 
+# -- Compiling module altera_pll_reconfig_top
+# 
+# Top level modules:
+# 	altera_pll_reconfig_top
+# End time: 13:44:01 on Jul 01,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog "C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v" -work PLL_Reconfig
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:44:02 on Jul 01,2024
+# vlog -reportprogress 300 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v -work PLL_Reconfig 
+# -- Compiling module altera_pll_reconfig_core
+# ** Warning: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(62): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# -- Compiling module self_reset
+# -- Compiling module dprio_mux
+# -- Compiling module fpll_dprio_init
+# -- Compiling module dyn_phase_shift
+# -- Compiling module generic_lcell_comb
+# 
+# Top level modules:
+# 	altera_pll_reconfig_core
+# End time: 13:44:02 on Jul 01,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vlog "C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_std_synchronizer.v"  -work PLL_Reconfig
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:44:02 on Jul 01,2024
+# vlog -reportprogress 300 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_std_synchronizer.v -work PLL_Reconfig 
+# -- Compiling module altera_std_synchronizer
+# 
+# Top level modules:
+# 	altera_std_synchronizer
+# End time: 13:44:02 on Jul 01,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom "C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/PLL_Reconfig.vhd"                                                 
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:44:02 on Jul 01,2024
+# vcom -reportprogress 300 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/PLL_Reconfig.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity PLL_Reconfig
+# -- Compiling architecture rtl of PLL_Reconfig
+# End time: 13:44:02 on Jul 01,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+
+vcom -93 -work work {C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/pll_control.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:44:02 on Jul 01,2024
+# vcom -reportprogress 300 -93 -work work C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/pll_control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity pll_control
+# -- Compiling architecture Behavioral of pll_control
+# End time: 13:44:02 on Jul 01,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -93 -work work {C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/ConstLow.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:44:02 on Jul 01,2024
+# vcom -reportprogress 300 -93 -work work C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/ConstLow.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ConstLow
+# -- Compiling architecture SYN of constlow
+# End time: 13:44:02 on Jul 01,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+
+vcom -93 -work work {C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/test/testPllControl.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:44:02 on Jul 01,2024
+# vcom -reportprogress 300 -93 -work work C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/test/testPllControl.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity tb_pll_control
+# -- Compiling architecture Behavioral of tb_pll_control
+# -- Loading package NUMERIC_STD
+# -- Loading entity pll_control
+# -- Loading entity PLL_Reconfig
+# -- Loading package altera_lnsim_components
+# -- Loading entity PLL
+# End time: 13:44:02 on Jul 01,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -L PLL_Reconfig -voptargs="+acc"  tb_pll_control
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -L PLL_Reconfig -voptargs=""+acc"" tb_pll_control 
+# Start time: 13:43:40 on Jul 01,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading altera_lnsim.altera_lnsim_components
+# Loading work.tb_pll_control(behavioral)
+# Loading work.pll_control(behavioral)
+# Loading work.pll_reconfig(rtl)
+# Loading PLL_Reconfig.altera_pll_reconfig_top
+# Loading PLL_Reconfig.altera_pll_reconfig_core
+# Loading altera_mf_ver.altera_std_synchronizer
+# Loading PLL_Reconfig.dyn_phase_shift
+# Loading PLL_Reconfig.generic_lcell_comb
+# Loading PLL_Reconfig.self_reset
+# Loading PLL_Reconfig.dprio_mux
+# Loading PLL_Reconfig.fpll_dprio_init
+# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2180): Unresolved defparam reference to 'lcell_inst' in lcell_inst.lut_mask.
+#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_0/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
+# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2181): Unresolved defparam reference to 'lcell_inst' in lcell_inst.dont_touch.
+#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_0/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
+# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2180): Unresolved defparam reference to 'lcell_inst' in lcell_inst.lut_mask.
+#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_1/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
+# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2181): Unresolved defparam reference to 'lcell_inst' in lcell_inst.dont_touch.
+#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_1/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
+# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2180): Unresolved defparam reference to 'lcell_inst' in lcell_inst.lut_mask.
+#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_2/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
+# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2181): Unresolved defparam reference to 'lcell_inst' in lcell_inst.dont_touch.
+#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_2/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
+# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2180): Unresolved defparam reference to 'lcell_inst' in lcell_inst.lut_mask.
+#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_3/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
+# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2181): Unresolved defparam reference to 'lcell_inst' in lcell_inst.dont_touch.
+#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_3/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
+# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2180): Unresolved defparam reference to 'lcell_inst' in lcell_inst.lut_mask.
+#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_4/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
+# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2181): Unresolved defparam reference to 'lcell_inst' in lcell_inst.dont_touch.
+#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_4/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
+# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2180): Unresolved defparam reference to 'lcell_inst' in lcell_inst.lut_mask.
+#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/lcell_fpll_0_1/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
+# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2181): Unresolved defparam reference to 'lcell_inst' in lcell_inst.dont_touch.
+#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/lcell_fpll_0_1/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
+# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2180): Unresolved defparam reference to 'lcell_inst' in lcell_inst.lut_mask.
+#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/lcell_dprio_read/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
+# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2181): Unresolved defparam reference to 'lcell_inst' in lcell_inst.dont_touch.
+#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/lcell_dprio_read/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
+# Loading work.pll(rtl)
+# Loading sv_std.std
+# Loading altera_lnsim.altera_lnsim_functions
+# Loading altera_lnsim.altera_pll
+# Loading altera_lnsim_ver.dps_extra_kick
+# Loading altera_lnsim_ver.dprio_init
+# Loading altera_lnsim_ver.altera_pll_dps_lcell_comb
+# Loading altera_lnsim_ver.altera_cyclonev_pll
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading cyclonev.cyclonev_atom_pack(body)
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./Nios_Sys_2A_run_msim_rtl_verilog.do PAUSED at line 30
+transcript on
+if ![file isdirectory Nios_Sys_2A_iputf_libs] {
+	file mkdir Nios_Sys_2A_iputf_libs
+}
+
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Modifying modelsim.ini
+
+###### Libraries for IPUTF cores 
+vlib Nios_Sys_2A_iputf_libs/PLL_Reconfig
+# ** Warning: (vlib-34) Library already exists at "Nios_Sys_2A_iputf_libs/PLL_Reconfig".
+vmap PLL_Reconfig ./Nios_Sys_2A_iputf_libs/PLL_Reconfig
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap PLL_Reconfig ./Nios_Sys_2A_iputf_libs/PLL_Reconfig 
+# Modifying modelsim.ini
+###### End libraries for IPUTF cores 
+###### MIF file copy and HDL compilation commands for IPUTF cores 
+
+
+vcom "C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_sim/PLL.vho"                                                                   
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:44:12 on Jul 01,2024
+# vcom -reportprogress 300 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_sim/PLL.vho 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_lnsim_components
+# -- Compiling entity PLL
+# -- Compiling architecture RTL of PLL
+# End time: 13:44:12 on Jul 01,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog "C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_top.v"  -work PLL_Reconfig
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:44:12 on Jul 01,2024
+# vlog -reportprogress 300 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_top.v -work PLL_Reconfig 
+# -- Compiling module altera_pll_reconfig_top
+# 
+# Top level modules:
+# 	altera_pll_reconfig_top
+# End time: 13:44:12 on Jul 01,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog "C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v" -work PLL_Reconfig
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:44:13 on Jul 01,2024
+# vlog -reportprogress 300 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v -work PLL_Reconfig 
+# -- Compiling module altera_pll_reconfig_core
+# ** Warning: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(62): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# -- Compiling module self_reset
+# -- Compiling module dprio_mux
+# -- Compiling module fpll_dprio_init
+# -- Compiling module dyn_phase_shift
+# -- Compiling module generic_lcell_comb
+# 
+# Top level modules:
+# 	altera_pll_reconfig_core
+# End time: 13:44:13 on Jul 01,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vlog "C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_std_synchronizer.v"  -work PLL_Reconfig
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:44:13 on Jul 01,2024
+# vlog -reportprogress 300 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_std_synchronizer.v -work PLL_Reconfig 
+# -- Compiling module altera_std_synchronizer
+# 
+# Top level modules:
+# 	altera_std_synchronizer
+# End time: 13:44:13 on Jul 01,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom "C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/PLL_Reconfig.vhd"                                                 
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:44:13 on Jul 01,2024
+# vcom -reportprogress 300 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/PLL_Reconfig.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity PLL_Reconfig
+# -- Compiling architecture rtl of PLL_Reconfig
+# End time: 13:44:13 on Jul 01,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+
+vcom -93 -work work {C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/pll_control.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:44:13 on Jul 01,2024
+# vcom -reportprogress 300 -93 -work work C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/pll_control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity pll_control
+# -- Compiling architecture Behavioral of pll_control
+# End time: 13:44:13 on Jul 01,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -93 -work work {C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/ConstLow.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:44:13 on Jul 01,2024
+# vcom -reportprogress 300 -93 -work work C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/ConstLow.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ConstLow
+# -- Compiling architecture SYN of constlow
+# End time: 13:44:13 on Jul 01,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+
+vcom -93 -work work {C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/test/testPllControl.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:44:13 on Jul 01,2024
+# vcom -reportprogress 300 -93 -work work C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/test/testPllControl.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity tb_pll_control
+# -- Compiling architecture Behavioral of tb_pll_control
+# -- Loading package NUMERIC_STD
+# -- Loading entity pll_control
+# -- Loading entity PLL_Reconfig
+# -- Loading package altera_lnsim_components
+# -- Loading entity PLL
+# End time: 13:44:13 on Jul 01,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -L PLL_Reconfig -voptargs="+acc"  tb_pll_control
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -L PLL_Reconfig -voptargs=""+acc"" tb_pll_control 
+# Start time: 13:43:40 on Jul 01,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading altera_lnsim.altera_lnsim_components
+# Loading work.tb_pll_control(behavioral)
+# Loading work.pll_control(behavioral)
+# Loading work.pll_reconfig(rtl)
+# Loading PLL_Reconfig.altera_pll_reconfig_top
+# Loading PLL_Reconfig.altera_pll_reconfig_core
+# Loading altera_mf_ver.altera_std_synchronizer
+# Loading PLL_Reconfig.dyn_phase_shift
+# Loading PLL_Reconfig.generic_lcell_comb
+# Loading PLL_Reconfig.self_reset
+# Loading PLL_Reconfig.dprio_mux
+# Loading PLL_Reconfig.fpll_dprio_init
+# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2180): Unresolved defparam reference to 'lcell_inst' in lcell_inst.lut_mask.
+#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_0/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
+# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2181): Unresolved defparam reference to 'lcell_inst' in lcell_inst.dont_touch.
+#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_0/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
+# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2180): Unresolved defparam reference to 'lcell_inst' in lcell_inst.lut_mask.
+#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_1/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
+# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2181): Unresolved defparam reference to 'lcell_inst' in lcell_inst.dont_touch.
+#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_1/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
+# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2180): Unresolved defparam reference to 'lcell_inst' in lcell_inst.lut_mask.
+#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_2/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
+# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2181): Unresolved defparam reference to 'lcell_inst' in lcell_inst.dont_touch.
+#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_2/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
+# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2180): Unresolved defparam reference to 'lcell_inst' in lcell_inst.lut_mask.
+#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_3/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
+# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2181): Unresolved defparam reference to 'lcell_inst' in lcell_inst.dont_touch.
+#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_3/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
+# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2180): Unresolved defparam reference to 'lcell_inst' in lcell_inst.lut_mask.
+#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_4/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
+# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2181): Unresolved defparam reference to 'lcell_inst' in lcell_inst.dont_touch.
+#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_4/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
+# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2180): Unresolved defparam reference to 'lcell_inst' in lcell_inst.lut_mask.
+#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/lcell_fpll_0_1/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
+# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2181): Unresolved defparam reference to 'lcell_inst' in lcell_inst.dont_touch.
+#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/lcell_fpll_0_1/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
+# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2180): Unresolved defparam reference to 'lcell_inst' in lcell_inst.lut_mask.
+#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/lcell_dprio_read/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
+# ** Error (suppressible): (vsim-10000) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2181): Unresolved defparam reference to 'lcell_inst' in lcell_inst.dont_touch.
+#    Time: 0 ps  Iteration: 0  Region: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/lcell_dprio_read/genblk1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
+# Loading work.pll(rtl)
+# Loading sv_std.std
+# Loading altera_lnsim.altera_lnsim_functions
+# Loading altera_lnsim.altera_pll
+# Loading altera_lnsim_ver.dps_extra_kick
+# Loading altera_lnsim_ver.dprio_init
+# Loading altera_lnsim_ver.altera_pll_dps_lcell_comb
+# Loading altera_lnsim_ver.altera_cyclonev_pll
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading cyclonev.cyclonev_atom_pack(body)
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./Nios_Sys_2A_run_msim_rtl_verilog.do PAUSED at line 30
+transcript on
+if ![file isdirectory Nios_Sys_2A_iputf_libs] {
+	file mkdir Nios_Sys_2A_iputf_libs
+}
+
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Modifying modelsim.ini
+
+###### Libraries for IPUTF cores 
+vlib Nios_Sys_2A_iputf_libs/PLL_Reconfig
+# ** Warning: (vlib-34) Library already exists at "Nios_Sys_2A_iputf_libs/PLL_Reconfig".
+vmap PLL_Reconfig ./Nios_Sys_2A_iputf_libs/PLL_Reconfig
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap PLL_Reconfig ./Nios_Sys_2A_iputf_libs/PLL_Reconfig 
+# Modifying modelsim.ini
+###### End libraries for IPUTF cores 
+###### MIF file copy and HDL compilation commands for IPUTF cores 
+
+
+vcom "C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_sim/PLL.vho"                                                                   
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:44:37 on Jul 01,2024
+# vcom -reportprogress 300 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_sim/PLL.vho 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_lnsim_components
+# -- Compiling entity PLL
+# -- Compiling architecture RTL of PLL
+# End time: 13:44:37 on Jul 01,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog "C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_top.v"  -work PLL_Reconfig
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:44:37 on Jul 01,2024
+# vlog -reportprogress 300 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_top.v -work PLL_Reconfig 
+# -- Compiling module altera_pll_reconfig_top
+# 
+# Top level modules:
+# 	altera_pll_reconfig_top
+# End time: 13:44:37 on Jul 01,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog "C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v" -work PLL_Reconfig
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:44:37 on Jul 01,2024
+# vlog -reportprogress 300 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v -work PLL_Reconfig 
+# -- Compiling module altera_pll_reconfig_core
+# ** Warning: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(62): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# -- Compiling module self_reset
+# -- Compiling module dprio_mux
+# -- Compiling module fpll_dprio_init
+# -- Compiling module dyn_phase_shift
+# -- Compiling module generic_lcell_comb
+# 
+# Top level modules:
+# 	altera_pll_reconfig_core
+# End time: 13:44:38 on Jul 01,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+vlog "C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_std_synchronizer.v"  -work PLL_Reconfig
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:44:38 on Jul 01,2024
+# vlog -reportprogress 300 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_std_synchronizer.v -work PLL_Reconfig 
+# -- Compiling module altera_std_synchronizer
+# 
+# Top level modules:
+# 	altera_std_synchronizer
+# End time: 13:44:38 on Jul 01,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom "C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/PLL_Reconfig.vhd"                                                 
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:44:38 on Jul 01,2024
+# vcom -reportprogress 300 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/PLL_Reconfig.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity PLL_Reconfig
+# -- Compiling architecture rtl of PLL_Reconfig
+# End time: 13:44:38 on Jul 01,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+
+vcom -93 -work work {C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/pll_control.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:44:38 on Jul 01,2024
+# vcom -reportprogress 300 -93 -work work C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/pll_control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity pll_control
+# -- Compiling architecture Behavioral of pll_control
+# End time: 13:44:38 on Jul 01,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -93 -work work {C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/ConstLow.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:44:38 on Jul 01,2024
+# vcom -reportprogress 300 -93 -work work C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/ConstLow.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ConstLow
+# -- Compiling architecture SYN of constlow
+# End time: 13:44:38 on Jul 01,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+
+vcom -93 -work work {C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/test/testPllControl.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:44:38 on Jul 01,2024
+# vcom -reportprogress 300 -93 -work work C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/test/testPllControl.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity tb_pll_control
+# -- Compiling architecture Behavioral of tb_pll_control
+# -- Loading package NUMERIC_STD
+# -- Loading entity pll_control
+# -- Loading entity PLL_Reconfig
+# -- Loading package altera_lnsim_components
+# -- Loading entity PLL
+# End time: 13:44:38 on Jul 01,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+
+vsim -suppress 10000 -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -L PLL_Reconfig -voptargs="+acc"  tb_pll_control
+# vsim -suppress 10000 -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -L PLL_Reconfig -voptargs=""+acc"" tb_pll_control 
+# Start time: 13:43:40 on Jul 01,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading altera_lnsim.altera_lnsim_components
+# Loading work.tb_pll_control(behavioral)
+# Loading work.pll_control(behavioral)
+# Loading work.pll_reconfig(rtl)
+# Loading PLL_Reconfig.altera_pll_reconfig_top
+# Loading PLL_Reconfig.altera_pll_reconfig_core
+# Loading altera_mf_ver.altera_std_synchronizer
+# Loading PLL_Reconfig.dyn_phase_shift
+# Loading PLL_Reconfig.generic_lcell_comb
+# Loading PLL_Reconfig.self_reset
+# Loading PLL_Reconfig.dprio_mux
+# Loading PLL_Reconfig.fpll_dprio_init
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading cyclonev.cyclonev_atom_pack(body)
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
+# Loading work.pll(rtl)
+# Loading sv_std.std
+# Loading altera_lnsim.altera_lnsim_functions
+# Loading altera_lnsim.altera_pll
+# Loading altera_lnsim_ver.dps_extra_kick
+# Loading altera_lnsim_ver.dprio_init
+# Loading altera_lnsim_ver.altera_pll_dps_lcell_comb
+# Loading altera_lnsim_ver.altera_cyclonev_pll
+# ** Warning: (vsim-8822) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2172): [TFMPC] - Missing Verilog connection for formal VHDL port 'datag'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_0/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2172): [TFMPC] - Missing Verilog connection for formal VHDL port 'cin'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_0/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2172): [TFMPC] - Missing Verilog connection for formal VHDL port 'sharein'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_0/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2172): [TFMPC] - Missing Verilog connection for formal VHDL port 'sumout'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_0/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2172): [TFMPC] - Missing Verilog connection for formal VHDL port 'cout'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_0/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2172): [TFMPC] - Missing Verilog connection for formal VHDL port 'shareout'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_0/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2172): [TFMPC] - Missing Verilog connection for formal VHDL port 'datag'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_1/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2172): [TFMPC] - Missing Verilog connection for formal VHDL port 'cin'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_1/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2172): [TFMPC] - Missing Verilog connection for formal VHDL port 'sharein'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_1/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2172): [TFMPC] - Missing Verilog connection for formal VHDL port 'sumout'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_1/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2172): [TFMPC] - Missing Verilog connection for formal VHDL port 'cout'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_1/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2172): [TFMPC] - Missing Verilog connection for formal VHDL port 'shareout'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_1/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2172): [TFMPC] - Missing Verilog connection for formal VHDL port 'datag'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_2/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2172): [TFMPC] - Missing Verilog connection for formal VHDL port 'cin'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_2/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2172): [TFMPC] - Missing Verilog connection for formal VHDL port 'sharein'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_2/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2172): [TFMPC] - Missing Verilog connection for formal VHDL port 'sumout'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_2/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2172): [TFMPC] - Missing Verilog connection for formal VHDL port 'cout'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_2/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2172): [TFMPC] - Missing Verilog connection for formal VHDL port 'shareout'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_2/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2172): [TFMPC] - Missing Verilog connection for formal VHDL port 'datag'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_3/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2172): [TFMPC] - Missing Verilog connection for formal VHDL port 'cin'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_3/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2172): [TFMPC] - Missing Verilog connection for formal VHDL port 'sharein'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_3/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2172): [TFMPC] - Missing Verilog connection for formal VHDL port 'sumout'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_3/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2172): [TFMPC] - Missing Verilog connection for formal VHDL port 'cout'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_3/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2172): [TFMPC] - Missing Verilog connection for formal VHDL port 'shareout'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_3/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2172): [TFMPC] - Missing Verilog connection for formal VHDL port 'datag'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_4/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2172): [TFMPC] - Missing Verilog connection for formal VHDL port 'cin'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_4/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2172): [TFMPC] - Missing Verilog connection for formal VHDL port 'sharein'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_4/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2172): [TFMPC] - Missing Verilog connection for formal VHDL port 'sumout'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_4/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2172): [TFMPC] - Missing Verilog connection for formal VHDL port 'cout'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_4/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2172): [TFMPC] - Missing Verilog connection for formal VHDL port 'shareout'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dyn_phase_shift_inst/lcell_cnt_sel_4/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-3017) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(1583): [TFMPC] - Too few port connections. Expected 28, found 27.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/dprio_mux_inst File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
+# ** Warning: (vsim-3722) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(1583): [TFMPC] - Missing connection for port 'avmm_ser_shift_load'.
+# ** Warning: (vsim-3017) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(1642): [TFMPC] - Too few port connections. Expected 7, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/lcell_fpll_0_1 File: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
+# ** Warning: (vsim-3722) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(1642): [TFMPC] - Missing connection for port 'datab'.
+# ** Warning: (vsim-3722) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(1642): [TFMPC] - Missing connection for port 'datac'.
+# ** Warning: (vsim-3722) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(1642): [TFMPC] - Missing connection for port 'datad'.
+# ** Warning: (vsim-3722) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(1642): [TFMPC] - Missing connection for port 'datae'.
+# ** Warning: (vsim-3722) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(1642): [TFMPC] - Missing connection for port 'dataf'.
+# ** Warning: (vsim-8822) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2172): [TFMPC] - Missing Verilog connection for formal VHDL port 'datag'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/lcell_fpll_0_1/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2172): [TFMPC] - Missing Verilog connection for formal VHDL port 'cin'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/lcell_fpll_0_1/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2172): [TFMPC] - Missing Verilog connection for formal VHDL port 'sharein'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/lcell_fpll_0_1/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2172): [TFMPC] - Missing Verilog connection for formal VHDL port 'sumout'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/lcell_fpll_0_1/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2172): [TFMPC] - Missing Verilog connection for formal VHDL port 'cout'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/lcell_fpll_0_1/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2172): [TFMPC] - Missing Verilog connection for formal VHDL port 'shareout'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/lcell_fpll_0_1/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2172): [TFMPC] - Missing Verilog connection for formal VHDL port 'datag'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/lcell_dprio_read/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2172): [TFMPC] - Missing Verilog connection for formal VHDL port 'cin'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/lcell_dprio_read/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2172): [TFMPC] - Missing Verilog connection for formal VHDL port 'sharein'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/lcell_dprio_read/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2172): [TFMPC] - Missing Verilog connection for formal VHDL port 'sumout'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/lcell_dprio_read/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2172): [TFMPC] - Missing Verilog connection for formal VHDL port 'cout'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/lcell_dprio_read/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v(2172): [TFMPC] - Missing Verilog connection for formal VHDL port 'shareout'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_reconfig_inst/pll_reconfig_inst/NM28_reconfig/reconfig_core/altera_pll_reconfig_core_inst0/lcell_dprio_read/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(34275): [TFMPC] - Missing Verilog connection for formal VHDL port 'datag'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_inst/pll_altera_pll_altera_pll_i_640/genblk2/genblk2/lcell_cntsel_int_0/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(34275): [TFMPC] - Missing Verilog connection for formal VHDL port 'cin'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_inst/pll_altera_pll_altera_pll_i_640/genblk2/genblk2/lcell_cntsel_int_0/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(34275): [TFMPC] - Missing Verilog connection for formal VHDL port 'sharein'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_inst/pll_altera_pll_altera_pll_i_640/genblk2/genblk2/lcell_cntsel_int_0/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(34275): [TFMPC] - Missing Verilog connection for formal VHDL port 'sumout'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_inst/pll_altera_pll_altera_pll_i_640/genblk2/genblk2/lcell_cntsel_int_0/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(34275): [TFMPC] - Missing Verilog connection for formal VHDL port 'cout'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_inst/pll_altera_pll_altera_pll_i_640/genblk2/genblk2/lcell_cntsel_int_0/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(34275): [TFMPC] - Missing Verilog connection for formal VHDL port 'shareout'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_inst/pll_altera_pll_altera_pll_i_640/genblk2/genblk2/lcell_cntsel_int_0/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(34275): [TFMPC] - Missing Verilog connection for formal VHDL port 'datag'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_inst/pll_altera_pll_altera_pll_i_640/genblk2/genblk2/lcell_cntsel_int_1/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(34275): [TFMPC] - Missing Verilog connection for formal VHDL port 'cin'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_inst/pll_altera_pll_altera_pll_i_640/genblk2/genblk2/lcell_cntsel_int_1/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(34275): [TFMPC] - Missing Verilog connection for formal VHDL port 'sharein'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_inst/pll_altera_pll_altera_pll_i_640/genblk2/genblk2/lcell_cntsel_int_1/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(34275): [TFMPC] - Missing Verilog connection for formal VHDL port 'sumout'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_inst/pll_altera_pll_altera_pll_i_640/genblk2/genblk2/lcell_cntsel_int_1/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(34275): [TFMPC] - Missing Verilog connection for formal VHDL port 'cout'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_inst/pll_altera_pll_altera_pll_i_640/genblk2/genblk2/lcell_cntsel_int_1/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(34275): [TFMPC] - Missing Verilog connection for formal VHDL port 'shareout'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_inst/pll_altera_pll_altera_pll_i_640/genblk2/genblk2/lcell_cntsel_int_1/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(34275): [TFMPC] - Missing Verilog connection for formal VHDL port 'datag'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_inst/pll_altera_pll_altera_pll_i_640/genblk2/genblk2/lcell_cntsel_int_2/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(34275): [TFMPC] - Missing Verilog connection for formal VHDL port 'cin'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_inst/pll_altera_pll_altera_pll_i_640/genblk2/genblk2/lcell_cntsel_int_2/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(34275): [TFMPC] - Missing Verilog connection for formal VHDL port 'sharein'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_inst/pll_altera_pll_altera_pll_i_640/genblk2/genblk2/lcell_cntsel_int_2/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(34275): [TFMPC] - Missing Verilog connection for formal VHDL port 'sumout'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_inst/pll_altera_pll_altera_pll_i_640/genblk2/genblk2/lcell_cntsel_int_2/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(34275): [TFMPC] - Missing Verilog connection for formal VHDL port 'cout'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_inst/pll_altera_pll_altera_pll_i_640/genblk2/genblk2/lcell_cntsel_int_2/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(34275): [TFMPC] - Missing Verilog connection for formal VHDL port 'shareout'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_inst/pll_altera_pll_altera_pll_i_640/genblk2/genblk2/lcell_cntsel_int_2/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(34275): [TFMPC] - Missing Verilog connection for formal VHDL port 'datag'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_inst/pll_altera_pll_altera_pll_i_640/genblk2/genblk2/lcell_cntsel_int_3/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(34275): [TFMPC] - Missing Verilog connection for formal VHDL port 'cin'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_inst/pll_altera_pll_altera_pll_i_640/genblk2/genblk2/lcell_cntsel_int_3/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(34275): [TFMPC] - Missing Verilog connection for formal VHDL port 'sharein'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_inst/pll_altera_pll_altera_pll_i_640/genblk2/genblk2/lcell_cntsel_int_3/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(34275): [TFMPC] - Missing Verilog connection for formal VHDL port 'sumout'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_inst/pll_altera_pll_altera_pll_i_640/genblk2/genblk2/lcell_cntsel_int_3/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(34275): [TFMPC] - Missing Verilog connection for formal VHDL port 'cout'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_inst/pll_altera_pll_altera_pll_i_640/genblk2/genblk2/lcell_cntsel_int_3/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(34275): [TFMPC] - Missing Verilog connection for formal VHDL port 'shareout'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_inst/pll_altera_pll_altera_pll_i_640/genblk2/genblk2/lcell_cntsel_int_3/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(34275): [TFMPC] - Missing Verilog connection for formal VHDL port 'datag'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_inst/pll_altera_pll_altera_pll_i_640/genblk2/genblk2/lcell_cntsel_int_4/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(34275): [TFMPC] - Missing Verilog connection for formal VHDL port 'cin'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_inst/pll_altera_pll_altera_pll_i_640/genblk2/genblk2/lcell_cntsel_int_4/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(34275): [TFMPC] - Missing Verilog connection for formal VHDL port 'sharein'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_inst/pll_altera_pll_altera_pll_i_640/genblk2/genblk2/lcell_cntsel_int_4/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(34275): [TFMPC] - Missing Verilog connection for formal VHDL port 'sumout'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_inst/pll_altera_pll_altera_pll_i_640/genblk2/genblk2/lcell_cntsel_int_4/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(34275): [TFMPC] - Missing Verilog connection for formal VHDL port 'cout'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_inst/pll_altera_pll_altera_pll_i_640/genblk2/genblk2/lcell_cntsel_int_4/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-8822) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(34275): [TFMPC] - Missing Verilog connection for formal VHDL port 'shareout'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_inst/pll_altera_pll_altera_pll_i_640/genblk2/genblk2/lcell_cntsel_int_4/genblk1/lcell_inst File: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../altera/vhdl/src/cyclonev/cyclonev_atoms.vhd
+# ** Warning: (vsim-3015) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(30085): [PCDPC] - Port size (2) does not match connection size (1) for port 'extclk'. The port definition is at: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(26950).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_inst/pll_altera_pll_altera_pll_i_640/genblk2/genblk2/cyclonev_pll File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv
+# ** Warning: (vsim-3017) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Too few port connections. Expected 280, found 60.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_inst/pll_altera_pll_altera_pll_i_640/genblk2/genblk2/cyclonev_pll/cyclonev_ffpll_inst File: nofile
+# ** Warning: (vsim-3015) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [PCDPC] - Port size (4) does not match connection size (2) for port 'extclk'. The port definition is at: nofile(38).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_inst/pll_altera_pll_altera_pll_i_640/genblk2/genblk2/cyclonev_pll/cyclonev_ffpll_inst File: nofile
+# ** Warning: (vsim-3015) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [PCDPC] - Port size (18) does not match connection size (1) for port 'divclk'. The port definition is at: nofile(38).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pll_control/pll_inst/pll_altera_pll_altera_pll_i_640/genblk2/genblk2/cyclonev_pll/cyclonev_ffpll_inst File: nofile
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'rbg_pdb'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'rcal_clk_test_sel'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'clk0_bad1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'clk1_bad1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'clk_fpll0'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'clk_fpll1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'clkb_fpll0'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'clkb_fpll1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'clksel1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'dprio1_block_select'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'fblvds_in_to0'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'fblvds_in_to1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'fblvds_out1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'fblvds_out_t0'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'fblvds_out_t1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'fpll0_ref_iqclk'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'fpll1_ref_iqclk'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'ioplniotri_buf'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'lock1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'nfrzdrv_buf'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'phase_done1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'pllbias_buf'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'plldout1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'plldout_t0'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'plldout_t1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'pllmout_r0'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'pllmout_r1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'pllmout_t0'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'pllmout_t1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'ratb_en'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'rbg_bypass'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'rrext_bypass'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'rtest'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'rz50_select'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'rzcal'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'rzrxwr'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'rztxwr'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'zdb_in_to0'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'zdb_in_to1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'atb0'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'atb1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'atb0_ftres'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'atb1_ftres'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'it50ua_ft'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'it50ua_ftres'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'ic50ua_ft'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'ic50ua_ftres'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'clkin_b_bi'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'clkin_b_bo'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'clkin_bc_bi'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'clkin_bc_bo'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'clkin_bm_bi'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'clkin_bm_bo'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'clkin_t_bi'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'clkin_t_bo'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'clkin_tc_bi'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'clkin_tc_bo'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'clkin_tm_bi'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'clkin_tm_bo'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'atpgmode1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'dprio1_clk'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'dprio1_mdio_dis'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'dprio1_read'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'dprio1_rst_n'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'dprio1_ser_shift_load'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'dprio1_write'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'extswitch1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'fbclk_fpll1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'fbclk_in1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'fblvds_in1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'fblvds_in_t0'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'fblvds_in_t1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'fblvds_out_ti0'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'fblvds_out_ti1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'ffpll_csr_test1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'iqtxrxclk_fpll1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'nreset1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'pfden1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'phase_en1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'plldout_ti0'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'plldout_ti1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'ref_iqclk_fpll1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'refclk_fpll1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'rx_iqclk_fpll1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'scanen1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'up_dn1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'zdb_in1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'zdb_in_t0'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'zdb_in_t1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'fblvds_in_r0'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'fblvds_in_r1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'fblvds_in_ro0'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'fblvds_in_ro1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'lvds_clk_t1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'r_rx_impctrl'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'r_tx_impctrl'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'r_bit_rx'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'vcoph_r0'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'loaden_t1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'dprio1_readdata'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'rmuxclksel'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'rbg_lst'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'r_bit_tx'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'loaden_r1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'loaden_t0'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'loaden_r0'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'pllcout_t'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'vcoph_r1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'lvds_clk_t0'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'dprio1_writedata'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'dprio1_byte_en'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'ibt50ua'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'ibc50ua'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'cnt_sel1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'pllcout_ti'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'dprio1_reg_addr'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'vcoph_ri0'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'vcoph_ri1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'vcoph_ti0'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'vcoph_ti1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'vcoph_t0'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'vcoph_t1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'zdb_in_r0'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'zdb_in_r1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'lvds_clk_ti0'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'lvds_clk_ti1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'loaden_ti0'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'loaden_ti1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'clk_fpll0_i'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'clk_fpll1_i'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'clkin_b_i'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'clkin_b_r'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'clkin_bm_i'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'clkin_bm_r'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'clkin_t_i'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'clkin_t_r'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'clkin_tm_i'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'clkin_tm_r'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'clkin_b_o'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'clkin_b_ro'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'clkin_bm_o'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'clkin_bm_ro'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'clkin_t_o'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'clkin_t_ro'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'clkin_tm_o'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'clkin_tm_ro'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'dpaclk1_i'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'vcoph0'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'vcoph1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'coreclk_l0'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'coreclk_l1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'coreclk_r0'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'coreclk_r1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'coreclk_t0'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'coreclk_t1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'coreclk_lo0'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'coreclk_lo1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'coreclk_ro0'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'coreclk_ro1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'coreclk_to0'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'coreclk_to1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'pllmout1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'extclk_ri'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'extclk_ti'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'extclk_r'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'extclk_t'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'fbclk_in_l0'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'fbclk_in_l1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'fbclk_in_r0'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'fbclk_in_r1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'fbclk_in_t0'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'fbclk_in_t1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'fbclk_in_lo0'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'fbclk_in_lo1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'fbclk_in_ro0'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'fbclk_in_ro1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'fbclk_in_to0'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'fbclk_in_to1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'fblvds_out_ri0'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'fblvds_out_ri1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'fblvds_out_r0'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'fblvds_out_r1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'fpll0_ref_iqclk_i'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'fpll1_ref_iqclk_i'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'loaden_ri0'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'loaden_ri1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'lvds_clk_ri0'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'lvds_clk_ri1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'lvds_clk_r0'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'lvds_clk_r1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'pllcout_li'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'pllcout_ri'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'pllcout_l'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'pllcout_r'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'plldout_ri0'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'plldout_ri1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'plldout_r0'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'plldout_r1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'pllmout_li0'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'pllmout_li1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'pllmout_ri0'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'pllmout_ri1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'pllmout_ti0'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'pllmout_ti1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'pllmout_l0'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'pllmout_l1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'fpll0_cout'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'fpll1_cout'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'pllcout'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'ratben0'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'ratben0_precomp'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'ratben1'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'ratben1_precomp'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'rbg_ks'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'rcomp_minus'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'rcomp_plus'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'rpwr_dn'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'rvbg_flag_pd'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'zdb_in_ro0'.
+# ** Warning: (vsim-3722) /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv(27863): [TFMPC] - Missing connection for port 'zdb_in_ro1'.
+# ** Warning: (vsim-3017) <protected>(<protected>): [TFMPC] - Too few port connections. Expected <protected>, found <protected>.
+#    Time: 0 ps  Iteration: 0  Protected: /tb_pll_control/pll_inst/pll_altera_pll_altera_pll_i_640/genblk2/genblk2/cyclonev_pll/cyclonev_ffpll_inst/<protected> File: nofile
+# ** Warning: (vsim-3722) <protected>(<protected>): [TFMPC] - Missing connection for port '<protected>'.
+# ** Warning: (vsim-3722) <protected>(<protected>): [TFMPC] - Missing connection for port '<protected>'.
+# ** Warning: (vsim-3722) <protected>(<protected>): [TFMPC] - Missing connection for port '<protected>'.
+# ** Warning: (vsim-3722) <protected>(<protected>): [TFMPC] - Missing connection for port '<protected>'.
+# ** Warning: (vsim-3722) <protected>(<protected>): [TFMPC] - Missing connection for port '<protected>'.
+# ** Warning: (vsim-3722) <protected>(<protected>): [TFMPC] - Missing connection for port '<protected>'.
+# ** Warning: (vsim-3017) <protected>(<protected>): [TFMPC] - Too few port connections. Expected <protected>, found <protected>.
+#    Time: 0 ps  Iteration: 0  Protected: /tb_pll_control/pll_inst/pll_altera_pll_altera_pll_i_640/genblk2/genblk2/cyclonev_pll/cyclonev_ffpll_inst/<protected> File: nofile
+# ** Warning: (vsim-3722) <protected>(<protected>): [TFMPC] - Missing connection for port '<protected>'.
+# ** Warning: (vsim-3722) <protected>(<protected>): [TFMPC] - Missing connection for port '<protected>'.
+# ** Warning: (vsim-3722) <protected>(<protected>): [TFMPC] - Missing connection for port '<protected>'.
+# ** Warning: (vsim-3722) <protected>(<protected>): [TFMPC] - Missing connection for port '<protected>'.
+# ** Warning: (vsim-3722) <protected>(<protected>): [TFMPC] - Missing connection for port '<protected>'.
+# ** Warning: (vsim-3017) <protected>(<protected>): [TFMPC] - Too few port connections. Expected <protected>, found <protected>.
+#    Time: 0 ps  Iteration: 0  Protected: /tb_pll_control/pll_inst/pll_altera_pll_altera_pll_i_640/genblk2/genblk2/cyclonev_pll/cyclonev_ffpll_inst/<protected> File: nofile
+# ** Warning: (vsim-3722) <protected>(<protected>): [TFMPC] - Missing connection for port '<protected>'.
+# ** Warning: (vsim-3722) <protected>(<protected>): [TFMPC] - Missing connection for port '<protected>'.
+# ** Warning: (vsim-3722) <protected>(<protected>): [TFMPC] - Missing connection for port '<protected>'.
+# ** Warning: (vsim-3017) <protected>(<protected>): [TFMPC] - Too few port connections. Expected <protected>, found <protected>.
+#    Time: 0 ps  Iteration: 0  Protected: /tb_pll_control/pll_inst/pll_altera_pll_altera_pll_i_640/genblk2/genblk2/cyclonev_pll/cyclonev_ffpll_inst/<protected>/<protected> File: nofile
+# ** Warning: (vsim-3722) <protected>(<protected>): [TFMPC] - Missing connection for port '<protected>'.
+# ** Warning: (vsim-3722) <protected>(<protected>): [TFMPC] - Missing connection for port '<protected>'.
+# ** Warning: (vsim-3722) <protected>(<protected>): [TFMPC] - Missing connection for port '<protected>'.
+# ** Warning: (vsim-3722) <protected>(<protected>): [TFMPC] - Missing connection for port '<protected>'.
+# ** Warning: (vsim-3722) <protected>(<protected>): [TFMPC] - Missing connection for port '<protected>'.
+# ** Warning: (vsim-3722) <protected>(<protected>): [TFMPC] - Missing connection for port '<protected>'.
+# ** Warning: (vsim-3017) <protected>(<protected>): [TFMPC] - Too few port connections. Expected <protected>, found <protected>.
+#    Time: 0 ps  Iteration: 0  Protected: /tb_pll_control/pll_inst/pll_altera_pll_altera_pll_i_640/genblk2/genblk2/cyclonev_pll/cyclonev_ffpll_inst/<protected>/<protected> File: nofile
+# ** Warning: (vsim-3722) <protected>(<protected>): [TFMPC] - Missing connection for port '<protected>'.
+# ** Warning: (vsim-3722) <protected>(<protected>): [TFMPC] - Missing connection for port '<protected>'.
+# ** Warning: (vsim-3722) <protected>(<protected>): [TFMPC] - Missing connection for port '<protected>'.
+# ** Warning: (vsim-3722) <protected>(<protected>): [TFMPC] - Missing connection for port '<protected>'.
+# ** Warning: (vsim-3722) <protected>(<protected>): [TFMPC] - Missing connection for port '<protected>'.
+# ** Warning: (vsim-3722) <protected>(<protected>): [TFMPC] - Missing connection for port '<protected>'.
+
+add wave *
+view structure
+# .main_pane.structure.interior.cs.body.struct
+view signals
+# .main_pane.objects.interior.cs.body.tree
+run 20000 ns
+# 
+# Warning: por to CB BFM is not connected, internal por is used.
+# 
+
+# End time: 13:47:40 on Jul 01,2024, Elapsed time: 0:04:00
+# Errors: 42, Warnings: 335

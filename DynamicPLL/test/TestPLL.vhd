@@ -14,7 +14,7 @@ architecture Behavioral of tb_PLL is
     signal reset_p          : std_logic := '0';
     signal pll_outclk_0      : std_logic;
     -- signal pll_outclk_1     : std_logic;
-    signal pll_locked        : std_logic;
+    signal pll_locked        : std_logic := '1';
 
     signal reconfig_to_pll   : std_logic_vector(63 downto 0);
     signal reconfig_from_pll : std_logic_vector(63 downto 0);
@@ -54,8 +54,8 @@ begin
     begin
         -- Apply reset
         reset_p <= '1';
-        -- wait for 100 ns;  -- Hold reset for 100 ns
-        -- reset_p <= '0';
+        wait for 100 ns;  -- Hold reset for 100 ns
+        reset_p <= '0';
        
         
         -- -- Wait for PLL to lock and observe the outputs

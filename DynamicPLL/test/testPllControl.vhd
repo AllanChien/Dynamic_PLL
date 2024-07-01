@@ -34,7 +34,7 @@ architecture Behavioral of tb_pll_control is
     signal reset_p          : std_logic;
     signal pll_outclk_0      : std_logic;
     signal pll_outclk_1      : std_logic;
-    signal pll_locked        : std_logic;
+    signal pll_locked        : std_logic := '1';
 
     signal reconfig_to_pll   : std_logic_vector(63 downto 0);
     signal reconfig_from_pll : std_logic_vector(63 downto 0);
@@ -94,27 +94,41 @@ begin
     -- Stimulus process
     stimulus: process
     begin
+        wait for 20 ns;
         -- Apply reset
         -- Apply reset
         reset_p <= '1';
         reset_SM_p <= '1';
         reset_R_p <= '1';
-        wait for 100 ns;
+        wait for 50 ns;
         
         reset_p <= '0';        
         reset_R_p <= '0';
 
         -- wait until pll_locked = '1';
         reset_SM_p <= '0';
-        wait for 100 ns;
+        -- wait for 100 ns;
 
         -- Wait for PLL to lock
         -- wait until pll_locked = '1';
         -- wait for 100 ns; -- Allow some time after lock
 
         -- Wait for PLL reconfiguration to complete
-        wait for 1000 ns;
+        wait for 500 ns;
+        reset_p <= '1';
+        -- reset_SM_p <= '1';
+        -- reset_R_p <= '1';
+        wait for 50 ns;
+        
+        reset_p <= '0';        
+        -- reset_R_p <= '0';
 
+        -- -- wait until pll_locked = '1';
+        -- reset_SM_p <= '0';
+        -- wait for 500 ns;
+        -- reset_p <= '1';
+        -- wait for 50 ns;
+        -- reset_p <= '0';
 
         wait;
     end process;
@@ -124,9 +138,9 @@ begin
     clk_process: process
     begin
         while True loop
-            clk <= '0';
-            wait for clk_period / 2;
             clk <= '1';
+            wait for clk_period / 2;
+            clk <= '0';
             wait for clk_period / 2;
         end loop;
     end process;
