@@ -1,24 +1,38 @@
 Info: Start Nativelink Simulation process
-executing command line: ip-make-simscript --nativelink-mode --output-directory=Nios_Sys_2A_iputf_input --spd=C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL.spd --spd=C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig.spd 
+executing command line: ip-make-simscript --nativelink-mode --output-directory=Nios_Sys_2A_iputf_input --spd=C:/Users/hchi686/OneDrive - The University of Auckland/Dynamic_PLL/DynamicPLL/PLL.spd --spd=C:/Users/hchi686/OneDrive - The University of Auckland/Dynamic_PLL/DynamicPLL/PLL_Reconfig.spd 
+Internal error: Failed to run ip-make-simscript: 2024.07.02.18:59:48 Error: Unrecognized switch <b>1</b>
+2024.07.02.18:59:48 Error: Unrecognized switch <b>2</b>
+2024.07.02.18:59:48 Error: Unrecognized switch <b>3</b>
+2024.07.02.18:59:48 Error: Unrecognized switch <b>4</b>
+2024.07.02.18:59:48 Error: Unrecognized switch <b>5</b>
+2024.07.02.18:59:48 Error: Unrecognized switch <b>6</b>
+2024.07.02.18:59:48 Error: Unrecognized switch <b>7</b>
+2024.07.02.18:59:48 Error: Unrecognized switch <b>8</b>
+2024.07.02.18:59:48 Error: Unrecognized switch <b>9</b>
+2024.07.02.18:59:48 Error: Unrecognized switch <b>10</b>
+Internal error: Failed to run ip-make-simscript: 2024.07.02.18:59:48 Error: Unrecognized switch <b>1</b>
+2024.07.02.18:59:48 Error: Unrecognized switch <b>2</b>
+2024.07.02.18:59:48 Error: Unrecognized switch <b>3</b>
+2024.07.02.18:59:48 Error: Unrecognized switch <b>4</b>
+2024.07.02.18:59:48 Error: Unrecognized switch <b>5</b>
+2024.07.02.18:59:48 Error: Unrecognized switch <b>6</b>
+2024.07.02.18:59:48 Error: Unrecognized switch <b>7</b>
+2024.07.02.18:59:48 Error: Unrecognized switch <b>8</b>
+2024.07.02.18:59:48 Error: Unrecognized switch <b>9</b>
+2024.07.02.18:59:48 Error: Unrecognized switch <b>10</b>
+Error: NativeLink simulation flow was NOT successful
 
-========= EDA Simulation Settings =====================
 
-Sim Mode              :  RTL
-Family                :  cyclonev
-Quartus root          :  c:/intelfpga_lite/18.0/quartus/bin64/
-Quartus sim root      :  c:/intelfpga_lite/18.0/quartus/eda/sim_lib
-Simulation Tool       :  modelsim-altera
-Simulation Language   :  vhdl
-Version               :  93
-Simulation Mode       :  GUI
-Sim Output File       :  
-Sim SDF file          :  
-Sim dir               :  simulation\modelsim
 
-=======================================================
-
-Info: Starting NativeLink simulation with ModelSim-Altera software
-Sourced NativeLink script c:/intelfpga_lite/18.0/quartus/common/tcl/internal/nativelink/modelsim.tcl
-Warning: File Nios_Sys_2A_run_msim_rtl_vhdl.do already exists - backing up current file as Nios_Sys_2A_run_msim_rtl_vhdl.do.bak11
-Info: Spawning ModelSim-Altera Simulation software 
-Info: NativeLink simulation flow was successful
+================The following additional information is provided to help identify the cause of error while running nativelink scripts=================
+Nativelink TCL script failed with errorCode:  1
+Nativelink TCL script failed with errorInfo:  1
+    (procedure "iputf_call_script_gen" line 1)
+    invoked from within
+"iputf_call_script_gen $spd_file_list"
+    (procedure "iputf_setup_info" line 45)
+    invoked from within
+"iputf_setup_info"
+    (procedure "run_eda_simulation_tool" line 178)
+    invoked from within
+"run_eda_simulation_tool eda_opts_hash"

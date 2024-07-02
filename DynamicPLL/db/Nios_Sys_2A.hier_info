@@ -1,7 +1,7 @@
 |Nios_Sys_2A
 CLOCK_50 => PLL_Reconfig:inst.mgmt_clk
 CLOCK_50 => pll_control:inst4.clk
-CLOCK_50 => PLL:inst3.refclk
+CLOCK_50 => PLL:inst1.refclk
 SW[0] => pll_control:inst4.sw_in
 
 
@@ -81,10 +81,6 @@ mgmt_writedata[28] => altera_pll_reconfig_top:pll_reconfig_inst.mgmt_writedata[2
 mgmt_writedata[29] => altera_pll_reconfig_top:pll_reconfig_inst.mgmt_writedata[29]
 mgmt_writedata[30] => altera_pll_reconfig_top:pll_reconfig_inst.mgmt_writedata[30]
 mgmt_writedata[31] => altera_pll_reconfig_top:pll_reconfig_inst.mgmt_writedata[31]
-mgmt_byteenable[0] => altera_pll_reconfig_top:pll_reconfig_inst.mgmt_byteenable[0]
-mgmt_byteenable[1] => altera_pll_reconfig_top:pll_reconfig_inst.mgmt_byteenable[1]
-mgmt_byteenable[2] => altera_pll_reconfig_top:pll_reconfig_inst.mgmt_byteenable[2]
-mgmt_byteenable[3] => altera_pll_reconfig_top:pll_reconfig_inst.mgmt_byteenable[3]
 reconfig_to_pll[0] <= altera_pll_reconfig_top:pll_reconfig_inst.reconfig_to_pll[0]
 reconfig_to_pll[1] <= altera_pll_reconfig_top:pll_reconfig_inst.reconfig_to_pll[1]
 reconfig_to_pll[2] <= altera_pll_reconfig_top:pll_reconfig_inst.reconfig_to_pll[2]
@@ -386,7 +382,7 @@ mgmt_address[3] => mgmt_address[3].IN1
 mgmt_address[4] => mgmt_address[4].IN1
 mgmt_address[5] => mgmt_address[5].IN1
 mgmt_read => mgmt_read.IN1
-mgmt_write => mgmt_byteenable_write.DATAB
+mgmt_write => mgmt_byteenable_write.IN1
 mgmt_writedata[0] => mgmt_writedata[0].IN1
 mgmt_writedata[1] => mgmt_writedata[1].IN1
 mgmt_writedata[2] => mgmt_writedata[2].IN1
@@ -419,10 +415,10 @@ mgmt_writedata[28] => mgmt_writedata[28].IN1
 mgmt_writedata[29] => mgmt_writedata[29].IN1
 mgmt_writedata[30] => mgmt_writedata[30].IN1
 mgmt_writedata[31] => mgmt_writedata[31].IN1
-mgmt_byteenable[0] => Equal0.IN3
-mgmt_byteenable[1] => Equal0.IN2
-mgmt_byteenable[2] => Equal0.IN1
-mgmt_byteenable[3] => Equal0.IN0
+mgmt_byteenable[0] => ~NO_FANOUT~
+mgmt_byteenable[1] => ~NO_FANOUT~
+mgmt_byteenable[2] => ~NO_FANOUT~
+mgmt_byteenable[3] => ~NO_FANOUT~
 
 
 |Nios_Sys_2A|PLL_Reconfig:inst|altera_pll_reconfig_top:pll_reconfig_inst|altera_pll_reconfig_core:NM28_reconfig.reconfig_core.altera_pll_reconfig_core_inst0
@@ -1453,7 +1449,7 @@ mgmt_writedata[30] <= mgmt_writedata_reg[30].DB_MAX_OUTPUT_PORT_TYPE
 mgmt_writedata[31] <= mgmt_writedata_reg[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Nios_Sys_2A|PLL:inst3
+|Nios_Sys_2A|PLL:inst1
 refclk => PLL_0002:pll_inst.refclk
 rst => PLL_0002:pll_inst.rst
 outclk_0 <= PLL_0002:pll_inst.outclk_0
@@ -1588,7 +1584,7 @@ reconfig_from_pll[62] <= PLL_0002:pll_inst.reconfig_from_pll[62]
 reconfig_from_pll[63] <= PLL_0002:pll_inst.reconfig_from_pll[63]
 
 
-|Nios_Sys_2A|PLL:inst3|PLL_0002:pll_inst
+|Nios_Sys_2A|PLL:inst1|PLL_0002:pll_inst
 refclk => refclk.IN1
 rst => rst.IN1
 outclk_0 <= altera_pll:altera_pll_i.outclk
@@ -1723,7 +1719,7 @@ reconfig_from_pll[62] <= altera_pll:altera_pll_i.reconfig_from_pll
 reconfig_from_pll[63] <= altera_pll:altera_pll_i.reconfig_from_pll
 
 
-|Nios_Sys_2A|PLL:inst3|PLL_0002:pll_inst|altera_pll:altera_pll_i
+|Nios_Sys_2A|PLL:inst1|PLL_0002:pll_inst|altera_pll:altera_pll_i
 refclk => refclk.IN1
 refclk1 => refclk1.IN1
 fbclk => ~NO_FANOUT~
@@ -1895,7 +1891,7 @@ cascade_out[0] <= altera_cyclonev_pll:cyclonev_pll.cascade_out
 zdbfbclk <> <GND>
 
 
-|Nios_Sys_2A|PLL:inst3|PLL_0002:pll_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst
+|Nios_Sys_2A|PLL:inst1|PLL_0002:pll_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst
 clk => dps_current_state~1.DATAIN
 reset => dps_current_state.OUTPUTSELECT
 reset => dps_current_state.OUTPUTSELECT
@@ -1914,7 +1910,7 @@ usr_phase_en => phase_en.IN1
 phase_en <= phase_en.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Nios_Sys_2A|PLL:inst3|PLL_0002:pll_inst|altera_pll:altera_pll_i|dprio_init:dprio_init_inst
+|Nios_Sys_2A|PLL:inst1|PLL_0002:pll_inst|altera_pll:altera_pll_i|dprio_init:dprio_init_inst
 clk => scanen~reg0.CLK
 clk => atpgmode~reg0.CLK
 clk => dprio_init_done~reg0.CLK
@@ -1965,7 +1961,7 @@ ser_shift_load <= ser_shift_load~reg0.DB_MAX_OUTPUT_PORT_TYPE
 dprio_init_done <= dprio_init_done~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Nios_Sys_2A|PLL:inst3|PLL_0002:pll_inst|altera_pll:altera_pll_i|altera_pll_dps_lcell_comb:lcell_cntsel_int_0
+|Nios_Sys_2A|PLL:inst1|PLL_0002:pll_inst|altera_pll:altera_pll_i|altera_pll_dps_lcell_comb:lcell_cntsel_int_0
 dataa => lcell_inst.DATAA
 datab => lcell_inst.DATAB
 datac => lcell_inst.DATAC
@@ -1975,7 +1971,7 @@ dataf => lcell_inst.DATAF
 combout <= lcell_inst.COMBOUT
 
 
-|Nios_Sys_2A|PLL:inst3|PLL_0002:pll_inst|altera_pll:altera_pll_i|altera_pll_dps_lcell_comb:lcell_cntsel_int_1
+|Nios_Sys_2A|PLL:inst1|PLL_0002:pll_inst|altera_pll:altera_pll_i|altera_pll_dps_lcell_comb:lcell_cntsel_int_1
 dataa => lcell_inst.DATAA
 datab => lcell_inst.DATAB
 datac => lcell_inst.DATAC
@@ -1985,7 +1981,7 @@ dataf => lcell_inst.DATAF
 combout <= lcell_inst.COMBOUT
 
 
-|Nios_Sys_2A|PLL:inst3|PLL_0002:pll_inst|altera_pll:altera_pll_i|altera_pll_dps_lcell_comb:lcell_cntsel_int_2
+|Nios_Sys_2A|PLL:inst1|PLL_0002:pll_inst|altera_pll:altera_pll_i|altera_pll_dps_lcell_comb:lcell_cntsel_int_2
 dataa => lcell_inst.DATAA
 datab => lcell_inst.DATAB
 datac => lcell_inst.DATAC
@@ -1995,7 +1991,7 @@ dataf => lcell_inst.DATAF
 combout <= lcell_inst.COMBOUT
 
 
-|Nios_Sys_2A|PLL:inst3|PLL_0002:pll_inst|altera_pll:altera_pll_i|altera_pll_dps_lcell_comb:lcell_cntsel_int_3
+|Nios_Sys_2A|PLL:inst1|PLL_0002:pll_inst|altera_pll:altera_pll_i|altera_pll_dps_lcell_comb:lcell_cntsel_int_3
 dataa => lcell_inst.DATAA
 datab => lcell_inst.DATAB
 datac => lcell_inst.DATAC
@@ -2005,7 +2001,7 @@ dataf => lcell_inst.DATAF
 combout <= lcell_inst.COMBOUT
 
 
-|Nios_Sys_2A|PLL:inst3|PLL_0002:pll_inst|altera_pll:altera_pll_i|altera_pll_dps_lcell_comb:lcell_cntsel_int_4
+|Nios_Sys_2A|PLL:inst1|PLL_0002:pll_inst|altera_pll:altera_pll_i|altera_pll_dps_lcell_comb:lcell_cntsel_int_4
 dataa => lcell_inst.DATAA
 datab => lcell_inst.DATAB
 datac => lcell_inst.DATAC
@@ -2015,7 +2011,7 @@ dataf => lcell_inst.DATAF
 combout <= lcell_inst.COMBOUT
 
 
-|Nios_Sys_2A|PLL:inst3|PLL_0002:pll_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll
+|Nios_Sys_2A|PLL:inst1|PLL_0002:pll_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll
 phout_0[0] <= altera_cyclonev_pll_base:fpll_0.phout
 phout_0[1] <= altera_cyclonev_pll_base:fpll_0.phout
 phout_0[2] <= altera_cyclonev_pll_base:fpll_0.phout
@@ -2946,7 +2942,7 @@ divclk[0] <= counter[0].output_counter.O_DIVCLK
 cascade_out[0] <= counter[0].output_counter.O_CASCADEOUT
 
 
-|Nios_Sys_2A|PLL:inst3|PLL_0002:pll_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0
+|Nios_Sys_2A|PLL:inst1|PLL_0002:pll_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0
 phout[0] <= DPA.O_PHOUT
 phout[1] <= DPA.O_PHOUT1
 phout[2] <= DPA.O_PHOUT2

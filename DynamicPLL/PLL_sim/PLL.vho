@@ -1,5 +1,5 @@
 --IP Functional Simulation Model
---VERSION_BEGIN 18.0 cbx_mgl 2018:04:24:18:08:49:SJ cbx_simgen 2018:04:24:18:04:18:SJ  VERSION_END
+--VERSION_BEGIN 18.1 cbx_mgl 2018:09:12:13:10:36:SJ cbx_simgen 2018:09:12:13:04:24:SJ  VERSION_END
 
 
 -- Copyright (C) 2018  Intel Corporation. All rights reserved.
@@ -290,7 +290,7 @@
 		pll_m_cnt_in_src => "ph_mux_clk",
 		pll_manu_clk_sw_en => "false",
 		pll_output_clk_frequency => "400.0 MHz",
-		pll_slf_rst => "true",
+		pll_slf_rst => "false",
 		pll_subtype => "Reconfigurable",
 		pll_type => "Cyclone V",
 		pll_vco_div => 2,
