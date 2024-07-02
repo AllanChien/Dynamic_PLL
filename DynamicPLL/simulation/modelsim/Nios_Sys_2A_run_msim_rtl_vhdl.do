@@ -33,7 +33,7 @@ vcom -93 -work work {C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/ConstLow.vhd}
 
 vcom -93 -work work {C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/test/testPllControl.vhd}
 
-vsim -suppress 10000 -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -L PLL_Reconfig -L PLL_Reconfig -voptargs="+acc"  tb_pll_control
+vsim -suppress 10000  -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -L PLL_Reconfig -L PLL_Reconfig -voptargs="+acc"  tb_pll_control
 
 add wave *
 view structure

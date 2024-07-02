@@ -22,7 +22,7 @@ vlog "C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/al
 vlog "C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_std_synchronizer.v"  -work PLL_Reconfig
 vcom "C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/PLL_Reconfig.vhd"                                                 
 
-vcom -93 -work work {C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig.vho}
+#vcom -93 -work work {C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig.vho}
 vlib PLL_Reconfig
 vmap PLL_Reconfig PLL_Reconfig
 vlog -vlog01compat -work PLL_Reconfig +incdir+C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig {C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig/altera_pll_reconfig_top.v}

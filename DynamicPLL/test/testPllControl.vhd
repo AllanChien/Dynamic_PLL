@@ -18,11 +18,11 @@ architecture Behavioral of tb_pll_control is
     signal mgmt_readdata    : std_logic_vector(31 downto 0);
     signal mgmt_address     : std_logic_vector(5 downto 0);
     signal mgmt_writedata   : std_logic_vector(31 downto 0);
-    signal config_done      : std_logic;
+    -- signal config_done      : std_logic;
     signal sw_in_p  : std_logic := '0';
 
     --Pll Reconfig
-    signal reset_R_p          : std_logic;
+    signal reset_R_p          : std_logic := '0';
     signal pll_reconfig_waitrequest : std_logic := '0';
     signal pll_reconfig_read        : std_logic;
     signal pll_reconfig_write       : std_logic;
@@ -34,7 +34,7 @@ architecture Behavioral of tb_pll_control is
     signal reset_p          : std_logic := '0';
     signal pll_outclk_0      : std_logic;
     -- signal pll_outclk_1      : std_logic;
-    signal pll_locked        : std_logic := '1';
+    signal pll_locked        : std_logic := '0';
 
     signal PLL_R_reconfig_to_pll   : std_logic_vector(63 downto 0);
     signal PLL_R_reconfig_from_pll : std_logic_vector(63 downto 0);
