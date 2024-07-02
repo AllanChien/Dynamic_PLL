@@ -101,16 +101,16 @@ begin
        
         -- Apply reset
         -- Apply reset
-        reset_p <= '1';
-        -- reset_SM_p <= '1';
-        -- reset_R_p <= '1';
-        wait for 40 ns;
-        
-        reset_p <= '0';        
+        reset_p <= '0';
+        reset_SM_p <= '0';
         reset_R_p <= '0';
+        wait for 20 ns;
+        
+        reset_p <= '1';        
+        reset_R_p <= '1';
 
         -- wait until pll_locked = '1';
-        -- reset_SM_p <= '0';
+        reset_SM_p <= '1';
         -- wait for 100 ns;
 
         -- Wait for PLL to lock
@@ -118,20 +118,20 @@ begin
         -- wait for 100 ns; -- Allow some time after lock
 
         -- Wait for PLL reconfiguration to complete
-        wait for 500 ns;
-        -- reset_p <= '1';
-        -- reset_SM_p <= '1';
-        -- reset_R_p <= '1';
-        wait for 200 ns;
+        wait for 20 ns;
+        reset_p <= '0';
+        reset_SM_p <= '0';
+        reset_R_p <= '0';
+        wait for 20 ns;
         
         -- reset_p <= '0';        
         -- reset_R_p <= '0';
-
+        -- wait for 500 ns;
         -- -- wait until pll_locked = '1';
         -- reset_SM_p <= '0';
         -- wait for 500 ns;
         -- reset_p <= '1';
-        -- wait for 50 ns;
+        -- wait for 80 ns;
         -- reset_p <= '0';
 
         wait;

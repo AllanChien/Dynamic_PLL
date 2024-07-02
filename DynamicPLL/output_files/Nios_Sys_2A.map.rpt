@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Nios_Sys_2A
-Tue Jul 02 23:44:47 2024
+Wed Jul 03 04:32:14 2024
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -79,7 +79,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Jul 02 23:44:47 2024       ;
+; Analysis & Synthesis Status     ; Successful - Wed Jul 03 04:32:14 2024       ;
 ; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                   ; Nios_Sys_2A                                 ;
 ; Top-level Entity Name           ; Nios_Sys_2A                                 ;
@@ -2025,7 +2025,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Tue Jul 02 23:44:33 2024
+    Info: Processing started: Wed Jul 03 04:32:01 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Nios_Sys_2A -c Nios_Sys_2A
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -2947,10 +2947,10 @@ Info (21057): Implemented 2 device resources after synthesis - the final resourc
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 0 output pins
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 632 warnings
-    Info: Peak virtual memory: 4947 megabytes
-    Info: Processing ended: Tue Jul 02 23:44:47 2024
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:09
+    Info: Peak virtual memory: 4949 megabytes
+    Info: Processing ended: Wed Jul 03 04:32:14 2024
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:10
 
 
 +------------------------------------------+

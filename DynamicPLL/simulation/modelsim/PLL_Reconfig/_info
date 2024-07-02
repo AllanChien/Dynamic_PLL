@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/simulation/modelsim
 valtera_pll_reconfig_core
-Z1 !s110 1719924765
+Z1 !s110 1719959087
 !i10b 1
 !s100 ]JlV6cdFHe2zlVkdmQKC@1
 I3d;@;A?85PC`;B`PPDLU>0
@@ -23,7 +23,7 @@ Z7 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z8 !s108 1719924765.000000
+Z8 !s108 1719959087.000000
 Z9 !s107 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig/altera_pll_reconfig_core.v|
 Z10 !s90 -reportprogress|300|-vlog01compat|-work|PLL_Reconfig|+incdir+C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig|C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig/altera_pll_reconfig_core.v|
 !i113 1
@@ -45,7 +45,7 @@ R7
 r1
 !s85 0
 31
-R8
+!s108 1719959086.000000
 !s107 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig/altera_pll_reconfig_top.v|
 !s90 -reportprogress|300|-vlog01compat|-work|PLL_Reconfig|+incdir+C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig|C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig/altera_pll_reconfig_top.v|
 !i113 1

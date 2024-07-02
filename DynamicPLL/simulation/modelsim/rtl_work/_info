@@ -21,9 +21,9 @@ V^fWWoha:dH6GXiISMa[a50
 !s100 8]>H]Ld@j7:iz=jCaN6K_2
 Z6 OV;C;10.5b;63
 31
-Z7 !s110 1719924766
+Z7 !s110 1719959087
 !i10b 1
-Z8 !s108 1719924766.000000
+Z8 !s108 1719959087.000000
 Z9 !s90 -reportprogress|300|-93|-work|work|C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/ConstLow.vhd|
 Z10 !s107 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/ConstLow.vhd|
 !i113 1
@@ -61,9 +61,9 @@ V6<oPC:OAW9F]RcJObFaFe3
 !s100 1QXRX>Jf2fXCD[L<?mNjg3
 R6
 32
-Z17 !s110 1719924764
+Z17 !s110 1719959086
 !i10b 1
-Z18 !s108 1719924764.000000
+Z18 !s108 1719959086.000000
 Z19 !s90 -reportprogress|300|C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_sim/PLL.vho|
 Z20 !s107 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_sim/PLL.vho|
 !i113 1
@@ -100,11 +100,11 @@ V[^Y;^e<_WgjV8>TVF8cQ?2
 !s100 ;[b1I0TS@Kf4Cl9<L:UC:2
 R6
 31
-Z26 !s110 1719924765
+R7
 !i10b 1
-Z27 !s108 1719924765.000000
-Z28 !s90 -reportprogress|300|-93|-work|work|C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/pll_control.vhd|
-Z29 !s107 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/pll_control.vhd|
+R8
+Z26 !s90 -reportprogress|300|-93|-work|work|C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/pll_control.vhd|
+Z27 !s107 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/pll_control.vhd|
 !i113 1
 R11
 R12
@@ -112,69 +112,69 @@ Abehavioral
 R23
 R2
 R3
-Z30 DEx4 work 11 pll_control 0 22 [^Y;^e<_WgjV8>TVF8cQ?2
+Z28 DEx4 work 11 pll_control 0 22 [^Y;^e<_WgjV8>TVF8cQ?2
 l34
 L19
 Vh[@`J`OBXhej:S?Y:KW2A3
 !s100 FfADPTj@8fej1QGY@@JY>3
 R6
 31
-R26
+R7
 !i10b 1
+R8
+R26
 R27
-R28
-R29
 !i113 1
 R11
 R12
 Epll_reconfig
-Z31 w1719919511
+Z29 w1719919511
 R23
 R2
 R3
 R0
-Z32 8C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/PLL_Reconfig.vhd
-Z33 FC:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/PLL_Reconfig.vhd
+Z30 8C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/PLL_Reconfig.vhd
+Z31 FC:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/PLL_Reconfig.vhd
 l0
 L9
 VYKd^@:l:bOI]MJXzOzGj:1
 !s100 gk:PDG^<[IkBOFo^gM1e[0
 R6
 32
-R26
+R17
 !i10b 1
-R27
-Z34 !s90 -reportprogress|300|C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/PLL_Reconfig.vhd|
-Z35 !s107 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/PLL_Reconfig.vhd|
+R18
+Z32 !s90 -reportprogress|300|C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/PLL_Reconfig.vhd|
+Z33 !s107 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/PLL_Reconfig.vhd|
 !i113 1
 R12
 Artl
 R23
 R2
 R3
-Z36 DEx4 work 12 pll_reconfig 0 22 YKd^@:l:bOI]MJXzOzGj:1
+Z34 DEx4 work 12 pll_reconfig 0 22 YKd^@:l:bOI]MJXzOzGj:1
 l52
 L24
 VDFCandgmC[BH`GYgU5]Hm1
 !s100 l?Xz_U;KGU4FEnLT8jc@B1
 R6
 32
-R26
+R17
 !i10b 1
-R27
-R34
-R35
+R18
+R32
+R33
 !i113 1
 R12
 Etb_pll_control
-Z37 w1719924687
-Z38 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
-Z39 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z35 w1719959068
+Z36 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z37 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
 R2
 R3
 R0
-Z40 8C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/test/testPllControl.vhd
-Z41 FC:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/test/testPllControl.vhd
+Z38 8C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/test/testPllControl.vhd
+Z39 FC:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/test/testPllControl.vhd
 l0
 L7
 VnV^DZ2K7^_cJN=Mna:I^R0
@@ -184,33 +184,33 @@ R6
 R7
 !i10b 1
 R8
-Z42 !s90 -reportprogress|300|-93|-work|work|C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/test/testPllControl.vhd|
-Z43 !s107 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/test/testPllControl.vhd|
+Z40 !s90 -reportprogress|300|-93|-work|work|C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/test/testPllControl.vhd|
+Z41 !s107 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/test/testPllControl.vhd|
 !i113 1
 R11
 R12
 Abehavioral
 R14
 R21
-R36
+R34
 R23
-R30
-R38
-R39
+R28
+R36
+R37
 R2
 R3
 DEx4 work 14 tb_pll_control 0 22 nV^DZ2K7^_cJN=Mna:I^R0
 l47
 L10
-VmN:^`X6S=Ol9U25NZUiBF3
-!s100 >HoeR2U[b^P?H[5<2cBDT1
+VfSH^d;N@_7X6zKi;CD^7e3
+!s100 fWH=:<BU?Gzo72Sm41`4L2
 R6
 31
 R7
 !i10b 1
 R8
-R42
-R43
+R40
+R41
 !i113 1
 R11
 R12

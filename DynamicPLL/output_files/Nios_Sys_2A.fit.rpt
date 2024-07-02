@@ -1,5 +1,5 @@
 Fitter report for Nios_Sys_2A
-Tue Jul 02 23:45:13 2024
+Wed Jul 03 04:32:37 2024
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -57,7 +57,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Tue Jul 02 23:45:13 2024       ;
+; Fitter Status                   ; Successful - Wed Jul 03 04:32:37 2024       ;
 ; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                   ; Nios_Sys_2A                                 ;
 ; Top-level Entity Name           ; Nios_Sys_2A                                 ;
@@ -2087,7 +2087,7 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "VGA_R[7]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_SYNC_N" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_VS" is assigned to location or region, but does not exist in design
-Info (11798): Fitter preparation operations ending: elapsed time is 00:00:08
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:09
 Info (332164): Evaluating HDL-embedded SDC commands
     Info (332165): Entity altera_std_synchronizer
         Info (332166): set_false_path -to [get_keepers {*altera_std_synchronizer:*|din_s1}]
@@ -2123,10 +2123,10 @@ Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:02
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info (144001): Generated suppressed messages file C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/output_files/Nios_Sys_2A.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 265 warnings
-    Info: Peak virtual memory: 7236 megabytes
-    Info: Processing ended: Tue Jul 02 23:45:13 2024
-    Info: Elapsed time: 00:00:25
-    Info: Total CPU time (on all processors): 00:00:54
+    Info: Peak virtual memory: 7240 megabytes
+    Info: Processing ended: Wed Jul 03 04:32:37 2024
+    Info: Elapsed time: 00:00:22
+    Info: Total CPU time (on all processors): 00:00:51
 
 
 +----------------------------+
