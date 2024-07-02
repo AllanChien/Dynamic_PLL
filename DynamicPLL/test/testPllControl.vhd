@@ -42,7 +42,7 @@ architecture Behavioral of tb_pll_control is
     signal reconfig_to_pll   : std_logic_vector(63 downto 0);
     signal reconfig_from_pll : std_logic_vector(63 downto 0);
 
-    constant clk_period : time := 10 ns;
+    constant clk_period : time := 20 ns;
 
 begin
     -- Instantiate the Unit Under Test (UUT)
@@ -98,13 +98,13 @@ begin
     -- Stimulus process
     stimulus: process
     begin
-        wait for 20 ns;
+       
         -- Apply reset
         -- Apply reset
         reset_p <= '1';
         -- reset_SM_p <= '1';
         -- reset_R_p <= '1';
-        wait for 500 ns;
+        wait for 40 ns;
         
         reset_p <= '0';        
         reset_R_p <= '0';
@@ -119,12 +119,12 @@ begin
 
         -- Wait for PLL reconfiguration to complete
         wait for 500 ns;
-        reset_p <= '1';
+        -- reset_p <= '1';
         -- reset_SM_p <= '1';
         -- reset_R_p <= '1';
         wait for 200 ns;
         
-        reset_p <= '0';        
+        -- reset_p <= '0';        
         -- reset_R_p <= '0';
 
         -- -- wait until pll_locked = '1';
@@ -142,9 +142,9 @@ begin
     clk_process: process
     begin
         while True loop
-            clk <= '0';
-            wait for clk_period / 2;
             clk <= '1';
+            wait for clk_period / 2;
+            clk <= '0';
             wait for clk_period / 2;
         end loop;
     end process;

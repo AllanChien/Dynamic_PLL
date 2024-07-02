@@ -1,0 +1,186 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/simulation/modelsim
+valtera_pll_reconfig_core
+Z1 !s110 1719922889
+!i10b 1
+!s100 ]JlV6cdFHe2zlVkdmQKC@1
+I3d;@;A?85PC`;B`PPDLU>0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1719919511
+Z4 8C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig/altera_pll_reconfig_core.v
+Z5 FC:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig/altera_pll_reconfig_core.v
+Z6 L0 16
+Z7 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z8 !s108 1719922889.000000
+Z9 !s107 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig/altera_pll_reconfig_core.v|
+Z10 !s90 -reportprogress|300|-vlog01compat|-work|PLL_Reconfig|+incdir+C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig|C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig/altera_pll_reconfig_core.v|
+!i113 1
+Z11 o-vlog01compat -work PLL_Reconfig
+Z12 !s92 -vlog01compat -work PLL_Reconfig +incdir+C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig
+Z13 tCvgOpt 0
+valtera_pll_reconfig_top
+R1
+!i10b 1
+!s100 7IS0miYWMi8:A<XQ[8W;]2
+IoW7U`XnNgm2kdMa7>G0O^3
+R2
+R0
+R3
+8C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig/altera_pll_reconfig_top.v
+FC:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig/altera_pll_reconfig_top.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+!s107 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig/altera_pll_reconfig_top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|PLL_Reconfig|+incdir+C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig|C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig/altera_pll_reconfig_top.v|
+!i113 1
+R11
+R12
+R13
+valtera_std_synchronizer
+R1
+!i10b 1
+!s100 MBo4XSMRh8:VPJzdo>9JQ1
+IY04eoa1m2BNb_aMDR9Lj81
+R2
+R0
+R3
+8C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig/altera_std_synchronizer.v
+FC:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig/altera_std_synchronizer.v
+L0 37
+R7
+r1
+!s85 0
+31
+R8
+!s107 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig/altera_std_synchronizer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|PLL_Reconfig|+incdir+C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig|C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig/altera_std_synchronizer.v|
+!i113 1
+R11
+R12
+R13
+vdprio_mux
+R1
+!i10b 1
+!s100 Doo^z1=4L?4>4MaP?1z8d3
+I>Z58^U2MX7TSFfM?QUlKY2
+R2
+R0
+R3
+R4
+R5
+L0 1739
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vdyn_phase_shift
+R1
+!i10b 1
+!s100 N2XAF_nMz6OjNCa:CoW^V2
+IIenc71`JXf>:bbL_5A@iU2
+R2
+R0
+R3
+R4
+R5
+L0 1884
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vfpll_dprio_init
+R1
+!i10b 1
+!s100 TcM2kcQ0I[>g7W3V3F?IN0
+IDE7Xbb5?k1R4g[eCM>N;23
+R2
+R0
+R3
+R4
+R5
+L0 1789
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vgeneric_lcell_comb
+R1
+!i10b 1
+!s100 LcbJkog7=ENfj:PlP<@Y>2
+IjBfdI35?VdB<D`cUP0GkN1
+R2
+R0
+R3
+R4
+R5
+L0 2112
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vself_reset
+R1
+!i10b 1
+!s100 ^E9<^k8blR9`JH5<ZEL4n2
+I17gn_oMPfdYo7Wh`Ueio_1
+R2
+R0
+R3
+R4
+R5
+L0 1691
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13

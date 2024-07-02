@@ -1,6 +1,6 @@
 IP Upgrade report for Nios_Sys_2A
-Thu Jun 27 02:22:45 2024
-Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+Tue Jul 02 13:38:42 2024
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
 ---------------------
@@ -8,7 +8,7 @@ Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 ---------------------
   1. Legal Notice
   2. IP Upgrade Summary
-  3. Successfully Upgraded IP Components
+  3. Failed Upgrade IP Components
   4. IP Upgrade Messages
 
 
@@ -16,9 +16,9 @@ Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2024  Intel Corporation. All rights reserved.
+Copyright (C) 2018  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and any partner logic 
+and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -28,337 +28,51 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details, at
-https://fpgasoftware.intel.com/eula.
+refer to the applicable agreement for further details.
 
 
 
-+-------------------------------------------------------------------------------+
-; IP Upgrade Summary                                                            ;
-+------------------------------+------------------------------------------------+
-; IP Components Upgrade Status ; Passed - Thu Jun 27 02:22:45 2024              ;
-; Quartus Prime Version        ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
-; Revision Name                ; Nios_Sys_2A                                    ;
-; Top-level Entity Name        ; Nios_Sys_2A                                    ;
-; Family                       ; Cyclone V                                      ;
-+------------------------------+------------------------------------------------+
++----------------------------------------------------------------------------+
+; IP Upgrade Summary                                                         ;
++------------------------------+---------------------------------------------+
+; IP Components Upgrade Status ; Failed - Tue Jul 02 13:38:42 2024           ;
+; Quartus Prime Version        ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                ; Nios_Sys_2A                                 ;
+; Top-level Entity Name        ; Nios_Sys_2A                                 ;
+; Family                       ; Cyclone V                                   ;
++------------------------------+---------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Successfully Upgraded IP Components                                                                                                                                         ;
-+----------------+---------------------+---------+---------------------------------------------+----------------------+---------------------------------------------+---------+
-; Entity Name    ; Component Name      ; Version ; Original Source File                        ; Generation File Path ; New Source File                             ; Message ;
-+----------------+---------------------+---------+---------------------------------------------+----------------------+---------------------------------------------+---------+
-; Nios_System_4A ; Qsys                ; 18.1    ; Nios_System_4A/synthesis/Nios_System_4A.qip ; Nios_System_4A.qsys  ; Nios_System_4A/synthesis/Nios_System_4A.qip ;         ;
-; PLL            ; altera_pll          ; 18.1    ; PLL.qip                                     ; PLL.vhd              ; PLL.qip                                     ;         ;
-; PLL_Reconfig   ; altera_pll_reconfig ; 18.1    ; PLL_Reconfig.qip                            ; PLL_Reconfig.vhd     ; PLL_Reconfig.qip                            ;         ;
-; PLL_normal     ; altera_pll          ; 18.1    ; PLL_normal.qip                              ; PLL_normal.vhd       ; PLL_normal.qip                              ;         ;
-; PLL_MS         ; altera_pll          ; 18.1    ; PLL_MS.qip                                  ; PLL_MS.vhd           ; PLL_MS.qip                                  ;         ;
-+----------------+---------------------+---------+---------------------------------------------+----------------------+---------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Failed Upgrade IP Components                                                                                                                                    ;
++--------------+---------------------+---------+----------------------+----------------------+-----------------+--------------------------------------------------+
+; Entity Name  ; Component Name      ; Version ; Original Source File ; Generation File Path ; New Source File ; Message                                          ;
++--------------+---------------------+---------+----------------------+----------------------+-----------------+--------------------------------------------------+
+; PLL          ; altera_pll          ; 18.0    ; PLL.qip              ; PLL.vhd              ;                 ; Error upgrading IP component "PLL.vhd".          ;
+; PLL_Reconfig ; altera_pll_reconfig ; 18.0    ; PLL_Reconfig.qip     ; PLL_Reconfig.vhd     ;                 ; Error upgrading IP component "PLL_Reconfig.vhd". ;
++--------------+---------------------+---------+----------------------+----------------------+-----------------+--------------------------------------------------+
 
 
 +---------------------+
 ; IP Upgrade Messages ;
 +---------------------+
-Info (11902): Backing up file "Nios_System_4A.qsys" to "Nios_System_4A.BAK.qsys"
-Info (11902): Backing up file "Nios_System_4A/synthesis/Nios_System_4A.vhd" to "Nios_System_4A.BAK.vhd"
-Info (11837): Started upgrading IP component Qsys with file "Nios_System_4A.qsys"
-Info: 2024.06.27.02:20:39 Info: Starting to upgrade the IP cores in the Platform Designer system
-Info: 2024.06.27.02:20:39 Info: Finished upgrading the ip cores
-Info: 2024.06.27.02:20:45 Info: Saving generation log to C:/UNI/Y4S1/P4P/p4p-2024-group57/Implementation_Test/QuartusProject/DynamicPLL/Nios_System_4A
-Info: 2024.06.27.02:20:45 Info: Starting: Create simulation model
-Info: 2024.06.27.02:20:45 Info: qsys-generate C:\UNI\Y4S1\P4P\p4p-2024-group57\Implementation_Test\QuartusProject\DynamicPLL\Nios_System_4A.qsys --simulation=VHDL --allow-mixed-language-simulation --output-directory=C:\UNI\Y4S1\P4P\p4p-2024-group57\Implementation_Test\QuartusProject\DynamicPLL\Nios_System_4A\simulation --family="Cyclone V" --part=5CSEMA5F31C6
-Info: 2024.06.27.02:20:45 Info: Loading DynamicPLL
-Info: 2024.06.27.02:20:45 Info: Reading input file
-Info: 2024.06.27.02:20:45 Info: Adding BUTTON_pio [altera_avalon_pio 23.1]
-Info: 2024.06.27.02:20:45 Info: Parameterizing module BUTTON_pio
-Info: 2024.06.27.02:20:45 Info: Adding LED_pio [altera_avalon_pio 23.1]
-Info: 2024.06.27.02:20:45 Info: Parameterizing module LED_pio
-Info: 2024.06.27.02:20:45 Info: Adding clocks [altera_up_avalon_sys_sdram_pll 18.0]
-Info: 2024.06.27.02:20:45 Info: Parameterizing module clocks
-Info: 2024.06.27.02:20:45 Info: Adding cpu [altera_nios2_gen2 23.1]
-Info: 2024.06.27.02:20:45 Info: Parameterizing module cpu
-Info: 2024.06.27.02:20:45 Info: Adding high_res_timer [altera_avalon_timer 23.1]
-Info: 2024.06.27.02:20:45 Info: Parameterizing module high_res_timer
-Info: 2024.06.27.02:20:45 Info: Adding jtag_uart [altera_avalon_jtag_uart 23.1]
-Info: 2024.06.27.02:20:45 Info: Parameterizing module jtag_uart
-Info: 2024.06.27.02:20:45 Info: Adding onchip_memory [altera_avalon_onchip_memory2 23.1]
-Info: 2024.06.27.02:20:45 Info: Parameterizing module onchip_memory
-Info: 2024.06.27.02:20:45 Info: Adding seg1_pio [altera_avalon_pio 23.1]
-Info: 2024.06.27.02:20:45 Info: Parameterizing module seg1_pio
-Info: 2024.06.27.02:20:45 Info: Adding seg2_pio [altera_avalon_pio 23.1]
-Info: 2024.06.27.02:20:45 Info: Parameterizing module seg2_pio
-Info: 2024.06.27.02:20:45 Info: Adding seg3_pio [altera_avalon_pio 23.1]
-Info: 2024.06.27.02:20:45 Info: Parameterizing module seg3_pio
-Info: 2024.06.27.02:20:45 Info: Adding seg4_pio [altera_avalon_pio 23.1]
-Info: 2024.06.27.02:20:45 Info: Parameterizing module seg4_pio
-Info: 2024.06.27.02:20:45 Info: Adding switch_pio [altera_avalon_pio 23.1]
-Info: 2024.06.27.02:20:45 Info: Parameterizing module switch_pio
-Info: 2024.06.27.02:20:45 Info: Building connections
-Info: 2024.06.27.02:20:45 Info: Parameterizing connections
-Info: 2024.06.27.02:20:45 Info: Validating
-Info: 2024.06.27.02:20:45 Info: Done reading input file
-Info: 2024.06.27.02:20:46 Info: Nios_System_4A.BUTTON_pio: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
-Info: 2024.06.27.02:20:46 Info: Nios_System_4A.clocks: Refclk Freq: 50.0
-Warning: 2024.06.27.02:20:46 Warning: Nios_System_4A.cpu: Nios II cores are not recommended for new projects and are subject to removal in a future release. Nios V cores are the recommended replacement as applicable.
-Info: 2024.06.27.02:20:46 Info: Nios_System_4A.jtag_uart: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
-Info: 2024.06.27.02:20:46 Info: Nios_System_4A.switch_pio: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
-Info: 2024.06.27.02:20:46 Info: Nios_System_4A: Generating Nios_System_4A "Nios_System_4A" for SIM_VHDL
-Info: 2024.06.27.02:20:51 Info: BUTTON_pio: Starting RTL generation for module 'Nios_System_4A_BUTTON_pio'
-Info: 2024.06.27.02:20:52 Info: BUTTON_pio: Done RTL generation for module 'Nios_System_4A_BUTTON_pio'
-Info: 2024.06.27.02:20:52 Info: BUTTON_pio: "Nios_System_4A" instantiated altera_avalon_pio "BUTTON_pio"
-Info: 2024.06.27.02:20:52 Info: LED_pio: Starting RTL generation for module 'Nios_System_4A_LED_pio'
-Info: 2024.06.27.02:20:52 Info: LED_pio: Done RTL generation for module 'Nios_System_4A_LED_pio'
-Info: 2024.06.27.02:20:52 Info: LED_pio: "Nios_System_4A" instantiated altera_avalon_pio "LED_pio"
-Info: 2024.06.27.02:20:53 Info: clocks: "Nios_System_4A" instantiated altera_up_avalon_sys_sdram_pll "clocks"
-Info: 2024.06.27.02:20:53 Info: cpu: "Nios_System_4A" instantiated altera_nios2_gen2 "cpu"
-Info: 2024.06.27.02:20:53 Info: high_res_timer: Starting RTL generation for module 'Nios_System_4A_high_res_timer'
-Info: 2024.06.27.02:20:53 Info: high_res_timer: Done RTL generation for module 'Nios_System_4A_high_res_timer'
-Info: 2024.06.27.02:20:53 Info: high_res_timer: "Nios_System_4A" instantiated altera_avalon_timer "high_res_timer"
-Info: 2024.06.27.02:20:53 Info: jtag_uart: Starting RTL generation for module 'Nios_System_4A_jtag_uart'
-Info: 2024.06.27.02:20:54 Info: jtag_uart: Done RTL generation for module 'Nios_System_4A_jtag_uart'
-Info: 2024.06.27.02:20:54 Info: jtag_uart: "Nios_System_4A" instantiated altera_avalon_jtag_uart "jtag_uart"
-Info: 2024.06.27.02:20:54 Info: onchip_memory: Starting RTL generation for module 'Nios_System_4A_onchip_memory'
-Info: 2024.06.27.02:20:54 Info: onchip_memory: Done RTL generation for module 'Nios_System_4A_onchip_memory'
-Info: 2024.06.27.02:20:54 Info: onchip_memory: "Nios_System_4A" instantiated altera_avalon_onchip_memory2 "onchip_memory"
-Info: 2024.06.27.02:20:54 Info: seg1_pio: Starting RTL generation for module 'Nios_System_4A_seg1_pio'
-Info: 2024.06.27.02:20:54 Info: seg1_pio: Done RTL generation for module 'Nios_System_4A_seg1_pio'
-Info: 2024.06.27.02:20:54 Info: seg1_pio: "Nios_System_4A" instantiated altera_avalon_pio "seg1_pio"
-Info: 2024.06.27.02:20:54 Info: switch_pio: Starting RTL generation for module 'Nios_System_4A_switch_pio'
-Info: 2024.06.27.02:20:55 Info: switch_pio: Done RTL generation for module 'Nios_System_4A_switch_pio'
-Info: 2024.06.27.02:20:55 Info: switch_pio: "Nios_System_4A" instantiated altera_avalon_pio "switch_pio"
-Info: 2024.06.27.02:20:58 Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
-Info: 2024.06.27.02:20:58 Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
-Info: 2024.06.27.02:20:58 Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
-Info: 2024.06.27.02:20:58 Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
-Info: 2024.06.27.02:20:59 Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
-Info: 2024.06.27.02:20:59 Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
-Info: 2024.06.27.02:20:59 Info: avalon_st_adapter_006: Inserting error_adapter: error_adapter_0
-Info: 2024.06.27.02:20:59 Info: avalon_st_adapter_007: Inserting error_adapter: error_adapter_0
-Info: 2024.06.27.02:20:59 Info: avalon_st_adapter_008: Inserting error_adapter: error_adapter_0
-Info: 2024.06.27.02:21:00 Info: avalon_st_adapter_009: Inserting error_adapter: error_adapter_0
-Info: 2024.06.27.02:21:00 Info: avalon_st_adapter_010: Inserting error_adapter: error_adapter_0
-Info: 2024.06.27.02:21:02 Info: mm_interconnect_0: "Nios_System_4A" instantiated altera_mm_interconnect "mm_interconnect_0"
-Info: 2024.06.27.02:21:02 Info: irq_mapper: "Nios_System_4A" instantiated altera_irq_mapper "irq_mapper"
-Info: 2024.06.27.02:21:02 Info: rst_controller: "Nios_System_4A" instantiated altera_reset_controller "rst_controller"
-Info: 2024.06.27.02:21:02 Info: sys_pll: Generating simgen model
-Info: 2024.06.27.02:21:13 Info: sys_pll: Simgen was successful
-Info: 2024.06.27.02:21:13 Info: sys_pll: "clocks" instantiated altera_pll "sys_pll"
-Info: 2024.06.27.02:21:13 Info: reset_from_locked: "clocks" instantiated altera_up_avalon_reset_from_locked_signal "reset_from_locked"
-Info: 2024.06.27.02:21:13 Info: cpu: Starting RTL generation for module 'Nios_System_4A_cpu_cpu'
-Info: 2024.06.27.02:21:13 Info: cpu:   Generation command is [exec C:/intelFPGA_lite/23.1std/quartus/bin64//perl/bin/perl.exe -I C:/intelFPGA_lite/23.1std/quartus/bin64//perl/lib -I C:/intelfpga_lite/23.1std/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/23.1std/quartus/sopc_builder/bin -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/intelfpga_lite/23.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.pl --name=Nios_System_4A_cpu_cpu --dir=C:/Users/b3105/AppData/Local/Temp/alt9900_623615190389865653.dir/0013_cpu_gen/ --quartus_bindir=C:/intelFPGA_lite/23.1std/quartus/bin64/ --verilog --config=C:/Users/b3105/AppData/Local/Temp/alt9900_623615190389865653.dir/0013_cpu_gen//Nios_System_4A_cpu_cpu_processor_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/b3105/AppData/Local/Temp/alt9900_623615190389865653.dir/0013_cpu_gen
-Info: 2024.06.27.02:21:14 Info: cpu: # 2024.06.27 02:21:13 (*) Starting Nios II generation
-Info: 2024.06.27.02:21:14 Info: cpu: # 2024.06.27 02:21:13 (*)   Elaborating CPU configuration settings
-Info: 2024.06.27.02:21:14 Info: cpu: # 2024.06.27 02:21:13 (*)   Creating all objects for CPU
-Info: 2024.06.27.02:21:14 Info: cpu: # 2024.06.27 02:21:14 (*)   Creating 'C:/Users/b3105/AppData/Local/Temp/alt9900_623615190389865653.dir/0013_cpu_gen/
-Info: 2024.06.27.02:21:14 Info: cpu: # 2024.06.27 02:21:14 (*)   Generating RTL from CPU objects
-Info: 2024.06.27.02:21:14 Info: cpu: # 2024.06.27 02:21:14 (*)   Creating plain-text RTL
-Info: 2024.06.27.02:21:14 Info: cpu: # 2024.06.27 02:21:14 (*) Done Nios II generation
-Info: 2024.06.27.02:21:14 Info: cpu: Done RTL generation for module 'Nios_System_4A_cpu_cpu'
-Info: 2024.06.27.02:21:14 Info: cpu: "cpu" instantiated altera_nios2_gen2_unit "cpu"
-Info: 2024.06.27.02:21:14 Info: cpu_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "cpu_data_master_translator"
-Info: 2024.06.27.02:21:14 Info: jtag_uart_avalon_jtag_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "jtag_uart_avalon_jtag_slave_translator"
-Info: 2024.06.27.02:21:14 Info: cpu_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "cpu_data_master_agent"
-Info: 2024.06.27.02:21:14 Info: jtag_uart_avalon_jtag_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "jtag_uart_avalon_jtag_slave_agent"
-Info: 2024.06.27.02:21:14 Info: jtag_uart_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "jtag_uart_avalon_jtag_slave_agent_rsp_fifo"
-Info: 2024.06.27.02:21:14 Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
-Info: 2024.06.27.02:21:14 Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
-Info: 2024.06.27.02:21:14 Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
-Info: 2024.06.27.02:21:14 Info: router_003: "mm_interconnect_0" instantiated altera_merlin_router "router_003"
-Info: 2024.06.27.02:21:14 Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
-Info: 2024.06.27.02:21:14 Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
-Info: 2024.06.27.02:21:14 Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
-Info: 2024.06.27.02:21:14 Info: cmd_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_001"
-Info: 2024.06.27.02:21:14 Info: Reusing file C:/UNI/Y4S1/P4P/p4p-2024-group57/Implementation_Test/QuartusProject/DynamicPLL/Nios_System_4A/simulation/submodules
-Info: 2024.06.27.02:21:14 Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
-Info: 2024.06.27.02:21:14 Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
-Info: 2024.06.27.02:21:14 Info: Reusing file C:/UNI/Y4S1/P4P/p4p-2024-group57/Implementation_Test/QuartusProject/DynamicPLL/Nios_System_4A/simulation/submodules
-Info: 2024.06.27.02:21:14 Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
-Info: 2024.06.27.02:21:14 Info: Reusing file C:/UNI/Y4S1/P4P/p4p-2024-group57/Implementation_Test/QuartusProject/DynamicPLL/Nios_System_4A/simulation/submodules
-Info: 2024.06.27.02:21:15 Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
-Info: 2024.06.27.02:21:15 Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
-Info: 2024.06.27.02:21:15 Info: Nios_System_4A: Done "Nios_System_4A" with 34 modules, 54 files
-Info: 2024.06.27.02:21:15 Info: qsys-generate succeeded.
-Info: 2024.06.27.02:21:15 Info: Finished: Create simulation model
-Info: 2024.06.27.02:21:15 Info: Starting: Create Modelsim Project.
-Info: 2024.06.27.02:21:15 Info: sim-script-gen --spd=C:\UNI\Y4S1\P4P\p4p-2024-group57\Implementation_Test\QuartusProject\DynamicPLL\Nios_System_4A\Nios_System_4A.spd --output-directory=C:/UNI/Y4S1/P4P/p4p-2024-group57/Implementation_Test/QuartusProject/DynamicPLL/Nios_System_4A/simulation
-Info: 2024.06.27.02:21:15 Info: Doing: ip-make-simscript --spd=C:\UNI\Y4S1\P4P\p4p-2024-group57\Implementation_Test\QuartusProject\DynamicPLL\Nios_System_4A\Nios_System_4A.spd --output-directory=C:/UNI/Y4S1/P4P/p4p-2024-group57/Implementation_Test/QuartusProject/DynamicPLL/Nios_System_4A/simulation
-Info: 2024.06.27.02:21:15 Info: Generating the following file(s) for MODELSIM simulator in C:/UNI/Y4S1/P4P/p4p-2024-group57/Implementation_Test/QuartusProject/DynamicPLL/Nios_System_4A/simulation
-Info: 2024.06.27.02:21:15 Info:     mentor
-Info: 2024.06.27.02:21:15 Info: Generating the following file(s) for RIVIERA simulator in C:/UNI/Y4S1/P4P/p4p-2024-group57/Implementation_Test/QuartusProject/DynamicPLL/Nios_System_4A/simulation
-Info: 2024.06.27.02:21:15 Info:     aldec
-Info: 2024.06.27.02:21:15 Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under C:/UNI/Y4S1/P4P/p4p-2024-group57/Implementation_Test/QuartusProject/DynamicPLL/Nios_System_4A/simulation
-Info: 2024.06.27.02:21:15 Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
-Info: 2024.06.27.02:21:15 Info: Finished: Create Modelsim Project.
-Info: 2024.06.27.02:21:15 Info: Starting: Create block symbol file (.bsf)
-Info: 2024.06.27.02:21:15 Info: qsys-generate C:\UNI\Y4S1\P4P\p4p-2024-group57\Implementation_Test\QuartusProject\DynamicPLL\Nios_System_4A.qsys --block-symbol-file --output-directory=C:\UNI\Y4S1\P4P\p4p-2024-group57\Implementation_Test\QuartusProject\DynamicPLL\Nios_System_4A --family="Cyclone V" --part=5CSEMA5F31C6
-Info: 2024.06.27.02:21:15 Info: Loading DynamicPLL
-Info: 2024.06.27.02:21:16 Info: Reading input file
-Info: 2024.06.27.02:21:16 Info: Adding BUTTON_pio [altera_avalon_pio 23.1]
-Info: 2024.06.27.02:21:16 Info: Parameterizing module BUTTON_pio
-Info: 2024.06.27.02:21:16 Info: Adding LED_pio [altera_avalon_pio 23.1]
-Info: 2024.06.27.02:21:16 Info: Parameterizing module LED_pio
-Info: 2024.06.27.02:21:16 Info: Adding clocks [altera_up_avalon_sys_sdram_pll 18.0]
-Info: 2024.06.27.02:21:16 Info: Parameterizing module clocks
-Info: 2024.06.27.02:21:16 Info: Adding cpu [altera_nios2_gen2 23.1]
-Info: 2024.06.27.02:21:16 Info: Parameterizing module cpu
-Info: 2024.06.27.02:21:16 Info: Adding high_res_timer [altera_avalon_timer 23.1]
-Info: 2024.06.27.02:21:16 Info: Parameterizing module high_res_timer
-Info: 2024.06.27.02:21:16 Info: Adding jtag_uart [altera_avalon_jtag_uart 23.1]
-Info: 2024.06.27.02:21:16 Info: Parameterizing module jtag_uart
-Info: 2024.06.27.02:21:16 Info: Adding onchip_memory [altera_avalon_onchip_memory2 23.1]
-Info: 2024.06.27.02:21:16 Info: Parameterizing module onchip_memory
-Info: 2024.06.27.02:21:16 Info: Adding seg1_pio [altera_avalon_pio 23.1]
-Info: 2024.06.27.02:21:16 Info: Parameterizing module seg1_pio
-Info: 2024.06.27.02:21:16 Info: Adding seg2_pio [altera_avalon_pio 23.1]
-Info: 2024.06.27.02:21:16 Info: Parameterizing module seg2_pio
-Info: 2024.06.27.02:21:16 Info: Adding seg3_pio [altera_avalon_pio 23.1]
-Info: 2024.06.27.02:21:16 Info: Parameterizing module seg3_pio
-Info: 2024.06.27.02:21:16 Info: Adding seg4_pio [altera_avalon_pio 23.1]
-Info: 2024.06.27.02:21:16 Info: Parameterizing module seg4_pio
-Info: 2024.06.27.02:21:16 Info: Adding switch_pio [altera_avalon_pio 23.1]
-Info: 2024.06.27.02:21:16 Info: Parameterizing module switch_pio
-Info: 2024.06.27.02:21:16 Info: Building connections
-Info: 2024.06.27.02:21:16 Info: Parameterizing connections
-Info: 2024.06.27.02:21:16 Info: Validating
-Info: 2024.06.27.02:21:16 Info: Done reading input file
-Info: 2024.06.27.02:21:17 Info: Nios_System_4A.BUTTON_pio: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
-Info: 2024.06.27.02:21:17 Info: Nios_System_4A.clocks: Refclk Freq: 50.0
-Warning: 2024.06.27.02:21:17 Warning: Nios_System_4A.cpu: Nios II cores are not recommended for new projects and are subject to removal in a future release. Nios V cores are the recommended replacement as applicable.
-Info: 2024.06.27.02:21:17 Info: Nios_System_4A.jtag_uart: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
-Info: 2024.06.27.02:21:17 Info: Nios_System_4A.switch_pio: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
-Info: 2024.06.27.02:21:17 Info: qsys-generate succeeded.
-Info: 2024.06.27.02:21:17 Info: Finished: Create block symbol file (.bsf)
-Info: 2024.06.27.02:21:17 Info:
-Info: 2024.06.27.02:21:17 Info: Starting: Create HDL design files for synthesis
-Info: 2024.06.27.02:21:17 Info: qsys-generate C:\UNI\Y4S1\P4P\p4p-2024-group57\Implementation_Test\QuartusProject\DynamicPLL\Nios_System_4A.qsys --synthesis=VHDL --output-directory=C:\UNI\Y4S1\P4P\p4p-2024-group57\Implementation_Test\QuartusProject\DynamicPLL\Nios_System_4A\synthesis --family="Cyclone V" --part=5CSEMA5F31C6
-Info: 2024.06.27.02:21:17 Info: Loading DynamicPLL
-Info: 2024.06.27.02:21:17 Info: Reading input file
-Info: 2024.06.27.02:21:17 Info: Adding BUTTON_pio [altera_avalon_pio 23.1]
-Info: 2024.06.27.02:21:17 Info: Parameterizing module BUTTON_pio
-Info: 2024.06.27.02:21:17 Info: Adding LED_pio [altera_avalon_pio 23.1]
-Info: 2024.06.27.02:21:17 Info: Parameterizing module LED_pio
-Info: 2024.06.27.02:21:17 Info: Adding clocks [altera_up_avalon_sys_sdram_pll 18.0]
-Info: 2024.06.27.02:21:17 Info: Parameterizing module clocks
-Info: 2024.06.27.02:21:17 Info: Adding cpu [altera_nios2_gen2 23.1]
-Info: 2024.06.27.02:21:17 Info: Parameterizing module cpu
-Info: 2024.06.27.02:21:17 Info: Adding high_res_timer [altera_avalon_timer 23.1]
-Info: 2024.06.27.02:21:17 Info: Parameterizing module high_res_timer
-Info: 2024.06.27.02:21:17 Info: Adding jtag_uart [altera_avalon_jtag_uart 23.1]
-Info: 2024.06.27.02:21:17 Info: Parameterizing module jtag_uart
-Info: 2024.06.27.02:21:17 Info: Adding onchip_memory [altera_avalon_onchip_memory2 23.1]
-Info: 2024.06.27.02:21:17 Info: Parameterizing module onchip_memory
-Info: 2024.06.27.02:21:17 Info: Adding seg1_pio [altera_avalon_pio 23.1]
-Info: 2024.06.27.02:21:17 Info: Parameterizing module seg1_pio
-Info: 2024.06.27.02:21:17 Info: Adding seg2_pio [altera_avalon_pio 23.1]
-Info: 2024.06.27.02:21:17 Info: Parameterizing module seg2_pio
-Info: 2024.06.27.02:21:17 Info: Adding seg3_pio [altera_avalon_pio 23.1]
-Info: 2024.06.27.02:21:17 Info: Parameterizing module seg3_pio
-Info: 2024.06.27.02:21:17 Info: Adding seg4_pio [altera_avalon_pio 23.1]
-Info: 2024.06.27.02:21:17 Info: Parameterizing module seg4_pio
-Info: 2024.06.27.02:21:17 Info: Adding switch_pio [altera_avalon_pio 23.1]
-Info: 2024.06.27.02:21:17 Info: Parameterizing module switch_pio
-Info: 2024.06.27.02:21:17 Info: Building connections
-Info: 2024.06.27.02:21:17 Info: Parameterizing connections
-Info: 2024.06.27.02:21:17 Info: Validating
-Info: 2024.06.27.02:21:18 Info: Done reading input file
-Info: 2024.06.27.02:21:19 Info: Nios_System_4A.BUTTON_pio: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
-Info: 2024.06.27.02:21:19 Info: Nios_System_4A.clocks: Refclk Freq: 50.0
-Warning: 2024.06.27.02:21:19 Warning: Nios_System_4A.cpu: Nios II cores are not recommended for new projects and are subject to removal in a future release. Nios V cores are the recommended replacement as applicable.
-Info: 2024.06.27.02:21:19 Info: Nios_System_4A.jtag_uart: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
-Info: 2024.06.27.02:21:19 Info: Nios_System_4A.switch_pio: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
-Info: 2024.06.27.02:21:19 Info: Nios_System_4A: Generating Nios_System_4A "Nios_System_4A" for QUARTUS_SYNTH
-Info: 2024.06.27.02:21:22 Info: BUTTON_pio: Starting RTL generation for module 'Nios_System_4A_BUTTON_pio'
-Info: 2024.06.27.02:21:22 Info: BUTTON_pio: Done RTL generation for module 'Nios_System_4A_BUTTON_pio'
-Info: 2024.06.27.02:21:22 Info: BUTTON_pio: "Nios_System_4A" instantiated altera_avalon_pio "BUTTON_pio"
-Info: 2024.06.27.02:21:22 Info: LED_pio: Starting RTL generation for module 'Nios_System_4A_LED_pio'
-Info: 2024.06.27.02:21:23 Info: LED_pio: Done RTL generation for module 'Nios_System_4A_LED_pio'
-Info: 2024.06.27.02:21:23 Info: LED_pio: "Nios_System_4A" instantiated altera_avalon_pio "LED_pio"
-Info: 2024.06.27.02:21:23 Info: clocks: "Nios_System_4A" instantiated altera_up_avalon_sys_sdram_pll "clocks"
-Info: 2024.06.27.02:21:24 Info: cpu: "Nios_System_4A" instantiated altera_nios2_gen2 "cpu"
-Info: 2024.06.27.02:21:24 Info: high_res_timer: Starting RTL generation for module 'Nios_System_4A_high_res_timer'
-Info: 2024.06.27.02:21:24 Info: high_res_timer: Done RTL generation for module 'Nios_System_4A_high_res_timer'
-Info: 2024.06.27.02:21:24 Info: high_res_timer: "Nios_System_4A" instantiated altera_avalon_timer "high_res_timer"
-Info: 2024.06.27.02:21:24 Info: jtag_uart: Starting RTL generation for module 'Nios_System_4A_jtag_uart'
-Info: 2024.06.27.02:21:24 Info: jtag_uart: Done RTL generation for module 'Nios_System_4A_jtag_uart'
-Info: 2024.06.27.02:21:24 Info: jtag_uart: "Nios_System_4A" instantiated altera_avalon_jtag_uart "jtag_uart"
-Info: 2024.06.27.02:21:24 Info: onchip_memory: Starting RTL generation for module 'Nios_System_4A_onchip_memory'
-Info: 2024.06.27.02:21:24 Info: onchip_memory: Done RTL generation for module 'Nios_System_4A_onchip_memory'
-Info: 2024.06.27.02:21:24 Info: onchip_memory: "Nios_System_4A" instantiated altera_avalon_onchip_memory2 "onchip_memory"
-Info: 2024.06.27.02:21:24 Info: seg1_pio: Starting RTL generation for module 'Nios_System_4A_seg1_pio'
-Info: 2024.06.27.02:21:25 Info: seg1_pio: Done RTL generation for module 'Nios_System_4A_seg1_pio'
-Info: 2024.06.27.02:21:25 Info: seg1_pio: "Nios_System_4A" instantiated altera_avalon_pio "seg1_pio"
-Info: 2024.06.27.02:21:25 Info: switch_pio: Starting RTL generation for module 'Nios_System_4A_switch_pio'
-Info: 2024.06.27.02:21:25 Info: switch_pio: Done RTL generation for module 'Nios_System_4A_switch_pio'
-Info: 2024.06.27.02:21:25 Info: switch_pio: "Nios_System_4A" instantiated altera_avalon_pio "switch_pio"
-Info: 2024.06.27.02:21:28 Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
-Info: 2024.06.27.02:21:28 Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
-Info: 2024.06.27.02:21:29 Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
-Info: 2024.06.27.02:21:29 Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
-Info: 2024.06.27.02:21:29 Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
-Info: 2024.06.27.02:21:29 Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
-Info: 2024.06.27.02:21:29 Info: avalon_st_adapter_006: Inserting error_adapter: error_adapter_0
-Info: 2024.06.27.02:21:30 Info: avalon_st_adapter_007: Inserting error_adapter: error_adapter_0
-Info: 2024.06.27.02:21:30 Info: avalon_st_adapter_008: Inserting error_adapter: error_adapter_0
-Info: 2024.06.27.02:21:30 Info: avalon_st_adapter_009: Inserting error_adapter: error_adapter_0
-Info: 2024.06.27.02:21:30 Info: avalon_st_adapter_010: Inserting error_adapter: error_adapter_0
-Info: 2024.06.27.02:21:33 Info: mm_interconnect_0: "Nios_System_4A" instantiated altera_mm_interconnect "mm_interconnect_0"
-Info: 2024.06.27.02:21:33 Info: irq_mapper: "Nios_System_4A" instantiated altera_irq_mapper "irq_mapper"
-Info: 2024.06.27.02:21:33 Info: rst_controller: "Nios_System_4A" instantiated altera_reset_controller "rst_controller"
-Info: 2024.06.27.02:21:33 Info: sys_pll: "clocks" instantiated altera_pll "sys_pll"
-Info: 2024.06.27.02:21:33 Info: reset_from_locked: "clocks" instantiated altera_up_avalon_reset_from_locked_signal "reset_from_locked"
-Info: 2024.06.27.02:21:33 Info: cpu: Starting RTL generation for module 'Nios_System_4A_cpu_cpu'
-Info: 2024.06.27.02:21:33 Info: cpu:   Generation command is [exec C:/intelFPGA_lite/23.1std/quartus/bin64//perl/bin/perl.exe -I C:/intelFPGA_lite/23.1std/quartus/bin64//perl/lib -I C:/intelfpga_lite/23.1std/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/23.1std/quartus/sopc_builder/bin -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/intelfpga_lite/23.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/intelfpga_lite/23.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.pl --name=Nios_System_4A_cpu_cpu --dir=C:/Users/b3105/AppData/Local/Temp/alt9900_623615190389865653.dir/0043_cpu_gen/ --quartus_bindir=C:/intelFPGA_lite/23.1std/quartus/bin64/ --verilog --config=C:/Users/b3105/AppData/Local/Temp/alt9900_623615190389865653.dir/0043_cpu_gen/
-Info: 2024.06.27.02:21:34 Info: cpu: # 2024.06.27 02:21:33 (*) Starting Nios II generation
-Info: 2024.06.27.02:21:34 Info: cpu: # 2024.06.27 02:21:33 (*)   Elaborating CPU configuration settings
-Info: 2024.06.27.02:21:34 Info: cpu: # 2024.06.27 02:21:33 (*)   Creating all objects for CPU
-Info: 2024.06.27.02:21:34 Info: cpu: # 2024.06.27 02:21:34 (*)   Generating RTL from CPU objects
-Info: 2024.06.27.02:21:34 Info: cpu: # 2024.06.27 02:21:34 (*)   Creating plain-text RTL
-Info: 2024.06.27.02:21:34 Info: cpu: # 2024.06.27 02:21:34 (*) Done Nios II generation
-Info: 2024.06.27.02:21:34 Info: cpu: Done RTL generation for module 'Nios_System_4A_cpu_cpu'
-Info: 2024.06.27.02:21:34 Info: cpu: "cpu" instantiated altera_nios2_gen2_unit "cpu"
-Info: 2024.06.27.02:21:34 Info: cpu_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "cpu_data_master_translator"
-Info: 2024.06.27.02:21:34 Info: jtag_uart_avalon_jtag_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "jtag_uart_avalon_jtag_slave_translator"
-Info: 2024.06.27.02:21:34 Info: cpu_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "cpu_data_master_agent"
-Info: 2024.06.27.02:21:34 Info: jtag_uart_avalon_jtag_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "jtag_uart_avalon_jtag_slave_agent"
-Info: 2024.06.27.02:21:34 Info: jtag_uart_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "jtag_uart_avalon_jtag_slave_agent_rsp_fifo"
-Info: 2024.06.27.02:21:34 Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
-Info: 2024.06.27.02:21:34 Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
-Info: 2024.06.27.02:21:34 Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
-Info: 2024.06.27.02:21:34 Info: router_003: "mm_interconnect_0" instantiated altera_merlin_router "router_003"
-Info: 2024.06.27.02:21:34 Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
-Info: 2024.06.27.02:21:34 Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
-Info: 2024.06.27.02:21:34 Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
-Info: 2024.06.27.02:21:34 Info: cmd_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_001"
-Info: 2024.06.27.02:21:34 Info: Reusing file C:/UNI/Y4S1/P4P/p4p-2024-group57/Implementation_Test/QuartusProject/DynamicPLL/Nios_System_4A/synthesis/submodules
-Info: 2024.06.27.02:21:34 Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
-Info: 2024.06.27.02:21:34 Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
-Info: 2024.06.27.02:21:34 Info: Reusing file C:/UNI/Y4S1/P4P/p4p-2024-group57/Implementation_Test/QuartusProject/DynamicPLL/Nios_System_4A/synthesis/submodules
-Info: 2024.06.27.02:21:34 Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
-Info: 2024.06.27.02:21:34 Info: Reusing file C:/UNI/Y4S1/P4P/p4p-2024-group57/Implementation_Test/QuartusProject/DynamicPLL/Nios_System_4A/synthesis/submodules
-Info: 2024.06.27.02:21:35 Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
-Info: 2024.06.27.02:21:35 Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
-Info: 2024.06.27.02:21:35 Info: Nios_System_4A: Done "Nios_System_4A" with 34 modules, 48 files
-Info: 2024.06.27.02:21:35 Info: qsys-generate succeeded.
-Info: 2024.06.27.02:21:35 Info: Finished: Create HDL design files for synthesis
 Info (11902): Backing up file "PLL.vhd" to "PLL.BAK.vhd"
 Info (11837): Started upgrading IP component altera_pll with file "PLL.vhd"
+Info (11904): Restoring file "PLL.BAK.vhd" to "PLL.vhd"
+Error (14921): Error upgrading IP component "PLL.vhd".
 Info (11902): Backing up file "PLL_Reconfig.vhd" to "PLL_Reconfig.BAK.vhd"
 Info (11837): Started upgrading IP component altera_pll_reconfig with file "PLL_Reconfig.vhd"
-Info (11902): Backing up file "PLL_normal.vhd" to "PLL_normal.BAK.vhd"
-Info (11837): Started upgrading IP component altera_pll with file "PLL_normal.vhd"
-Info (11902): Backing up file "PLL_MS.vhd" to "PLL_MS.BAK.vhd"
-Info (11837): Started upgrading IP component altera_pll with file "PLL_MS.vhd"
-Info (11131): Completed upgrading IP component Qsys with file "Nios_System_4A.qsys"
-Info (11131): Completed upgrading IP component altera_pll with file "PLL.vhd"
-Info (11131): Completed upgrading IP component altera_pll_reconfig with file "PLL_Reconfig.vhd"
-Info (11131): Completed upgrading IP component altera_pll with file "PLL_normal.vhd"
-Info (11131): Completed upgrading IP component altera_pll with file "PLL_MS.vhd"
-Info (23030): Evaluation of Tcl script c:/intelfpga_lite/23.1std/quartus/common/tcl/internal/ip_regen/ip_regen.tcl was successful
-Info: Quartus Prime Shell was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4877 megabytes
-    Info: Processing ended: Thu Jun 27 02:22:47 2024
-    Info: Elapsed time: 00:02:22
-    Info: Total CPU time (on all processors): 00:00:57
+Info (11904): Restoring file "PLL_Reconfig.BAK.vhd" to "PLL_Reconfig.vhd"
+Error (14921): Error upgrading IP component "PLL_Reconfig.vhd".
+Error (11133): IP component altera_pll with file "PLL.vhd" upgrade failed
+Error (11889): IP component upgrade failed
+Error (11133): IP component altera_pll_reconfig with file "PLL_Reconfig.vhd" upgrade failed
+Error (11889): IP component upgrade failed
+Error (23031): Evaluation of Tcl script c:/intelfpga_lite/18.1/quartus/common/tcl/internal/ip_regen/ip_regen.tcl unsuccessful
+Error: Quartus Prime Shell was unsuccessful. 7 errors, 0 warnings
+    Error: Peak virtual memory: 4856 megabytes
+    Error: Processing ended: Tue Jul 02 13:38:42 2024
+    Error: Elapsed time: 00:00:08
+    Error: Total CPU time (on all processors): 00:00:07
 
 

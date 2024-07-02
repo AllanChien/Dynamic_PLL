@@ -9,13 +9,13 @@ z2
 cModel Technology
 dC:/Y4S1/P4P/p4p-2024-group57/Implementation_Test/QuartusProject/PLLTest/simulation/modelsim
 valtera_pll_reconfig_core
-Z0 !s110 1719831056
+Z0 !s110 1719922889
 !i10b 1
 !s100 ]JlV6cdFHe2zlVkdmQKC@1
 Ik^g^g2]V1dm81_GRz:aa@2
 Z1 VDg1SIo80bB@j0V0VzS_@n1
 Z2 dC:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/simulation/modelsim
-Z3 w1719828933
+Z3 w1719919511
 Z4 8C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
 Z5 FC:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
 Z6 L0 16
@@ -23,14 +23,14 @@ Z7 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z8 !s108 1719831056.000000
+Z8 !s108 1719922888.000000
 Z9 !s107 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v|
 Z10 !s90 -reportprogress|300|C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v|-work|PLL_Reconfig|
 !i113 1
 Z11 o-work PLL_Reconfig
 Z12 tCvgOpt 0
 valtera_pll_reconfig_top
-R0
+!s110 1719922888
 !i10b 1
 !s100 7IS0miYWMi8:A<XQ[8W;]2
 IF0<4OchRjkA3`ldLcU5D00
@@ -51,7 +51,7 @@ R8
 R11
 R12
 valtera_std_synchronizer
-!s110 1719831057
+R0
 !i10b 1
 !s100 MBo4XSMRh8:VPJzdo>9JQ1
 IBm>D`?cHgJAh@N]_oac3N2
@@ -65,7 +65,7 @@ R7
 r1
 !s85 0
 31
-!s108 1719831057.000000
+!s108 1719922889.000000
 !s107 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_std_synchronizer.v|
 !s90 -reportprogress|300|C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_std_synchronizer.v|-work|PLL_Reconfig|
 !i113 1

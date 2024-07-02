@@ -897,12 +897,12 @@ set_global_assignment -name EDA_TEST_BENCH_NAME tb_pll_control -section_id eda_s
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_pll_control
 set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "10000 ns" -section_id tb_pll_control
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_pll_control -section_id tb_pll_control
+set_global_assignment -name EDA_TEST_BENCH_FILE test/TestPLL.vhd -section_id tb_PLL
+set_global_assignment -name EDA_TEST_BENCH_FILE test/testPllControl.vhd -section_id tb_pll_control
 set_global_assignment -name VHDL_FILE pll_control.vhd
 set_global_assignment -name QIP_FILE PLL.qip
 set_global_assignment -name SIP_FILE PLL.sip
 set_global_assignment -name QIP_FILE ConstLow.qip
 set_global_assignment -name QIP_FILE PLL_Reconfig.qip
 set_global_assignment -name SIP_FILE PLL_Reconfig.sip
-set_global_assignment -name EDA_TEST_BENCH_FILE test/TestPLL.vhd -section_id tb_PLL
-set_global_assignment -name EDA_TEST_BENCH_FILE test/testPllControl.vhd -section_id tb_pll_control
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

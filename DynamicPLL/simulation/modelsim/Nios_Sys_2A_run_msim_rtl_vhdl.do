@@ -22,12 +22,18 @@ vlog "C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/al
 vlog "C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_std_synchronizer.v"  -work PLL_Reconfig
 vcom "C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/PLL_Reconfig.vhd"                                                 
 
+#vcom -93 -work work {C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig.vho}
+vlib PLL_Reconfig
+vmap PLL_Reconfig PLL_Reconfig
+vlog -vlog01compat -work PLL_Reconfig +incdir+C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig {C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig/altera_pll_reconfig_top.v}
+vlog -vlog01compat -work PLL_Reconfig +incdir+C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig {C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig/altera_pll_reconfig_core.v}
+vlog -vlog01compat -work PLL_Reconfig +incdir+C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig {C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig/altera_std_synchronizer.v}
 vcom -93 -work work {C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/pll_control.vhd}
 vcom -93 -work work {C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/ConstLow.vhd}
 
 vcom -93 -work work {C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/test/testPllControl.vhd}
 
-vsim -suppress 10000 -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -L PLL_Reconfig -voptargs="+acc"  tb_pll_control
+vsim -suppress 10000 -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -L PLL_Reconfig -L PLL_Reconfig -voptargs="+acc"  tb_pll_control
 
 add wave *
 view structure
