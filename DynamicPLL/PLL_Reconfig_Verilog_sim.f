@@ -1,0 +1,4 @@
+PLL_Reconfig_Verilog_sim/PLL_Reconfig_Verilog.v
+PLL_Reconfig_Verilog_sim/altera_pll_reconfig/altera_pll_reconfig_top.v
+PLL_Reconfig_Verilog_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
+PLL_Reconfig_Verilog_sim/altera_pll_reconfig/altera_std_synchronizer.v

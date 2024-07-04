@@ -1,6 +1,6 @@
 Timing Analyzer report for Nios_Sys_2A
-Wed Jul 03 04:32:48 2024
-Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+Thu Jul 04 11:41:26 2024
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
 ---------------------
@@ -74,7 +74,7 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------+
 ; Timing Analyzer Summary                                                     ;
 +-----------------------+-----------------------------------------------------+
-; Quartus Prime Version ; Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
+; Quartus Prime Version ; Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Timing Analyzer       ; Legacy Timing Analyzer                              ;
 ; Revision Name         ; Nios_Sys_2A                                         ;
 ; Device Family         ; Cyclone V                                           ;
@@ -90,15 +90,15 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 12          ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.02        ;
-; Maximum used               ; 12          ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-12        ;   0.2%      ;
+;     Processors 2-4         ;   0.1%      ;
 +----------------------------+-------------+
 
 
@@ -362,10 +362,10 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +--------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
-    Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Wed Jul 03 04:32:45 2024
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Thu Jul 04 11:41:23 2024
 Info: Command: quartus_sta Nios_Sys_2A -c Nios_Sys_2A
-Info: qsta_default_script.tcl version: #2
+Info: qsta_default_script.tcl version: #1
 Warning (20013): Ignored 571 assignments for entity "DE1_SoC" -- entity does not exist in design
     Warning (20014): Assignment for entity set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to HPS_DDR3_ADDR[0] -entity DE1_SoC was ignored
     Warning (20014): Assignment for entity set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to HPS_DDR3_ADDR[10] -entity DE1_SoC was ignored
@@ -938,16 +938,20 @@ Warning (20013): Ignored 571 assignments for entity "DE1_SoC" -- entity does not
     Warning (20014): Assignment for entity set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to HPS_DDR3_DQ[9] -entity DE1_SoC was ignored
     Warning (20014): Assignment for entity set_instance_assignment -name D5_DELAY 2 -to HPS_DDR3_CK_N -entity DE1_SoC was ignored
     Warning (20014): Assignment for entity set_instance_assignment -name D5_DELAY 2 -to HPS_DDR3_CK_P -entity DE1_SoC was ignored
+Warning (20013): Ignored 22 assignments for entity "PLL_Reconfig_Verilog" -- entity does not exist in design
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_NAME altera_pll_reconfig -entity PLL_Reconfig_Verilog -sip PLL_Reconfig_Verilog.sip -library lib_PLL_Reconfig_Verilog was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_VERSION 18.1 -entity PLL_Reconfig_Verilog -sip PLL_Reconfig_Verilog.sip -library lib_PLL_Reconfig_Verilog was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_ENV mwpim -entity PLL_Reconfig_Verilog -sip PLL_Reconfig_Verilog.sip -library lib_PLL_Reconfig_Verilog was ignored
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
 Info (332164): Evaluating HDL-embedded SDC commands
     Info (332165): Entity altera_std_synchronizer
         Info (332166): set_false_path -to [get_keepers {*altera_std_synchronizer:*|din_s1}]
-Warning (332174): Ignored filter at qsta_default_script.tcl(1297): *altera_std_synchronizer:*|din_s1 could not be matched with a keeper File: C:/intelFPGA_lite/18.0/quartus/common/tcl/internal/qsta_default_script.tcl Line: 1297
-Warning (332049): Ignored set_false_path at qsta_default_script.tcl(1297): Argument <to> is an empty collection File: C:/intelFPGA_lite/18.0/quartus/common/tcl/internal/qsta_default_script.tcl Line: 1297
-    Info (332050): read_sdc File: C:/intelFPGA_lite/18.0/quartus/common/tcl/internal/qsta_default_script.tcl Line: 1297
+Warning (332174): Ignored filter at qsta_default_script.tcl(1297): *altera_std_synchronizer:*|din_s1 could not be matched with a keeper File: C:/intelFPGA_lite/18.1/quartus/common/tcl/internal/qsta_default_script.tcl Line: 1297
+Warning (332049): Ignored set_false_path at qsta_default_script.tcl(1297): Argument <to> is an empty collection File: C:/intelFPGA_lite/18.1/quartus/common/tcl/internal/qsta_default_script.tcl Line: 1297
+    Info (332050): read_sdc File: C:/intelFPGA_lite/18.1/quartus/common/tcl/internal/qsta_default_script.tcl Line: 1297
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'Nios_Sys_2A.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
 Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
@@ -1000,9 +1004,9 @@ Info (332140): No Removal paths to report
 Info (332140): No Minimum Pulse Width paths to report
 Info (332101): Design is fully constrained for setup requirements
 Info (332101): Design is fully constrained for hold requirements
-Info: Quartus Prime Timing Analyzer was successful. 0 errors, 580 warnings
-    Info: Peak virtual memory: 5202 megabytes
-    Info: Processing ended: Wed Jul 03 04:32:48 2024
+Info: Quartus Prime Timing Analyzer was successful. 0 errors, 584 warnings
+    Info: Peak virtual memory: 5100 megabytes
+    Info: Processing ended: Thu Jul 04 11:41:26 2024
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:02
 

@@ -9,23 +9,23 @@ z2
 cModel Technology
 dC:/Y4S1/P4P/p4p-2024-group57/Implementation_Test/QuartusProject/PLLTest/simulation/modelsim
 valtera_pll_reconfig_core
-Z0 !s110 1719959086
+Z0 !s110 1720050321
 !i10b 1
 !s100 ]JlV6cdFHe2zlVkdmQKC@1
-Ik^g^g2]V1dm81_GRz:aa@2
+IV6]cGh@[4Gj5ZI?0S^F0Z1
 Z1 VDg1SIo80bB@j0V0VzS_@n1
-Z2 dC:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/simulation/modelsim
-Z3 w1719919511
-Z4 8C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
-Z5 FC:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
+Z2 dC:/Y4S1/P4P/Dynamic_PLL/DynamicPLL/simulation/modelsim
+Z3 w1720042277
+Z4 8C:/Y4S1/P4P/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
+Z5 FC:/Y4S1/P4P/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v
 Z6 L0 16
 Z7 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z8 !s108 1719959086.000000
-Z9 !s107 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v|
-Z10 !s90 -reportprogress|300|C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v|-work|PLL_Reconfig|
+Z8 !s108 1720050321.000000
+Z9 !s107 C:/Y4S1/P4P/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v|
+Z10 !s90 -reportprogress|300|C:/Y4S1/P4P/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_core.v|-work|PLL_Reconfig|
 !i113 1
 Z11 o-work PLL_Reconfig
 Z12 tCvgOpt 0
@@ -33,20 +33,20 @@ valtera_pll_reconfig_top
 R0
 !i10b 1
 !s100 7IS0miYWMi8:A<XQ[8W;]2
-IF0<4OchRjkA3`ldLcU5D00
+IPXU=iaI_NBe4ISN6H9WII2
 R1
 R2
 R3
-8C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_top.v
-FC:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_top.v
+8C:/Y4S1/P4P/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_top.v
+FC:/Y4S1/P4P/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_top.v
 R6
 R7
 r1
 !s85 0
 31
 R8
-!s107 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_top.v|
-!s90 -reportprogress|300|C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_top.v|-work|PLL_Reconfig|
+!s107 C:/Y4S1/P4P/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_top.v|
+!s90 -reportprogress|300|C:/Y4S1/P4P/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_pll_reconfig_top.v|-work|PLL_Reconfig|
 !i113 1
 R11
 R12
@@ -54,20 +54,20 @@ valtera_std_synchronizer
 R0
 !i10b 1
 !s100 MBo4XSMRh8:VPJzdo>9JQ1
-IBm>D`?cHgJAh@N]_oac3N2
+IJ4UMEM@e614>TmE5GQo^l2
 R1
 R2
 R3
-8C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_std_synchronizer.v
-FC:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_std_synchronizer.v
+8C:/Y4S1/P4P/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_std_synchronizer.v
+FC:/Y4S1/P4P/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_std_synchronizer.v
 L0 37
 R7
 r1
 !s85 0
 31
 R8
-!s107 C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_std_synchronizer.v|
-!s90 -reportprogress|300|C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_std_synchronizer.v|-work|PLL_Reconfig|
+!s107 C:/Y4S1/P4P/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_std_synchronizer.v|
+!s90 -reportprogress|300|C:/Y4S1/P4P/Dynamic_PLL/DynamicPLL/PLL_Reconfig_sim/altera_pll_reconfig/altera_std_synchronizer.v|-work|PLL_Reconfig|
 !i113 1
 R11
 R12
@@ -75,7 +75,7 @@ vdprio_mux
 R0
 !i10b 1
 !s100 Doo^z1=4L?4>4MaP?1z8d3
-I?1=lL13BC2edOVXb?8KcO1
+Ikn55:Sm6<XTVnz=86972R2
 R1
 R2
 R3
@@ -96,7 +96,7 @@ vdyn_phase_shift
 R0
 !i10b 1
 !s100 N2XAF_nMz6OjNCa:CoW^V2
-IBPU21^SRk[NLKlJiM[0aP0
+Ig_FYR=KAAmR@Ce=S3d0RE2
 R1
 R2
 R3
@@ -117,7 +117,7 @@ vfpll_dprio_init
 R0
 !i10b 1
 !s100 TcM2kcQ0I[>g7W3V3F?IN0
-I0kmPkX4i0K?>;T^n[I<XE2
+IW^NZlll2VVGDXcW9C[RN12
 R1
 R2
 R3
@@ -138,7 +138,7 @@ vgeneric_lcell_comb
 R0
 !i10b 1
 !s100 LcbJkog7=ENfj:PlP<@Y>2
-ILl:oJG9@?:FS:UdAe3TjM0
+IWMZDfPBP^mR]1f0M;IcF<3
 R1
 R2
 R3
@@ -159,7 +159,7 @@ vself_reset
 R0
 !i10b 1
 !s100 ^E9<^k8blR9`JH5<ZEL4n2
-IF_]4m<?YYc4flA2N]K;0g1
+IDd7LS6KC;<RbOEo1Ac0G:0
 R1
 R2
 R3

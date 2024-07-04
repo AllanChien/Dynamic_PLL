@@ -41,7 +41,7 @@ set_global_assignment -name DEVICE 5CSEMA5F31C6
 set_global_assignment -name TOP_LEVEL_ENTITY Nios_Sys_2A
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "21:58:22  MARCH 14, 2024"
-set_global_assignment -name LAST_QUARTUS_VERSION "18.0.0 Lite Edition"
+set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
@@ -906,4 +906,6 @@ set_global_assignment -name QIP_FILE ConstLow.qip
 set_global_assignment -name QIP_FILE PLL_Reconfig.qip
 set_global_assignment -name SIP_FILE PLL_Reconfig.sip
 set_global_assignment -name PROJECT_IP_REGENERATION_POLICY ALWAYS_REGENERATE_IP
+set_global_assignment -name QIP_FILE PLL_Reconfig_Verilog.qip
+set_global_assignment -name SIP_FILE PLL_Reconfig_Verilog.sip
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
