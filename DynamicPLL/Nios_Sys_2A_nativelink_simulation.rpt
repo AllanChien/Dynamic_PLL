@@ -1,12 +1,12 @@
 Info: Start Nativelink Simulation process
-executing command line: ip-make-simscript --nativelink-mode --output-directory=Nios_Sys_2A_iputf_input --spd=C:/Y4S1/P4P/Dynamic_PLL/DynamicPLL/PLL.spd --spd=C:/Y4S1/P4P/Dynamic_PLL/DynamicPLL/PLL_Reconfig.spd --spd=C:/Y4S1/P4P/Dynamic_PLL/DynamicPLL/PLL_Reconfig_Verilog.spd 
+executing command line: ip-make-simscript --nativelink-mode --output-directory=Nios_Sys_2A_iputf_input --spd=C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL.spd --spd=C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig.spd --spd=C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/PLL_Reconfig_Verilog.spd 
 
 ========= EDA Simulation Settings =====================
 
 Sim Mode              :  RTL
 Family                :  cyclonev
-Quartus root          :  c:/intelfpga_lite/18.1/quartus/bin64/
-Quartus sim root      :  c:/intelfpga_lite/18.1/quartus/eda/sim_lib
+Quartus root          :  c:/intelfpga_lite/18.0/quartus/bin64/
+Quartus sim root      :  c:/intelfpga_lite/18.0/quartus/eda/sim_lib
 Simulation Tool       :  modelsim-altera
 Simulation Language   :  vhdl
 Version               :  93
@@ -18,7 +18,7 @@ Sim dir               :  simulation\modelsim
 =======================================================
 
 Info: Starting NativeLink simulation with ModelSim-Altera software
-Sourced NativeLink script c:/intelfpga_lite/18.1/quartus/common/tcl/internal/nativelink/modelsim.tcl
+Sourced NativeLink script c:/intelfpga_lite/18.0/quartus/common/tcl/internal/nativelink/modelsim.tcl
 Warning: File Nios_Sys_2A_run_msim_rtl_vhdl.do already exists - backing up current file as Nios_Sys_2A_run_msim_rtl_vhdl.do.bak11
 Info: Spawning ModelSim-Altera Simulation software 
 Info: NativeLink simulation flow was successful

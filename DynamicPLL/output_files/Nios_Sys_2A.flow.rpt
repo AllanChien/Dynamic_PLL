@@ -1,6 +1,6 @@
 Flow report for Nios_Sys_2A
-Thu Jul 04 11:41:28 2024
-Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Wed Jul 10 11:58:16 2024
+Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
 ---------------------
@@ -40,8 +40,8 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Thu Jul 04 11:41:28 2024       ;
-; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Flow Status                     ; Successful - Wed Jul 10 11:58:16 2024       ;
+; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                   ; Nios_Sys_2A                                 ;
 ; Top-level Entity Name           ; Nios_Sys_2A                                 ;
 ; Family                          ; Cyclone V                                   ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 07/04/2024 11:40:32 ;
+; Start date & time ; 07/10/2024 11:57:28 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Nios_Sys_2A         ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------+-------------------------------------------------------------------------+--------------------------------------+-------------+-----------------------------------+
 ; Assignment Name                      ; Value                                                                   ; Default Value                        ; Entity Name ; Section Id                        ;
 +--------------------------------------+-------------------------------------------------------------------------+--------------------------------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                ; 82359656361513.172005003125040                                          ; --                                   ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID                ; 233497588757482.172056944717768                                         ; --                                   ; --          ; --                                ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                                                      ; --                                   ; --          ; tb_pll_control                    ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                                                      ; --                                   ; --          ; tb_PLL                            ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                                                     ; --                                   ; --          ; eda_board_design_timing           ;
@@ -135,12 +135,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:14     ; 1.0                     ; 4906 MB             ; 00:00:11                           ;
-; Fitter               ; 00:00:26     ; 1.0                     ; 6479 MB             ; 00:00:30                           ;
-; Assembler            ; 00:00:09     ; 1.0                     ; 4835 MB             ; 00:00:05                           ;
-; Timing Analyzer      ; 00:00:03     ; 1.0                     ; 5100 MB             ; 00:00:02                           ;
+; Analysis & Synthesis ; 00:00:13     ; 1.0                     ; 4951 MB             ; 00:00:10                           ;
+; Fitter               ; 00:00:22     ; 1.0                     ; 7238 MB             ; 00:00:52                           ;
+; Assembler            ; 00:00:06     ; 1.0                     ; 4828 MB             ; 00:00:05                           ;
+; Timing Analyzer      ; 00:00:03     ; 1.0                     ; 5199 MB             ; 00:00:03                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4721 MB             ; 00:00:01                           ;
-; Total                ; 00:00:53     ; --                      ; --                  ; 00:00:49                           ;
+; Total                ; 00:00:45     ; --                      ; --                  ; 00:01:11                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -149,11 +149,11 @@ refer to the applicable agreement for further details.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; LAPTOP-D433AAN6  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; LAPTOP-D433AAN6  ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; LAPTOP-D433AAN6  ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; LAPTOP-D433AAN6  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; LAPTOP-D433AAN6  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; DESKTOP-609QEO1  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; DESKTOP-609QEO1  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; DESKTOP-609QEO1  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; DESKTOP-609QEO1  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-609QEO1  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 

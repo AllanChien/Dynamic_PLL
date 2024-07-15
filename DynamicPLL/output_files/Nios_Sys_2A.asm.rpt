@@ -1,6 +1,6 @@
 Assembler report for Nios_Sys_2A
-Thu Jul 04 11:41:22 2024
-Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Wed Jul 10 11:58:10 2024
+Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
 ---------------------
@@ -10,7 +10,7 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Y4S1/P4P/Dynamic_PLL/DynamicPLL/output_files/Nios_Sys_2A.sof
+  5. Assembler Device Options: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/output_files/Nios_Sys_2A.sof
   6. Assembler Messages
 
 
@@ -37,7 +37,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Thu Jul 04 11:41:22 2024 ;
+; Assembler Status      ; Successful - Wed Jul 10 11:58:10 2024 ;
 ; Revision Name         ; Nios_Sys_2A                           ;
 ; Top-level Entity Name ; Nios_Sys_2A                           ;
 ; Family                ; Cyclone V                             ;
@@ -57,12 +57,12 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------+
 ; File Name                                                       ;
 +-----------------------------------------------------------------+
-; C:/Y4S1/P4P/Dynamic_PLL/DynamicPLL/output_files/Nios_Sys_2A.sof ;
+; C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/output_files/Nios_Sys_2A.sof ;
 +-----------------------------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Y4S1/P4P/Dynamic_PLL/DynamicPLL/output_files/Nios_Sys_2A.sof ;
+; Assembler Device Options: C:/UNI/Y4S1/Dynamic_PLL/DynamicPLL/output_files/Nios_Sys_2A.sof ;
 +----------------+--------------------------------------------------------------------------+
 ; Option         ; Setting                                                                  ;
 +----------------+--------------------------------------------------------------------------+
@@ -76,15 +76,15 @@ refer to the applicable agreement for further details.
 +--------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
-    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Jul 04 11:41:13 2024
+    Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+    Info: Processing started: Wed Jul 10 11:58:04 2024
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off Nios_Sys_2A -c Nios_Sys_2A
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4836 megabytes
-    Info: Processing ended: Thu Jul 04 11:41:22 2024
-    Info: Elapsed time: 00:00:09
+    Info: Peak virtual memory: 4829 megabytes
+    Info: Processing ended: Wed Jul 10 11:58:10 2024
+    Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:05
 
 
